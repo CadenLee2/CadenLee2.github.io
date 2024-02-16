@@ -5,11 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego DiPasquo for president!</title>
     <link rel="stylesheet" href="static/govwebsite/govstyles.css">
-    <!-- todo: icon/logo -->
+    <meta property="og-title" content="Diego DiPasquo for president!">
+    <!-- <meta property="og-image" content=""> -->
+    <meta property="og-description" content="Protect the environment and cultivate a better standard of living for everyone.">
+    <!-- todo: icon/logo, og -->
+    <script defer>
+        // Textswap setting ("If you want {}, vote for Diego DiPasquo in 2024!")
+        const textswapvals = [
+            "better infrastructure",
+            "a safer environment",
+            "higher-quality public education",
+            "investment in human capital",
+            "cleaner air",
+            "simpler government websites",
+            "better technology in schools",
+            "better public transportation",
+            "animal rights",
+            "affordable electric vehicles",
+        ];
+        let currenti = 0;
+        setInterval(
+            () => {
+                // Set the text
+                document.getElementById("textswap").innerText = textswapvals[currenti];
+                // Move to the next one
+                currenti++;
+                if (currenti >= textswapvals.length) currenti = 0;
+            }, 1000
+        );
+    </script>
 </head>
 <body>
     <div class="titlebar">
-        <h1>Vote for Diego DiPasquo!</h1>
+        <div style="width: 400px; text-align: left;">
+            <span>If you want <span id="textswap" style="font-weight: bold;">success</span>,</span>
+        </div>
+        <h1>Vote for Diego DiPasquo in 2024!</h1>
     </div>
     <div class="flexcenter">
         <div class="maincenter">
@@ -31,8 +62,8 @@
                             From Redondo Beach
                         </div>
                         <div class="infosection">
-                            Graduated from USC
-                            <br>Majored in Law
+                            Graduate degree in
+                            <br>law from USC
                         </div>
                     </div>
                     <div class="infoflexrow">
@@ -53,7 +84,8 @@
         </div>
     </div>
     <div class="footerbar">
-        🇺🇸 Diego DiPasquo for president!
+        <!-- todo: US flag image instead -->
+        <img height="12px;" src="https://flagemoji.net/img/flags/usa-flag.png"> <!-- 🇺🇸 --> Diego DiPasquo for president!
         <br>© 2024 Diego DiPasquo, Caden Lee, Amy Saffer
     </div>
 </body>
