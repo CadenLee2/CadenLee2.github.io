@@ -11,21 +11,41 @@
     <!-- todo: icon/logo, og -->
     <!-- todo: download all images used for consistency -->
     <script defer>
+        // Navigation
+        const allpages = [
+            "home",
+            "platform",
+            "contact",
+            "donate",
+            "thankyou"
+        ]
+        function navTo(pageName) {
+            for (let i = 0; i < allpages.length; i++) {
+                if (allpages[i] == pageName) {
+                    document.getElementById(allpages[i]).style.display = "block";
+                } else {
+                    document.getElementById(allpages[i]).style.display = "none";
+                }
+            }
+        }
         // Textswap setting ("If you want {}, vote for Diego DiPasquo in 2024!")
         const textswapvals = [
             "better infrastructure",
             "higher-quality public education",
-            "less potholes",
+            "fewer potholes",
             "investment in human capital",
             "cleaner air",
-            "simpler government websites",
+            "more accessible government websites",
             "better technology in schools",
             "better public transportation",
-            "a safer environment",
+            "a healthier environment",
+            "a more fair tax system",
             "animal rights",
             "affordable electric vehicles",
+            "safer streets",
             "effective use of taxes"
         ];
+        const intervaltime = 1000; // ms
         let currenti = 0;
         setInterval(
             () => {
@@ -34,35 +54,36 @@
                 // Move to the next one
                 currenti++;
                 if (currenti >= textswapvals.length) currenti = 0;
-            }, 1000
+            }, intervaltime
         );
     </script>
 </head>
 <body>
-    <div class="titlebar">
+    <div class="titlebar" onclick="navTo('home')">
         <div style="width: 400px; text-align: left;">
             <span>If you want <span id="textswap" style="font-weight: bold;">success</span>,</span>
         </div>
         <h1>Vote for Diego DiPasquo in 2024!</h1>
     </div>
     <div class="flexcenter">
-        <div class="maincenter">
+        <!-- HOME -->
+        <div class="maincenter" id="home">
+            <!-- todo: unique first box that shows image of Diego, date of when to vote, and details -->
             <div class="imageful" style=" background-position-y: 300px; background-image: url(https://store-images.s-microsoft.com/image/apps.47288.14001870391400150.353e36cd-9d19-45f7-b569-412dc3f4e6b0.e716f291-0e62-44b6-ad87-56a4628d5e5d?mode=scale&q=90&h=1080&w=1920&background=%230078D7);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Protect the Environment</span></h2>
                 <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">and Cultivate a Better Standard of Living...</span></h2>
                 <br><h2><span class="highlight" style="color: rgb(255, 255, 255); font-size: 30px;">For Everyone</span></h2>
-                <br>
-                <hr>
-                <br>
-                <button>Full Platform</button>
+                <br><br><br>
+                <button onclick="navTo('platform')">Full Platform</button>
             </div>
             <div class="imageful" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/RedondoBeachKingHarborSign.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who is Diego?</span></h2>
-                <hr>
+                <br>
                 <div class="infoflex">
+                    <!-- todo: improve these details -->
                     <div class="infoflexrow">
                         <div class="infosection">
-                            From Redondo Beach
+                            Served as Governor of California
                         </div>
                         <div class="infosection">
                             Graduate degree in
@@ -71,20 +92,93 @@
                     </div>
                     <div class="infoflexrow">
                         <div class="infosection">
-                            -
+                            Author of two
+                            <br>Pulitzer Prize-winning novels
                         </div>
                         <div class="infosection">
-                            -
+                            From the town of Redondo Beach
                         </div>
                     </div>
                 </div>
             </div>
             <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
                 <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">Support Us</span></h2>
-                <hr>
-                <button class="outl">Contact</button> <button class="outl">Donate</button>
+                <br>
+                <button class="outl" onclick="navTo('contact')">Contact</button>
+                <button class="outl" onclick="navTo('donate')">Donate</button>
             </div>
         </div>
+        <!-- PLATFORM -->
+        <div class="maincenter" id="platform" style="display: none;">
+            <div class="imageful" style="background-image: url(https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg); background-size: 100%">
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Our Platform</span></h2>
+                <div class="infoflex" style="text-align: left;">
+                    <!-- todo: add the full platform, including sources, and edit -->
+                    <h2 style="margin-left: 5%;">The Environment</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            <!-- todo: include sources -->
+                            We will begin to enforce stricter regulations and make safer work places for those working in oil rigs and fossil fuels. To do this, our plan would be to reopen oil drilling and collection in American, rather than sourcing from foreign countries. With domestic oil rigging, America can ensure that greater regulations and precautions can be taken, and loosen American dependence on foreign production.
+                            <a style="float:right;">Source</a>
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Education</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            <!-- todo: include sources -->
+                            (details here)
+                            <a style="float:right;">Source</a>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button onclick="navTo('donate')">Make this Reality</button>
+            </div>
+        </div>
+        <!-- CONTACT -->
+        <div class="maincenter" id="contact" style="display: none;">
+            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Contact Us</span></h2>
+                <br>
+                <div class="infosectionwide" style="text-align: left;">
+                    <!-- todo: details -->
+                    This page is under construction.
+                </div>
+                <br>
+                <button class="outl" onclick="navTo('home')">Home</button>
+            </div>
+        </div>
+        <!-- DONATE -->
+        <div class="maincenter" id="donate" style="display: none;">
+            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Support Us By Donating!</span></h2>
+                <br>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Address">
+                <br>
+                <input type="text" placeholder="Credit Card #">
+                <br><input type="text" placeholder="SSN (___-__-____)">
+                <br><input type="text" placeholder="Donation Amount ($)">
+                <!-- todo: any details? -->
+                <br><br>
+                <button onclick="navTo('thankyou')">Donate Now</button>
+                <br><br>
+                <span style="color: rgba(255, 255, 255, 0.5)">
+                    * note: this is a demo page and your data will not be collected.
+                    Regardless, please remember to never share critical personal information
+                    like your real SSN online, even to a trusted individual like Diego DiPasquo.
+                </span>
+            </div>
+        </div>
+        <!-- THANK YOU PAGE -->
+        <div class="maincenter" id="thankyou" style="display: none;">
+            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Thank You For Your Support!</span></h2>
+                <br>
+                <button class="outl" onclick="navTo('home')">Home</button>
+            </div>
+        </div>
+
     </div>
     <div class="footerbar">
         <!-- todo: US flag image instead -->

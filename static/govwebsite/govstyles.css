@@ -72,6 +72,14 @@ div.infosection {
     padding: 8px;
     margin-bottom: 10px;
 }
+div.infosectionwide {
+    width: 90%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white; /*rgb(36, 36, 36);*/
+    padding: 8px;
+    margin-bottom: 10px;
+}
 div.infoflex {
     display: flex;
     flex-direction: column;
@@ -95,6 +103,21 @@ span.highlight {
 }
 hr {
     border: solid rgba(255, 255, 255, 0.4) 1px;
+}
+a {
+    color: white;
+    text-decoration: underline;
+}
+a:visited {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    color: rgb(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+a:active {
+    color: rgb(255, 255, 255, 0.6);
 }
 button {
     border: none;
@@ -127,4 +150,15 @@ button.outl:hover {
 }
 button.outl:active {
     background-color: rgba(255, 255, 255, 0.4);
+}
+input {
+    width: 40%;
+    height: 30px;
+    border-radius: 100px;
+    font-size: 18px;
+    padding-left: 8px;
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
 }
