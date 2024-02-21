@@ -17,7 +17,8 @@
             "platform",
             "contact",
             "donate",
-            "thankyou"
+            "thankyou",
+            "about"
         ]
         function navTo(pageName) {
             for (let i = 0; i < allpages.length; i++) {
@@ -56,10 +57,76 @@
                 if (currenti >= textswapvals.length) currenti = 0;
             }, intervaltime
         );
+        // Generation of platform HTML (goes inside the infoflex)
+        const platformData = [
+            {
+                topic: "The Environment",
+                stance: "We will begin to enforce stricter regulations and make safer work places for those working in oil rigs and fossil fuels. To do this, our plan would be to reopen oil drilling and collection in American, rather than sourcing from foreign countries. With domestic oil rigging, America can ensure that greater regulations and precautions can be taken, and loosen American dependence on foreign production.",
+                source: "[none]"
+            },
+            {
+                topic: "Taxes",
+                stance: "We will create a new policy where a new, higher, tax bracket is added to the layered tax bracket system. This higher bracket would be for individuals with an annual salary of >$1,000,000 or a household income of >$1,200,000, and it would be taxed a 40% income tax. The new tax revenues would be allocated toward the spending and new infrastructure built through our presidency.",
+                source: "[none]"
+            },
+            {
+                topic: "Animal Rights",
+                stance: "We will support animal rights by promoting humane, healthy adoption practices. Will require check-ups, six and twelve months after adoption, on families or individuals who have adopted pets; will also provide improved online services for taking care of animals. This will decrease the number of stray animals in the streets and ensure they instead have safe homes.",
+                source: "[none]"
+            },
+            {
+                topic: "Education",
+                stance: "We will increase funding to public schools in low-income areas. Give the federal government more of a role in funding schools to fairly distribute money. This will raise the bar for public education overall, enhancing future human capital across the United States.",
+                source: "[none]"
+            },
+            {
+                topic: "Healthcare",
+                stance: "We will gradually switch the United States to the Bismarck Model of healthcare (described in the evidence). Will slowly increase regulation on health insurance while increasing the portion paid for by the government, easing into the change. The plan will be completed by 2034 and will aim to increase the affordability and fairness of the healthcare system for all Americans.",
+                source: "[none]"
+            },
+            {
+                topic: "Government Technology",
+                stance: "We will streamline and update government technology systems. Current services, like the federal student aid application, DMV and IRS websites, and others, are outdated and have bugs. Will provide 30% more funding to technology across US departments and encourage development improvements to reduce wasted time, strengthen security, and increase accessibility for all users of technological services.",
+                source: "[none]"
+            },
+            {
+                topic: "Immigration Protections",
+                stance: "America has been involved in many controversial destabalization of countries, leaving many people of other nations without safety or a home. Our candidate will work to sustain the numbers by the Biden Administration and enhance the immigration system. We aim to ensure that people are being fairly and safely moved into the country.",
+                source: "[none]"
+            },
+            {
+                topic: "Electric Vehicles",
+                stance: "We will provide a national subsidy for hybrid and electric vehicles to increase their supply across all states, decreasing their price and increasing their equilibrium quantity. This will put more such vehicles on the roads instead of fossil-fuel-reliant vehicles. By reducing pollution and decreasing the detrimental effects of greenhouse gases in climate change, we will have a positive effect on the environment.",
+                source: "[none]"
+            },
+            {
+                topic: "Infrastructure",
+                stance: "We will improve infrastructure across the country by incentivizing cities to better-maintain roads, highways, tunnels, and bridges. Will provide funding on a national level based on populations and existing conditions to ensure an equal effect. This will increase everyday quality of life and safety while simultaneously creating new jobs.",
+                source: "[none]"
+            },
+            {
+                topic: "Public Transportation",
+                stance: "We will work to support the upkeep and evironmental advantages of using public transportation. Our goal as an Administration would be to set a mandate that requires all public transportation to be electric by 2040. This would improve the carbon emissions and make public transportation an even safer way for the environment to heal.",
+                source: "[none]"
+            }
+        ];
+        function generatePlatformData() {
+            let res = "";
+            for (const data of platformData) {
+                res += "<h2 style=\"margin-left: 5%;\">" + data.topic + "</h2>"
+                    + "\n<div class=\"infoflexrow\">"
+                        + "\n    <div class=\"infosectionwide\">"
+                            + "\n        " + data.stance
+                        + "\n    </div>"
+                    + "\n</div>\n";
+            }
+            return res;
+        }
     </script>
 </head>
 <body>
     <div class="titlebar" onclick="navTo('home')">
+        <!-- todo: include logo -->
         <div style="width: 400px; text-align: left;">
             <span>If you want <span id="textswap" style="font-weight: bold;">success</span>,</span>
         </div>
@@ -68,15 +135,16 @@
     <div class="flexcenter">
         <!-- HOME -->
         <div class="maincenter" id="home">
+            <!-- todo: at least 3 images -->
             <!-- todo: unique first box that shows image of Diego, date of when to vote, and details -->
-            <div class="imageful" style=" background-position-y: 300px; background-image: url(https://store-images.s-microsoft.com/image/apps.47288.14001870391400150.353e36cd-9d19-45f7-b569-412dc3f4e6b0.e716f291-0e62-44b6-ad87-56a4628d5e5d?mode=scale&q=90&h=1080&w=1920&background=%230078D7);">
+            <div class="imageful" style=" background-position-y: 300px; background-image: url(static/govwebsite/bright-city.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Protect the Environment</span></h2>
                 <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">and Cultivate a Better Standard of Living...</span></h2>
                 <br><h2><span class="highlight" style="color: rgb(255, 255, 255); font-size: 30px;">For Everyone</span></h2>
                 <br><br><br>
                 <button onclick="navTo('platform')">Full Platform</button>
             </div>
-            <div class="imageful" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/8a/RedondoBeachKingHarborSign.jpg);">
+            <div class="imageful" style="background-image: url(static/govwebsite/redondo-harbor.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who is Diego?</span></h2>
                 <br>
                 <div class="infoflex">
@@ -100,8 +168,9 @@
                         </div>
                     </div>
                 </div>
+                <button class="outl" onclick="navTo('about')">Biography</button>
             </div>
-            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+            <div class="imageful" style="background-image: url(static/govwebsite/money.webp);">
                 <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">Support Us</span></h2>
                 <br>
                 <button class="outl" onclick="navTo('contact')">Contact</button>
@@ -110,24 +179,82 @@
         </div>
         <!-- PLATFORM -->
         <div class="maincenter" id="platform" style="display: none;">
-            <div class="imageful" style="background-image: url(https://www.corpnet.com/wp-content/uploads/2022/01/Legal-Document.jpg); background-size: 100%">
+            <div class="imageful" style="background-image: url(static/govwebsite/platform.jpg); background-size: 100%">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Our Platform</span></h2>
                 <div class="infoflex" style="text-align: left;">
-                    <!-- todo: add the full platform, including sources, and edit -->
-                    <h2 style="margin-left: 5%;">The Environment</h2>
+                    <!-- todo: impl any platform edits? -->
+                    <!-- <a style="float:right;">Source</a> -->
+                    <!-- <h2 style="margin-left: 5%;">The Environment</h2>
                     <div class="infoflexrow">
                         <div class="infosectionwide">
-                            <!-- todo: include sources -->
                             We will begin to enforce stricter regulations and make safer work places for those working in oil rigs and fossil fuels. To do this, our plan would be to reopen oil drilling and collection in American, rather than sourcing from foreign countries. With domestic oil rigging, America can ensure that greater regulations and precautions can be taken, and loosen American dependence on foreign production.
-                            <a style="float:right;">Source</a>
                         </div>
                     </div>
                     <h2 style="margin-left: 5%;">Education</h2>
                     <div class="infoflexrow">
                         <div class="infosectionwide">
-                            <!-- todo: include sources -->
                             (details here)
                             <a style="float:right;">Source</a>
+                        </div>
+                    </div>-->
+                    <h2 style="margin-left: 5%;">The Environment</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will begin to enforce stricter regulations and make safer work places for those working in oil rigs and fossil fuels. To do this, our plan would be to reopen oil drilling and collection in American, rather than sourcing from foreign countries. With domestic oil rigging, America can ensure that greater regulations and precautions can be taken, and loosen American dependence on foreign production.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Taxes</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will create a new policy where a new, higher, tax bracket is added to the layered tax bracket system. This higher bracket would be for individuals with an annual salary of >$1,000,000 or a household income of >$1,200,000, and it would be taxed a 40% income tax. The new tax revenues would be allocated toward the spending and new infrastructure built through our presidency.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Animal Rights</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will support animal rights by promoting humane, healthy adoption practices. Will require check-ups, six and twelve months after adoption, on families or individuals who have adopted pets; will also provide improved online services for taking care of animals. This will decrease the number of stray animals in the streets and ensure they instead have safe homes.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Education</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will increase funding to public schools in low-income areas. Give the federal government more of a role in funding schools to fairly distribute money. This will raise the bar for public education overall, enhancing future human capital across the United States.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Healthcare</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will gradually switch the United States to the Bismarck Model of healthcare (described in the evidence). Will slowly increase regulation on health insurance while increasing the portion paid for by the government, easing into the change. The plan will be completed by 2034 and will aim to increase the affordability and fairness of the healthcare system for all Americans.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Government Technology</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will streamline and update government technology systems. Current services, like the federal student aid application, DMV and IRS websites, and others, are outdated and have bugs. Will provide 30% more funding to technology across US departments and encourage development improvements to reduce wasted time, strengthen security, and increase accessibility for all users of technological services.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Immigration Protections</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            America has been involved in many controversial destabalization of countries, leaving many people of other nations without safety or a home. Our candidate will work to sustain the numbers by the Biden Administration and enhance the immigration system. We aim to ensure that people are being fairly and safely moved into the country.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Electric Vehicles</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will provide a national subsidy for hybrid and electric vehicles to increase their supply across all states, decreasing their price and increasing their equilibrium quantity. This will put more such vehicles on the roads instead of fossil-fuel-reliant vehicles. By reducing pollution and decreasing the detrimental effects of greenhouse gases in climate change, we will have a positive effect on the environment.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Infrastructure</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will improve infrastructure across the country by incentivizing cities to better-maintain roads, highways, tunnels, and bridges. Will provide funding on a national level based on populations and existing conditions to ensure an equal effect. This will increase everyday quality of life and safety while simultaneously creating new jobs.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Public Transportation</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will work to support the upkeep and evironmental advantages of using public transportation. Our goal as an Administration would be to set a mandate that requires all public transportation to be electric by 2040. This would improve the carbon emissions and make public transportation an even safer way for the environment to heal.
                         </div>
                     </div>
                 </div>
@@ -137,8 +264,21 @@
         </div>
         <!-- CONTACT -->
         <div class="maincenter" id="contact" style="display: none;">
-            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+            <div class="imageful" style="background-image: url(static/govwebsite/money.webp);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Contact Us</span></h2>
+                <br>
+                <div class="infosectionwide" style="text-align: left;">
+                    <!-- todo: details -->
+                    This page is under construction.
+                </div>
+                <br>
+                <button class="outl" onclick="navTo('home')">Home</button>
+            </div>
+        </div>
+        <!-- ABOUT -->
+        <div class="maincenter" id="about" style="display: none;">
+            <div class="imageful" style="background-image: url(static/govwebsite/redondo-harbor.jpg);">
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who Is Diego?</span></h2>
                 <br>
                 <div class="infosectionwide" style="text-align: left;">
                     <!-- todo: details -->
@@ -150,7 +290,7 @@
         </div>
         <!-- DONATE -->
         <div class="maincenter" id="donate" style="display: none;">
-            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+            <div class="imageful" style="background-image: url(static/govwebsite/money.webp);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Support Us By Donating!</span></h2>
                 <br>
                 <input type="text" placeholder="Name">
@@ -159,7 +299,7 @@
                 <input type="text" placeholder="Credit Card #">
                 <br><input type="text" placeholder="SSN (___-__-____)">
                 <br><input type="text" placeholder="Donation Amount ($)">
-                <!-- todo: any details? -->
+                <!-- todo: any more details? -->
                 <br><br>
                 <button onclick="navTo('thankyou')">Donate Now</button>
                 <br><br>
@@ -172,7 +312,7 @@
         </div>
         <!-- THANK YOU PAGE -->
         <div class="maincenter" id="thankyou" style="display: none;">
-            <div class="imageful" style="background-image: url(https://imageio.forbes.com/blogs-images/ofx/files/2018/09/OFX3-iStock-492595743-1200x800.jpg?height=474&width=711&fit=bounds);">
+            <div class="imageful" style="background-image: url(static/govwebsite/money.webp);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Thank You For Your Support!</span></h2>
                 <br>
                 <button class="outl" onclick="navTo('home')">Home</button>
@@ -182,7 +322,7 @@
     </div>
     <div class="footerbar">
         <!-- todo: US flag image instead -->
-        <img height="12px;" src="https://flagemoji.net/img/flags/usa-flag.png"> <!-- 🇺🇸 --> Diego DiPasquo for president!
+        <img height="12px;" src="static/govwebsite/flagemoji-usa-flag.png"> <!-- 🇺🇸 --> Diego DiPasquo for president!
         <br>© 2024 Diego DiPasquo, Caden Lee, Amy Saffer
     </div>
 </body>
