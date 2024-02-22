@@ -126,7 +126,7 @@
 </head>
 <body>
     <div class="titlebar" onclick="navTo('home')">
-        <!-- todo: include logo -->
+        <!-- todo: include logo on header? -->
         <div style="width: 400px; text-align: left;">
             <span>If you want <span id="textswap" style="font-weight: bold;">success</span>,</span>
         </div>
@@ -136,17 +136,41 @@
         <!-- HOME -->
         <div class="maincenter" id="home">
             <!-- todo: at least 3 images -->
-            <!-- todo: unique first box that shows image of Diego, date of when to vote, and details -->
-            <div class="imageful" style=" background-position-y: 300px; background-image: url(static/govwebsite/bright-city.jpg);">
+            <div class="bigempty" style="height: 340px;">
+                <div class="infoflexrow">
+                    <div class="infowhite">
+                        <!-- todo: improve slogan -->
+                        <img src="static/govwebsite/diego-campaign-logo.png" width="90px;" style="position: inherit; left: 20%; top: 100px;">
+                        <br><br>I'm not just a candidate. I'm the future of America.
+                        <!-- todo: LINK TO THE AD? -->
+                        <!-- <br><br><a>Campaign Ad →</a> -->
+                    </div>
+                    <div style="text-align: left;">
+                        <h2 style="color: rgba(255, 255, 255, 1);"><span class="highlight" style="background-color: rgb(207, 19, 19);">VOTE ON</span></h2>
+                        <h2 style="font-size: 60px;">Feb. 27</h2>
+                        <h2 style="color: rgba(255, 255, 255, 0.6);">2024</h2>
+                        <br><br>
+                        <!-- todo: LINK TO THE AD! -->
+                        <button onclick="navTo('platform')">
+                            <!-- Why Diego? -->
+                            Campaign Ad →
+                        </button>
+                        <!-- <button onclick="navTo('platform')">Full Platform</button> -->
+                    </div>
+                    <img class="diegoimg" src="static/govwebsite/diego-1.png" height="340px;" style="position: inherit; float:right; bottom: 2px;">
+                </div>
+            </div>
+            <div class="imageful" style="background-position-y: 300px; background-image: url(static/govwebsite/bright-city.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Protect the Environment</span></h2>
                 <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">and Cultivate a Better Standard of Living...</span></h2>
                 <br><h2><span class="highlight" style="color: rgb(255, 255, 255); font-size: 30px;">For Everyone</span></h2>
-                <br><br><br>
-                <button onclick="navTo('platform')">Full Platform</button>
+                <br><br>
+                <button onclick="navTo('platform')" class="outl">Full Platform</button>
             </div>
             <div class="imageful" style="background-image: url(static/govwebsite/redondo-harbor.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who is Diego?</span></h2>
                 <br>
+                <!-- todo: images here -->
                 <div class="infoflex">
                     <!-- todo: improve these details -->
                     <div class="infoflexrow">
@@ -180,7 +204,12 @@
         <!-- PLATFORM -->
         <div class="maincenter" id="platform" style="display: none;">
             <div class="imageful" style="background-image: url(static/govwebsite/platform.jpg); background-size: 100%">
-                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Our Platform</span></h2>
+                <!-- <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Our Platform</span></h2> -->
+                <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Protect the Environment</span></h2>
+                <h2><span class="highlight" style="background-color: rgb(24, 26, 187);">and Cultivate a Better Standard of Living...</span></h2>
+                <br><h2><span class="highlight" style="color: rgb(255, 255, 255); font-size: 30px;">For Everyone</span></h2>
+                <br>
+                <br>
                 <div class="infoflex" style="text-align: left;">
                     <!-- todo: impl any platform edits? -->
                     <!-- <a style="float:right;">Source</a> -->
@@ -197,6 +226,18 @@
                             <a style="float:right;">Source</a>
                         </div>
                     </div>-->
+                    <h2 style="margin-left: 5%;">Education</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will increase funding to public schools in low-income areas. Give the federal government more of a role in funding schools to fairly distribute money. This will raise the bar for public education overall, enhancing future human capital across the United States.
+                        </div>
+                    </div>
+                    <h2 style="margin-left: 5%;">Healthcare</h2>
+                    <div class="infoflexrow">
+                        <div class="infosectionwide">
+                            We will gradually switch the United States to the Bismarck Model of healthcare (described in the evidence). Will slowly increase regulation on health insurance while increasing the portion paid for by the government, easing into the change. The plan will be completed by 2034 and will aim to increase the affordability and fairness of the healthcare system for all Americans.
+                        </div>
+                    </div>
                     <h2 style="margin-left: 5%;">The Environment</h2>
                     <div class="infoflexrow">
                         <div class="infosectionwide">
@@ -213,18 +254,6 @@
                     <div class="infoflexrow">
                         <div class="infosectionwide">
                             We will support animal rights by promoting humane, healthy adoption practices. Will require check-ups, six and twelve months after adoption, on families or individuals who have adopted pets; will also provide improved online services for taking care of animals. This will decrease the number of stray animals in the streets and ensure they instead have safe homes.
-                        </div>
-                    </div>
-                    <h2 style="margin-left: 5%;">Education</h2>
-                    <div class="infoflexrow">
-                        <div class="infosectionwide">
-                            We will increase funding to public schools in low-income areas. Give the federal government more of a role in funding schools to fairly distribute money. This will raise the bar for public education overall, enhancing future human capital across the United States.
-                        </div>
-                    </div>
-                    <h2 style="margin-left: 5%;">Healthcare</h2>
-                    <div class="infoflexrow">
-                        <div class="infosectionwide">
-                            We will gradually switch the United States to the Bismarck Model of healthcare (described in the evidence). Will slowly increase regulation on health insurance while increasing the portion paid for by the government, easing into the change. The plan will be completed by 2034 and will aim to increase the affordability and fairness of the healthcare system for all Americans.
                         </div>
                     </div>
                     <h2 style="margin-left: 5%;">Government Technology</h2>
