@@ -71,6 +71,9 @@ img.diegoimg {
 img.diegoimg:hover {
     translate: 0px -8px;
 }
+img.roundimg {
+    border-radius: 8px;
+}
 div.titlebar {
     background-color: rgb(48, 61, 247);
     color: white;

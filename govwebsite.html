@@ -125,7 +125,6 @@
 </head>
 <body>
     <div class="titlebar" onclick="navTo('home')">
-        <!-- todo: include logo on header? -->
         <div style="width: 400px; text-align: left;">
             <span>If you want <span id="textswap" style="font-weight: bold;">success</span>,</span>
         </div>
@@ -134,16 +133,11 @@
     <div class="flexcenter">
         <!-- HOME -->
         <div class="maincenter" id="home">
-            <!-- todo: at least 3 images -->
             <div class="bigempty" style="height: 340px;">
                 <div class="infoflexrow">
                     <div class="infowhite">
-                        <!-- todo: improve slogan -->
-                        <!-- todo: new logo -->
                         <img src="static/govwebsite/diego-campaign-logo-color.png" width="90px;" style="position: inherit; left: 20%; top: 100px;">
                         <br><br>I'm not just a candidate. I'm the future of America.
-                        <!-- todo: LINK TO THE AD? -->
-                        <!-- <br><br><a>Campaign Ad →</a> -->
                     </div>
                     <div style="text-align: left;">
                         <h2 style="color: rgba(255, 255, 255, 1);"><span class="highlight" style="background-color: rgb(207, 19, 19);">VOTE ON</span></h2>
@@ -151,8 +145,7 @@
                         <h2 style="color: rgba(255, 255, 255, 0.6);">2024</h2>
                         <br><br>
                         <!-- todo: LINK TO THE AD! -->
-                        <button onclick="navTo('platform')">
-                            <!-- Why Diego? -->
+                        <button onclick="location.href='https://drive.google.com/file/d/1Rb6zcD95Jdmo9llGY_g_RpnkCWIFkHNG/view?usp=sharing'">
                             Campaign Ad →
                         </button>
                         <!-- <button onclick="navTo('platform')">Full Platform</button> -->
@@ -170,7 +163,8 @@
             <div class="imageful" style="background-image: url(static/govwebsite/redondo-harbor.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who is Diego?</span></h2>
                 <br>
-                <!-- todo: images here -->
+                <img class="roundimg" src="static/govwebsite/diego-3.png" height="180px;">
+                <br><br>
                 <div class="infoflex">
                     <div class="infoflexrow">
                         <div class="infosection">
@@ -295,16 +289,17 @@
             <div class="imageful" style="background-image: url(static/govwebsite/redondo-harbor.jpg);">
                 <h2><span class="highlight" style="background-color: rgb(207, 19, 19);">Who Is Diego?</span></h2>
                 <br>
-                <!-- todo: TWO MORE IMAGES! -->
+                <img class="roundimg" src="static/govwebsite/diego-2.png" height="340px;">
+                <br><br>
                 <div class="infosectionwide" style="text-align: left;">
                     <!-- todo: update first paragraph of bio -->
                     As a motivated and talented individual, Diego DiPasquo has spent his life advocating for positive change.
                     As early as high school, he participated in civic action projects, volunteered, and bettered his local community of Redondo Beach, California.
                     Growing up in tumultuous political times, he believed that universal issues like animal rights could unite Americans, and he saw the potential for improvement everywhere he went.
-                    His political career, however, did not start until college.
+                    These beliefs soon became the foundations of his political career.
                     <br><br>
                     After graduating from the University of Nebraska-Lincoln, Diego DiPasquo attended the University of Southern California's Gould School of Law, where he specialized in environmental law and gained inspiration for his first Pulitzer Prize-winning novel.
-                    Knowing that not everyone had access to the same education that he did, DiPasquo became motivated to run for local office as a city councilmember of Los Angeles, the first government position he had held.
+                    Knowing that not everyone had access to the same education that he did, DiPasquo became motivated to run for local office as a city councilmember of Los Angeles, which would become his first government position.
                     He spent 8 years on the city council advocating for widely-applauded education improvements and environmental protections before being elected as the governor of California. For the past 8 years, he has been increasing funding to public schools, promoting electric vehicles and public transportation, and building new infrastructure across the state.
                     He now hopes to take his policies to the national level as President of the United States of America.
                 </div>
@@ -320,8 +315,8 @@
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="Address">
                 <br>
-                <input type="text" placeholder="Credit Card #">
-                <br><input type="text" placeholder="SSN (___-__-____)">
+                <input type="text" placeholder="Card #">
+                <br><input type="text" placeholder="Security Code">
                 <br><input type="text" placeholder="Donation Amount ($)">
                 <br><br>
                 <button onclick="navTo('thankyou')">Donate Now</button>
