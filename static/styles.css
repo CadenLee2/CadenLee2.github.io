@@ -1,0 +1,130 @@
+:root {
+    /* Dark Theme colors */
+    /*--pagebg: rgb(16, 18, 22);
+    --sectionbg: rgb(21, 24, 31);
+    --sectionborder: rgb(34, 38, 48);
+    --hrborder: rgb(76, 81, 97);
+    --headercolor: rgb(212, 216, 224);
+    --textcolor: rgb(212, 216, 224);*/
+
+    /* Light Theme colors */
+    --pagebg: rgb(204, 212, 219);
+    --sectionbg: rgb(211, 220, 227);
+    --sectionbgmid: rgb(199, 209, 217);
+    --sectionbglight: rgb(223, 230, 235);
+    --whitesectionbg: rgb(225, 233, 240);
+    --whitesectionbglight: rgb(233, 238, 242);
+    --sectionborder: rgb(176, 186, 194);
+    --sectionborderdark: rgb(165, 175, 184);
+    --hrborder: rgb(176, 186, 194);
+    --hrborderdark: rgb(156, 166, 173);
+    --headercolor: rgb(29, 33, 41);
+    --textcolor: rgb(70, 78, 94);
+    /* Light Theme colors */
+    /* Light Theme colors */
+}
+
+@font-face {
+    font-family: 'Abordage';
+    src: url('Abordage-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf');
+}
+
+body {
+    color: var(--textcolor);
+    background-color: var(--pagebg);
+    /*font-family: Arial, sans-serif;*/
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+/* Divs */
+div {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+div.pagecentercontainer {
+    display: flex;
+    justify-content: center;
+}
+div.pagecenter {
+    width: 600px;
+    padding: 0px;
+}
+div.section {
+    background-color: var(--sectionbg);
+    width: 600px;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--sectionborder);
+    margin-bottom: 10px;
+    transition: all 0.1s;
+}
+div.section:hover {
+    background-color: var(--sectionbglight);
+}
+div.whitesection {
+    background-color: var(--whitesectionbg);
+    width: 600px;
+    padding: 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+    border: solid 1px var(--sectionborder);
+    margin-bottom: 10px;
+}
+
+/* Text */
+h1 {
+    font-size: 20px;
+    margin: 0px;
+    color: var(--headercolor);
+}
+span.minihead {
+    font-size: 14px;
+    color: var(--hrborderdark);
+}
+
+/* Misc. */
+hr {
+    outline: none;
+    border: solid 1px var(--hrborder);
+}
+
+/* Button */
+button {
+    font-family: 'Lato';
+    color: var(--textcolor);
+    background-color: var(--sectionbg);
+    /*background-color: rgb(130, 173, 232);*/
+    border: none;
+    border-radius: 4px;
+    width: 24%;
+    height: 26px;
+    font-size: 14px;
+    transition: all 0.05s;
+    padding: 0px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--sectionbgmid);
+}
+button:active {
+    background-color: var(--sectionborder);
+}
+button.mid {
+    background-color: var(--sectionbgmid);
+    width: 200px;
+}
+button.mid:hover {
+    background-color: var(--sectionborder);
+}
+button.mid:active {
+    background-color: var(--sectionborderdark); /* TODO: border */
+}
