@@ -1,3 +1,3 @@
 # CadenLee2.github.io
 
-My personal website
+My website, located at <https://cadenlee2.github.io/>
