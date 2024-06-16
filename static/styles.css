@@ -9,17 +9,22 @@
 
     /* Light Theme colors */
     --pagebg: rgb(204, 212, 219);
-    --sectionbg: rgb(211, 220, 227);
+    /*--sectionbg: rgb(211, 220, 227);*/ /* Old */
+    --sectionbg: rgb(218, 226, 232);
     --sectionbgmid: rgb(199, 209, 217);
     --sectionbglight: rgb(223, 230, 235);
     --whitesectionbg: rgb(225, 233, 240);
     --whitesectionbglight: rgb(233, 238, 242);
     --sectionborder: rgb(176, 186, 194);
+    --sectionbordershadow: rgba(176, 186, 194, 0.5);
     --sectionborderdark: rgb(165, 175, 184);
     --hrborder: rgb(176, 186, 194);
     --hrborderdark: rgb(156, 166, 173);
     --headercolor: rgb(29, 33, 41);
     --textcolor: rgb(70, 78, 94);
+    --blue1: rgb(75, 173, 209);
+    --blue1mid: rgb(58, 140, 181);
+    --blue1dark: rgb(50, 117, 166);
     /* Light Theme colors */
     /* Light Theme colors */
 }
@@ -54,16 +59,17 @@ div.pagecentercontainer {
     justify-content: center;
 }
 div.pagecenter {
-    width: 600px;
+    width: 700px;
     padding: 0px;
 }
 div.section {
     background-color: var(--sectionbg);
-    width: 600px;
+    width: 700px;
     padding: 12px;
     border-radius: 8px;
     border: solid 1px var(--sectionborder);
-    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px var(--sectionbordershadow);
+    margin-bottom: 8px;
     transition: all 0.1s;
 }
 div.section:hover {
@@ -71,13 +77,16 @@ div.section:hover {
 }
 div.whitesection {
     background-color: var(--whitesectionbg);
-    width: 600px;
+    width: 700px;
     padding: 12px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top: none;
     border: solid 1px var(--sectionborder);
+    box-shadow: 0px 2px 2px var(--sectionbordershadow);
+    margin-bottom: 8px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Text */
@@ -96,6 +105,15 @@ hr {
     outline: none;
     border: solid 1px var(--hrborder);
 }
+div.codebox {
+    color: rgb(54, 179, 106);
+    background-color: rgb(22, 31, 54);
+    border-radius: 4px;
+    font-family: monospace;
+    width: 80%;
+    padding: 6px;
+    margin-top: 4px;
+}
 
 /* Button */
 button {
@@ -105,6 +123,7 @@ button {
     /*background-color: rgb(130, 173, 232);*/
     border: none;
     border-radius: 4px;
+    margin-top: 4px;
     width: 24%;
     height: 26px;
     font-size: 14px;
@@ -127,4 +146,17 @@ button.mid:hover {
 }
 button.mid:active {
     background-color: var(--sectionborderdark); /* TODO: border */
+}
+button.long {
+    width: 300px;
+}
+button.blue {
+    background-color: var(--blue1);
+    color: var(--sectionbg);
+}
+button.blue:hover {
+    background-color: var(--blue1mid);
+}
+button.blue:active {
+    background-color: var(--blue1dark);
 }
