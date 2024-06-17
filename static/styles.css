@@ -90,6 +90,18 @@ div.whitesection {
     margin-bottom: 10px;
     text-align: center;
 }
+div.subsection {
+    background-color: var(--sectionbg);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--sectionborder);
+    margin-bottom: 8px;
+    transition: all 0.1s;
+}
+div.subsection:hover {
+    background-color: var(--sectionbglight);
+}
 
 /* Text */
 h1 {
@@ -100,6 +112,10 @@ h1 {
 span.minihead {
     font-size: 14px;
     color: var(--hrborderdark);
+}
+span.bigfont {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 /* Misc. */
@@ -113,8 +129,12 @@ div.codebox {
     border-radius: 4px;
     font-family: monospace;
     width: 80%;
+    height: 27px;
     padding: 6px;
     margin-top: 4px;
+}
+img {
+    border-radius: 4px;
 }
 
 /* Button */
@@ -145,6 +165,7 @@ button:hover {
 button:active {
     background-color: var(--sectionborder);
 }
+/* TODO: button focus border/edge style */
 button.mid {
     background-color: var(--sectionbgmid);
     width: 200px;
@@ -167,4 +188,16 @@ button.blue:hover {
 }
 button.blue:active {
     background-color: var(--blue1dark);
+}
+
+/* Link */
+a, a:visited {
+    color: var(--blue1);
+}
+a:hover {
+    cursor: pointer;
+    color: var(--blue1mid);
+}
+a:active {
+    color: var(--blue1dark);
 }
