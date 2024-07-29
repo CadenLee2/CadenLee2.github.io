@@ -74,7 +74,7 @@ div.section {
     padding: 12px;
     border-radius: 8px;
     border: solid 1px var(--sectionborder);
-    box-shadow: 0px 2px 2px var(--sectionbordershadow);
+    /* box-shadow: 0px 2px 2px var(--sectionbordershadow); */
     margin-bottom: 8px;
     transition: all 0.1s;
 }
@@ -138,6 +138,11 @@ h1 {
     margin: 0px;
     color: var(--headercolor);
 }
+h3 {
+    font-size: 18px;
+    margin: 0px;
+    color: var(--headercolor);
+}
 span.minihead {
     font-size: 14px;
     color: var(--hrborderdark);
@@ -194,6 +199,11 @@ button:hover {
 button:active {
     background-color: var(--sectionborder);
 }
+button:disabled, button:disabled:hover, button:disabled:focus {
+    color: var(--sectionbgdark); /* var(--sectionbgmid); */
+    background-color: transparent; /* var(--sectionbg); */
+    cursor: auto;
+}
 /* TODO: button focus border/edge style */
 button.mid {
     background-color: var(--sectionbgmid);
@@ -219,7 +229,7 @@ button.blue:active {
     background-color: var(--blue1dark);
 }
 button.dark {
-    background-color: var(--darkb);
+    background-color: transparent; /*var(--darkb);*/
     color: var(--blue1light);
     text-decoration: underline;
 }

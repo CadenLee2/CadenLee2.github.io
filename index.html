@@ -18,7 +18,7 @@
                 <h1>Caden Lee</h1>
                 <br>
                 <div>
-                    <button>Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
+                    <button disabled>Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
                     <button>Skills &amp; Resume/CV</button>
                     <button>Contact</button>
                     <button>Need tutoring?</button>
@@ -39,14 +39,21 @@
             </div>
             <!-- TODO: tech stack, images, etc. in this top portion -->
             <div class="section">
-                <h1><span class="minihead">#</span> CS Student @ UCI <span style="font-size: 14px;">Class of 2028</span></h1>
-                <!-- TODO: "Studying CS @ UCI" instead of "CS Student @ UCI"? -->
-                <hr>
-                As a student in computer science and honors, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
-                <br>
-                <button class="mid blue">➜ View my resume</button> <!-- TODO: link -->
-                <!-- TODO: button should be brighter/colored than the others to signify action -->
-                <!-- TODO: images, more interesting formatting (ex. bento style?) -->
+                <div style="display: flex;">
+                    <div>
+                        <h1><span class="minihead">#</span> CS Student @ UCI <span style="font-size: 14px;">Class of 2028</span></h1>
+                        <!-- TODO: "Studying CS @ UCI" instead of "CS Student @ UCI"? -->
+                        <hr style="margin-right: 10px;">
+                        As a student in computer science and honors, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
+                        <br>
+                        <button class="mid blue">➜ View my resume</button> <!-- TODO: link -->
+                        <!-- TODO: button should be brighter/colored than the others to signify action -->
+                        <!-- TODO: images, more interesting formatting (ex. bento style?) -->
+                    </div>
+                    <div style="width: 70%;">
+                        <img src="static/images/img_ICSStairs_Filter.jpg" style="width: 100%;">
+                    </div>
+                </div>
                 <!-- Pictures of Aldrich Park, Crystal Cove, Anteater ? -->
             </div>
             <div class="section">
@@ -56,32 +63,33 @@
                 <br>
                 <!-- TODO: code box -->
                 <div class="codebox">
-                    // My philosophy is quality and attention to detail.
+                    // Attention to detail is my philosophy.
                 </div>
                 <hr>
                 <div style="display: flex; justify-content: center; text-align: center;">
                     <!-- TODO: fix alignment -->
                     <!-- TODO: add contents, choose good projects -->
                     <!-- TODO: add images -->
+                    <!-- TODO: programming language icons in the corner of each project -->
                     <div class="showcase" style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;">
                         <b>Sheatfish</b>
                         <br>A lightweight, productive terminal-based spreadsheet editor
-                        <button class="mid dark" style="width: 100%;">➜ GitHub</button>
+                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/sheatfish'">➜ GitHub</button>
                     </div>
                     <div class="showcase" style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%;">
                         <b>Tetrome</b>
                         <br>A fully-featured stacker game as a browser extension
-                        <button class="mid dark" style="width: 100%;">➜ GitHub</button>
+                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/tetrome-source'">➜ GitHub</button>
                     </div>
                     <div class="showcase" style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;">
                         <b>Landform: Eclipse</b>
                         <br>An web game with an emphasis on procedural generation and rendering
-                        <button class="mid dark" style="width: 100%;">➜ GitHub</button>
+                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'">➜ GitHub</button>
                     </div>
                 </div>
                 <hr>
-                <button class="mid long blue">➜ Visit my personal showcase page</button> <!-- TODO: link -->
-                <button class="mid">➜ See my personal GitHub</button> <!-- TODO: link -->
+                <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button> <!-- TODO: link -->
+                <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button> <!-- TODO: link -->
                 <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
                 <!-- TODO: feature my tech stack? -->
@@ -91,7 +99,8 @@
                 <hr>
                 In my free time, I make trance, synthwave, and other electronic music.
                 <br>
-                <button class="mid">➜ Listen on YouTube</button> <!-- TODO: link -->
+                <!-- TODO: clean up my yt channel... -->
+                <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button> <!-- TODO: link -->
                 <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
                 <!-- TODO: feature my tech stack? -->
@@ -102,7 +111,7 @@
                 <!-- TODO: contact stuff (social media links), link to personal cadecraft site -->
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS.
-                    <br>Last updated: <span id="editdate">2024/06/27</span>
+                    <br>Last updated: <span id="editdate">2024/07/22</span>
                 </span>
             </div>
         </div>
