@@ -1,0 +1,253 @@
+:root {
+    /* Dark Theme colors */
+    /*--pagebg: rgb(16, 18, 22);
+    --sectionbg: rgb(21, 24, 31);
+    --sectionborder: rgb(34, 38, 48);
+    --hrborder: rgb(76, 81, 97);
+    --headercolor: rgb(212, 216, 224);
+    --textcolor: rgb(212, 216, 224);*/
+
+    /* Light Theme colors */
+    --pagebg: rgb(23, 69, 145);
+    /*--sectionbg: rgb(211, 220, 227);*/ /* Old */
+    --sectionbg: rgba(218, 226, 232, 0.9);
+    --sectionbgmid: rgb(199, 209, 217);
+    --sectionbglight: rgb(223, 230, 235);
+    --whitesectionbg: rgb(225, 233, 240);
+    --whitesectionbglight: rgb(233, 238, 242);
+    --sectionborder: rgb(176, 186, 194);
+    --sectionbordershadow: rgba(176, 186, 194, 0.5);
+    --sectionborderdark: rgb(165, 175, 184);
+    --hrborder: rgb(176, 186, 194);
+    --hrborderdark: rgb(156, 166, 173);
+    --headercolor: rgb(29, 33, 41);
+    --textcolor: rgb(70, 78, 94);
+    --blue1light: rgb(106, 183, 212);
+    --blue1: rgb(75, 173, 209);
+    --blue1mid: rgb(58, 140, 181);
+    --blue1dark: rgb(50, 117, 166);
+    --darkb: rgba(0, 0, 0, 0.3);
+    --darkb2: rgba(0, 0, 0, 0.5);
+    --darkb3: rgba(0, 0, 0, 0.8);
+    /* Light Theme colors */
+    /* Light Theme colors */
+}
+
+@font-face {
+    font-family: 'Abordage';
+    src: url('../Abordage-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../Lato-Regular.ttf');
+}
+
+body {
+    color: var(--textcolor);
+    background-color: var(--pagebg);
+    /*font-family: Arial, sans-serif;*/
+    padding: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+/* Divs */
+div {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+div.pagecentercontainer {
+    display: flex;
+    justify-content: center;
+}
+div.pagecenter {
+    width: 750px;
+    padding: 0px;
+}
+div.section {
+    background-color: var(--sectionbg);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--sectionborder);
+    /* box-shadow: 0px 2px 2px var(--sectionbordershadow); */
+    margin-bottom: 8px;
+    transition: all 0.1s;
+}
+div.section:hover {
+    background-color: var(--sectionbglight);
+}
+div.whitesection {
+    background-color: var(--whitesectionbg);
+    width: 100%;
+    padding: 12px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top: none;
+    border: solid 1px var(--sectionborder);
+    box-shadow: 0px 2px 2px var(--sectionbordershadow);
+    margin-bottom: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+div.subsection {
+    background-color: var(--sectionbg);
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: solid 1px var(--sectionborder);
+    margin-bottom: 8px;
+    transition: all 0.1s;
+}
+div.subsection:hover {
+    background-color: var(--sectionbglight);
+}
+/* Project showcase div (meant to be 1/3 of the size, used in a flexbox) */
+div.showcase {
+    background-color: var(--darkb);
+    color: var(--sectionbg);
+    padding: 12px;
+    border-radius: 8px;
+    /*border: solid 1px var(--sectionborder);*/
+    border: none;
+    margin-bottom: 8px;
+    transition: all 0.1s;
+    /*display: inline-flex;*/
+    box-shadow: 0px 2px 2px var(--sectionbordershadow);
+    flex: 0 1 auto;
+    width: 33%;
+    position: relative;
+    min-height: 190px;
+    margin-left: 4px;
+    margin-right: 4px;
+    /*height: 200px;*/
+    background-blend-mode: multiply;
+}
+div.showcase:hover {
+    background-color: transparent;
+    border-radius: 24px;
+}
+
+/* Text */
+h1 {
+    font-size: 20px;
+    margin: 0px;
+    color: var(--headercolor);
+}
+h3 {
+    font-size: 18px;
+    margin: 0px;
+    color: var(--headercolor);
+}
+span.minihead {
+    font-size: 14px;
+    color: var(--hrborderdark);
+}
+span.bigfont {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/* Misc. */
+hr {
+    outline: none;
+    border: solid 1px var(--hrborder);
+}
+div.codebox {
+    color: rgb(54, 179, 106);
+    background-color: rgb(22, 31, 54);
+    border-radius: 4px;
+    font-family: monospace;
+    width: 80%;
+    height: 27px;
+    padding: 6px;
+    margin-top: 4px;
+}
+img {
+    border-radius: 4px;
+}
+
+/* Button */
+button {
+    font-family: 'Lato';
+    color: var(--textcolor);
+    background-color: var(--sectionbg);
+    /*background-color: rgb(130, 173, 232);*/
+    border: none;
+    border-radius: 4px;
+    margin-top: 4px;
+    width: 24%;
+    height: 26px;
+    font-size: 14px;
+    transition: all 0.05s;
+    padding: 0px;
+}
+/* Resize the top buttons if the screen is too small */
+@media(max-width:560px) {
+    button {
+        width: 44%;
+    }
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--sectionbgmid);
+}
+button:active {
+    background-color: var(--sectionborder);
+}
+button:disabled, button:disabled:hover, button:disabled:focus {
+    color: var(--sectionbgdark); /* var(--sectionbgmid); */
+    background-color: transparent; /* var(--sectionbg); */
+    cursor: auto;
+}
+/* TODO: button focus border/edge style */
+button.mid {
+    background-color: var(--sectionbgmid);
+    width: 200px;
+}
+button.mid:hover {
+    background-color: var(--sectionborder);
+}
+button.mid:active {
+    background-color: var(--sectionborderdark); /* TODO: border */
+}
+button.long {
+    width: 300px;
+}
+button.blue {
+    background-color: var(--blue1);
+    color: var(--sectionbg);
+}
+button.blue:hover {
+    background-color: var(--blue1mid);
+}
+button.blue:active {
+    background-color: var(--blue1dark);
+}
+button.dark {
+    background-color: transparent; /*var(--darkb);*/
+    color: var(--blue1light);
+    text-decoration: underline;
+}
+button.dark:hover {
+    background-color: var(--darkb2);
+}
+button.dark:active {
+    background-color: var(--darkb3);
+}
+
+/* Link */
+a, a:visited {
+    color: var(--blue1);
+}
+a:hover {
+    cursor: pointer;
+    color: var(--blue1mid);
+}
+a:active {
+    color: var(--blue1dark);
+}
