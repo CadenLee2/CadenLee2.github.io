@@ -167,6 +167,11 @@ div.codebox {
     padding: 6px;
     margin-top: 4px;
 }
+div.quotebox {
+    font-style: italic;
+    padding-left: 8px;
+    border-left: var(--hrborder) 6px solid;
+}
 img {
     border-radius: 4px;
 }
