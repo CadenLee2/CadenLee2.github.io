@@ -53,7 +53,7 @@
                 <div style="display: flex;">
                     <div style="width: 70%; padding-right: 2%;">
                         <div class="quotebox">
-                            A grim loner, dead set in his own lawless ways. Here was a piece of work, by god, a monster (210-211)
+                            A grim loner, dead set in his own lawless ways. Here was a piece of work, by god, a monster. (210-211)
                         </div>
                         <br>
                         Through his carefully-chosen descriptions of the cyclops Polyphemus, Odysseus justifies his actions, which include stealing the cyclops' cheese and sheep, deceiving him, and blinding him.
@@ -83,8 +83,8 @@
                             let stages = [
                                 {
                                     "xenia-disp": "Step 1. Invite the guest in",
-                                    "xenia-cyclops": "Polyphemus did not have the opportunity to invite Odysseus in.",
-                                    "xenia-odysseus": "Odysseus invited himself in to Polyphemus' cave."
+                                    "xenia-cyclops": "Polyphemus did not have the opportunity to invite Odysseus because he was in his pasture.",
+                                    "xenia-odysseus": "Odysseus invited himself in to Polyphemus' cave, even though he was not invited.<br><br><div class=\"quotebox\">We failed to find our host himself inside [...] so we explored his den, gazing wide-eyed at it all. (242-244)</div>"
                                 },
                                 {
                                     "xenia-disp": "2. Give the guest a meal",
@@ -93,7 +93,7 @@
                                 },
                                 {
                                     "xenia-disp": "3. Ask for their name",
-                                    "xenia-cyclops": "Polyphemus asked for Odysseus' name",
+                                    "xenia-cyclops": "Polyphemus asked for Odysseus' name, following the tradition of Xenia",
                                     "xenia-odysseus": "Odysseus lied about his name to deceive Polyphemus"
                                 },
                                 {
@@ -112,14 +112,14 @@
                                 currStage--;
                                 if (currStage < 0) currStage = stages.length - 1;
                                 for (key in stages[currStage]) {
-                                    document.getElementById(key).innerText = stages[currStage][key];
+                                    document.getElementById(key).innerHTML = stages[currStage][key];
                                 }
                             });
                             document.getElementById("xenia-next").addEventListener("click", () => {
                                 currStage++;
                                 if (currStage >= stages.length) currStage = 0;
                                 for (key in stages[currStage]) {
-                                    document.getElementById(key).innerText = stages[currStage][key];
+                                    document.getElementById(key).innerHTML = stages[currStage][key];
                                 }
                             });
                         </script>
@@ -160,4 +160,4 @@
     <!-- TODO: social links, pictures -->
     <!-- TODO: section for a tutoring business? (phone number or insta) -->
 </body>
-</html>
+</html>"
