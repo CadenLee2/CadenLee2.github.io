@@ -151,6 +151,31 @@ span.bigfont {
     font-weight: bold;
     font-size: 24px;
 }
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline;
+    border-bottom: 1px dotted black;
+    background-color: rgba(255, 211, 99, 0.4);
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    border-radius: 6px;
+    padding: 4px;
+    background-color: var(--sectionbg);
+    color: var(--headercolor);
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    box-shadow: var(--headercolor) 0px 2px 2px;
+}
+.tooltip:hover {
+    background-color: rgb(255, 211, 99);
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* Misc. */
 hr {
