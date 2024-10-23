@@ -65,7 +65,7 @@ div.pagecentercontainer {
     justify-content: center;
 }
 div.pagecenter {
-    width: 750px;
+    width: 920px; /* Formerly 750px */
     padding: 0px;
 }
 div.section {
