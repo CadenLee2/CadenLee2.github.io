@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- todo: meta, og, title, favicon, better description, og image -->
+    <meta property="og:title" content="Caden Lee's Digital Archive">
+    <meta property="og:description" content="A record of my thoughts and experiences during my time in UCI's Humanities Core course">
+    <link rel="stylesheet" href="./../static/digital_archive/digital_archive_styles.css">
+    <!-- TODO: check that stylesheet linking works fine in different browsers -->
+    <title>Caden Lee's Digital Archive</title>
+</head>
+<body>
+    <div class="pagecentercontainer">
+        <div class="pagecenter">
+            <!-- Top section -->
+            <div class="whitesection" style="height: auto; background-image: url('https://i.imgur.com/9OqbPb6.jpeg'); background-size: 100%; background-blend-mode: multiply; background-color:rgba(0, 0, 50, 0.3); border: none; color: white">
+                <br>
+                <h1 style="color: white;">Caden Lee's Digital Archive</h1>
+                <br>
+                <h1 style="color: white;">W O R L D B U I L D I N G - 2 0 2 4</h1>
+                <br>
+                <div>
+                    <!-- TODO: check that button links properly -->
+                    <button onclick="location.href='./../digitalarchive.html'">🏠 Home</button>
+                </div>
+            </div>
+            <noscript>
+                <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
+            </noscript>
+            <!-- Main sections -->
+            <div class="section">
+                <div>
+                    <h1><span class="minihead"># </span> The Decameron <span class="minihead">(2024/11/04)</span></h1>
+                    <hr>
+                    <!-- Ideas: 1) Boccaccio's Decameron overview, memorable notes from the lectures, the format of nested storytelling (in an interactive nested div element system); 2) the physical space of UCI as a world apart/setting, but also part of the wider world (when we leave); 3) the virtual spaces of UCI, and nested storytelling in web design -->
+                    Boccaccio's <i>Decameron</i>, written in the 14th century after the 1348 pandemic, describes a group of seven women and three men who have ran from the plague-infested city of Florence to the countryside. During their time there, they tell tales to each other. Within those tales--and within the book as a whole--Boccaccio argues for the importance of imagination, creativity, and other human qualities and experiences, rather than the divine, religious subjects of his contemporaries.
+                    <br><br>
+                    To outline his system in the preface, he speaks from the point of view of the book's Author:
+                    <br><br>
+                    <div class="quotebox">
+                        My plan is to recount one hundred stories, or fables, or parables, or histories, or whatever you wish to call them. [...] In reading them, <span class="tooltip">the ladies of whom I have been speaking<span class="tooltiptext">The Author claims to sympathize with women, aiming to save them when they have nothing else to do inside their homes</span></span> will be able to derive not only pleasure from the entertaining material they contain, but useful advice as well [...] and I believe that as they read them, their suffering would come to an end (4-5).
+                    </div>
+                </div>
+                <br>
+                <div style="display: flex;">
+                    <div style="width: 30%;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Waterhouse_decameron.jpg" style="width: 100%">
+                    </div>
+                    <div style="width: 70%; padding-left: 2%;">
+                        Rather than tell these stories outright, Boccaccio (speaking as the Author) presents them through the ten characters. Known as a pastoral setting, their idyllic countryside surroundings reflect his virtues and the world the group has built for themselves, as opposed to the much more grim outside world.
+                        <br><br>Similarly, he hopes that his audience will find escape and salvation in the literary world he creates.
+                        <br><br><span class="minihead">Left (image 1): a 1916 painting of the brigata by John William Waterhouse</span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="section">
+                <div>
+                    <h1><span class="minihead"># </span> Nested Storytelling</h1>
+                    <hr>
+                    <!-- Ideas: 1) Boccaccio's Decameron overview, memorable notes from the lectures, the format of nested storytelling (in an interactive nested div element system); 2) the physical space of UCI as a world apart/setting, but also part of the wider world (when we leave); 3) the virtual spaces of UCI, and nested storytelling in web design -->
+                    Boccaccio's system creates a multi-layered framework that characterizes the <i>Decameron</i>'s storytelling.
+                    <br>
+                </div>
+                <br>
+                <style>
+                    div.nested2 {
+                        background-color: rgb(153, 144, 138);
+                        color: rgb(153, 144, 138);
+                        width: 100%;
+                        padding: 10px;
+                        height: 100%;
+                        border: solid 2px rgb(125, 112, 104);
+                        border-radius: 8px;
+                        margin-top: 10px;
+                        transition: all 0.1s;
+                    }
+                    div.nested2:hover {
+                        background-color: rgb(179, 168, 161);
+                        color: rgb(51, 48, 46);
+                        box-shadow: 0px 0px 1px 6px rgba(0, 0, 0, 0.2);
+                        transition: all 0.1s;
+                    }
+                    div.nested {
+                        background-color: rgb(166, 157, 151);
+                        color: rgb(166, 157, 151);
+                        width: 100%;
+                        padding: 10px;
+                        height: 100%;
+                        border: solid 2px rgb(125, 112, 104);
+                        border-radius: 8px;
+                        margin-top: 10px;
+                        transition: all 0.1s;
+                    }
+                    div.nested:hover {
+                        background-color: rgb(189, 179, 172);
+                        color: rgb(51, 48, 46);
+                        box-shadow: 0px 0px 1px 6px rgba(0, 0, 0, 0.2);
+                        transition: all 0.1s;
+                    }
+                </style>
+                Hover over the boxes to display the layers, as they are revealed to us in the book, and the corresponding worlds they take place in:
+                <div style="width: 80%;">
+                    <div class="nested">
+                        The Decameron as the tale the reader experiences
+                        <div class="nested2">
+                            The tale told by the Author about the Decameron
+                            <div class="nested">
+                                The tale told by the Author about society during the plague
+                                <div class="nested2">
+                                    The tale told by the Author about the group
+                                    <div class="nested">
+                                        The tales told by the group
+                                        <div class="nested2">
+                                            (Sometimes) the tales told inside those tales
+                                        </div>
+                                        The world represented in the tales
+                                    </div>
+                                    The idyllic world of the group
+                                </div>
+                                The world of a society devastated by plague
+                            </div>
+                            The world of Ladies whom the Author wants to console
+                        </div>
+                        The world where Boccaccio lives
+                    </div>
+                </div>
+                <br><span class="minihead">(Source for the info in the above model: Professor Shemek's 2024 Humanities Core Lecture 1)</span>
+            </div>
+            <div class="section">
+                <div>
+                    <h1><span class="minihead"># </span> Layered Worlds: the University Campus</h1>
+                    <hr>
+                    Boccaccio's work reflects one way that we design and categorize spaces. Similar to how the <i>Decameron</i> is just a sequence of words but contains a multi-dimensional structure, the universe we live in is relatively flat and continuous but can be split into nested layers. Each of these could be seen as its own world, with its own attributes, histories, and purposes.
+                    <br><br>
+                    <style>
+                        div.imgcol {
+                            /*height: 400px;*/
+                            width: 20%;
+                        }
+                    </style>
+                    <div>
+                        <span style="float:right;">➡️ Narrower world</span>
+                        Wider world ➡️
+                    </div>
+                    <br>
+                    <div style="display: flex;">
+                        <div class="imgcol">
+                            <img src="../static/digital_archive/images/1_Campus.jpg" style="width: 100%;">
+                            UCI's campus, a setting relatively isolated from the outside world
+                        </div>
+                        <div class="imgcol">
+                            <img src="../static/digital_archive/images/2_Lib.jpg" style="width: 100%;">
+                            Certain parts of campus have specific roles, like how the Science Library area is for studying and research
+                        </div>
+                        <div class="imgcol">
+                            <img src="../static/digital_archive/images/3_Housing.jpg" style="width: 100%;">
+                            The Middle Earth Laurelin-Telperion housing, where I live
+                        </div>
+                        <div class="imgcol">
+                            <img src="../static/digital_archive/images/4_CommonRoom.jpg" style="width: 100%;">
+                            My hall, a specific floor of the towers
+                        </div>
+                        <div class="imgcol">
+                            <img src="../static/digital_archive/images/5_DormComputerSetup.jpg" style="width: 100%;">
+                            My desk in my room, which I designed to fit my personal life
+                        </div>
+                    </div>
+                    <br><br>
+                    When deciding whether UCI is an isolated, pastoral world of its own or a liminal space, I think of it like reading the <i>Decameron</i> : each sub-world I inhabit is practically cut off from the outside until I leave. Going from my room to the library is like switching chapters, and taking a weekend trip off campus is like closing the book, leaving the stories for when I return.
+                </div>
+            </div>
+            <div class="section">
+                <div>
+                    <h1><span class="minihead"># </span> Layered Worlds: Digital Spaces</h1>
+                    <hr>
+                    This style of categorization is especially apparent to us when we use computers--the design of graphical user interfaces heavily employs visual distinctions between layers for navigation. For instance, every UCI undergraduate uses the Canvas learning management system, as seen in the image:
+                    <br><br>
+                    <div style="display: flex;">
+                        <div style="width: 70%;">
+                            <img src="../static/digital_archive/images/20241105_CanvasScreenshot.png" style="width: 100%;">
+                        </div>
+                        <div style="width: 30%; padding-left: 2%;">
+                            1. An application window, as the name suggests, visually separates its view of the program's inner world from the surrounding desktop
+                            <br>2. Most web browsers use tabs, each of which contains a different website's world
+                            <br>3. In Canvas, the page is split into various regions, like the Dashboard and the To Do list
+                            <br>4. As a liminal space, the Dashboard displays a list of courses (similar to Boccaccio's frame for presenting stories)
+                            <br>5. The entire world of each course visually resides within its corresponding box, waiting to be clicked
+                            <br><br><span class="minihead">Left: the Canvas learning management system used by UCI, as of 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image credits -->
+            <div class="section">
+                <span class="minihead">
+                    Image credits (in order, starting with image 1):
+                    <br>1. <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Waterhouse_decameron.jpg/800px-Waterhouse_decameron.jpg?20060907215859"><i>A Tale from the Decameron</i>, by John William Waterhouse in 1916</a>
+                    <br>All images or screenshots without numbers were taken by me on the UCI campus in 2024
+                    <br>
+                    <br>Quotes:
+                    <br>Boccaccio, Giovanni. <i>The Decameron</i> (Norton Critical Edition). Edited and translated by Wayne A. Rebhorn. Norton, 2016.
+                </span>
+            </div>
+            <!-- Footer -->
+            <div class="section">
+                All code (software and associated documentation files) is © 2024 Caden Lee under the MIT license (<a href="https://github.com/CadenLee2/CadenLee2.github.io/">source</a>).
+                Analysis on this digital archive is written by Caden Lee, unless stated otherwise.
+                <br>All referenced works (images, websites, quotes, etc.) not by me belong to their respective creators and are used here for commentary and educational purposes.
+                <span class="minihead">
+                    <br>Last updated: <span id="editdate">2024/11/05</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>"

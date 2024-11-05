@@ -192,6 +192,15 @@ div.codebox {
     padding: 6px;
     margin-top: 4px;
 }
+div.codebox_multi {
+    color: rgb(54, 179, 106);
+    background-color: rgb(22, 31, 54);
+    border-radius: 4px;
+    font-family: monospace;
+    width: 80%;
+    padding: 6px;
+    margin-top: 4px;
+}
 div.quotebox {
     font-style: italic;
     padding-left: 8px;
