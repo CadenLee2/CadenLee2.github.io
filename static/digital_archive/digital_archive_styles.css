@@ -175,6 +175,7 @@ span.bigfont {
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
+    width: 300px;
 }
 
 /* Misc. */
