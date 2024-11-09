@@ -66,8 +66,13 @@
                     <h1><span class="minihead"># </span> Nested Storytelling</h1>
                     <hr>
                     <!-- Ideas: 1) Boccaccio's Decameron overview, memorable notes from the lectures, the format of nested storytelling (in an interactive nested div element system); 2) the physical space of UCI as a world apart/setting, but also part of the wider world (when we leave); 3) the virtual spaces of UCI, and nested storytelling in web design -->
-                    Boccaccio's system creates a multi-layered framework that characterizes the <i>Decameron</i>'s storytelling.
+                    Boccaccio's system creates a multi-layered framework that characterizes the <i>Decameron</i>'s storytelling. On the first day, he lays out the framework through Pampinea:
+                    <br><br>
+                    <div class="quotebox">
+                        We should tell stories, for even though just one person is doing the talking, all the others still have the pleasure of listening. And by the time each one of you have told his or her little tale, the sun will be setting (18).
+                    </div>
                     <br>
+                    That is, within the story written by Boccaccio, and furthermore within the story of the Author, Pampinea is allowing tales to be told.
                 </div>
                 <br>
                 <style>
@@ -86,6 +91,7 @@
                         background-color: rgb(179, 168, 161);
                         color: rgb(51, 48, 46);
                         box-shadow: 0px 0px 1px 6px rgba(0, 0, 0, 0.2);
+                        transform:scale(1.01);
                         transition: all 0.1s;
                     }
                     div.nested {
@@ -103,6 +109,7 @@
                         background-color: rgb(189, 179, 172);
                         color: rgb(51, 48, 46);
                         box-shadow: 0px 0px 1px 6px rgba(0, 0, 0, 0.2);
+                        transform:scale(1.01);
                         transition: all 0.1s;
                     }
                 </style>
@@ -144,44 +151,86 @@
                         div.imgcol {
                             width: 20%;
                             padding: 1px;
+                            transition: 0.1s all;
+                        }
+                        img.bouncy {
+                            transform: none;
+                        }
+                        img.bouncy:hover {
+                            transform: rotateX(10deg);
+                            transition: 0.1s all;
+                            cursor: pointer;
+                        }
+                        img.bouncy:active {
+                            transform: rotateX(16deg) scale(0.95);
+                            transition: 0.1s all;
                         }
                     </style>
+                    <script>
+                        // Unveil only certain images (by the number in their ID); hide the rest
+                        function unveil(visibleArr) {
+                            for (let i = 1; i <= 5; i++) {
+                                if (visibleArr.includes(i)) {
+                                    document.getElementById("mapzoom").src = "../static/digital_archive/images/OsmAndMap" + i + ".png";
+                                    if (i == 5) {
+                                        document.getElementById("imgcolhint").style.display = "none";
+                                    } else {
+                                        document.getElementById("imgcolhint").style.display = "block";
+                                    }
+                                    document.getElementById("imgcol" + i).style.display = "block";
+                                } else {
+                                    document.getElementById("imgcol" + i).style.display = "none";
+                                }
+                            }
+                        }
+                    </script>
                     <div>
                         <span style="float:right;">➡️ Narrower world</span>
                         Wider world ➡️
                     </div>
                     <br>
                     <div style="display: flex;">
-                        <div class="imgcol">
-                            <img src="../static/digital_archive/images/1_Campus.jpg" style="width: 100%;">
+                        <div class="imgcol" id="imgcol1">
+                            <img class="bouncy" src="../static/digital_archive/images/1_Campus.jpg" style="width: 100%;" onclick="unveil([1, 2])">
                             UCI's campus, a setting relatively isolated from the outside world
                         </div>
-                        <div class="imgcol">
-                            <img src="../static/digital_archive/images/2_Lib.jpg" style="width: 100%;">
+                        <div class="imgcol" id="imgcol2" style="display: none;">
+                            <img class="bouncy" src="../static/digital_archive/images/2_Lib.jpg" style="width: 100%;" onclick="unveil([1, 2, 3])">
                             Certain parts of campus with specific roles, like how the Science Library area is for studying and research
                         </div>
-                        <div class="imgcol">
-                            <img src="../static/digital_archive/images/3_Housing.jpg" style="width: 100%;">
-                            The Middle Earth Laurelin-Telperion housing, where I live
+                        <div class="imgcol" id="imgcol3" style="display: none;">
+                            <img class="bouncy" src="../static/digital_archive/images/3_Housing.jpg" style="width: 100%;" onclick="unveil([1, 2, 3, 4])">
+                            The Laurelin-Telperion towers, where I live, are for housing
                         </div>
-                        <div class="imgcol">
-                            <img src="../static/digital_archive/images/4_CommonRoom.jpg" style="width: 100%;">
+                        <div class="imgcol" id="imgcol4" style="display: none;">
+                            <img class="bouncy" src="../static/digital_archive/images/4_CommonRoom.jpg" style="width: 100%" onclick="unveil([1, 2, 3, 4, 5])">
                             My hall, a specific floor of the towers
                         </div>
-                        <div class="imgcol">
-                            <img src="../static/digital_archive/images/5_DormComputerSetup.jpg" style="width: 100%;">
+                        <div class="imgcol" id="imgcolhint" style="padding: 10px;">
+                            ← Click the image to enter a more specific world
+                            <img style="width: 100%;" src="../static/digital_archive/images/OsmAndMap1.png" id="mapzoom">
+                            <br><br><span class="minihead">Above: a map of UCI (source: OsmAnd/OpenStreetMap)</span>
+                        </div>
+                        <div class="imgcol" id="imgcol5" style="display: none;">
+                            <img class="bouncy" src="../static/digital_archive/images/5_DormComputerSetup.jpg" style="width: 100%;">
                             My desk in my room, which I designed to fit my personal life
                         </div>
                     </div>
                     <br><br>
                     When deciding whether UCI is an isolated, pastoral world of its own or a liminal space, I think of it like reading the <i>Decameron</i> : each sub-world I inhabit is practically cut off from the outside until I leave. Going from my room to the library is like switching chapters, and taking a weekend trip off campus is like closing the book, leaving the stories for when I return.
+                    <br><br>
+                    <div style="display: flex">
+                        <img src="../static/digital_archive/images/20241017_MorningArcWalk.jpg" style="width: 33%;">
+                        <img src="../static/digital_archive/images/20240923_AldrichParkPlants.jpg" style="width: 33%;">
+                        <img src="../static/digital_archive/images/20241017_PetrDrop.jpg" style="width: 33%;">
+                    </div>
                 </div>
             </div>
             <div class="section">
                 <div>
                     <h1><span class="minihead"># </span> Layered Worlds: Digital Spaces</h1>
                     <hr>
-                    This style of categorization is especially apparent to us when we use computers--the design of graphical user interfaces heavily employs visual distinctions between layers for navigation. For instance, every UCI undergraduate uses the Canvas learning management system, as seen in the image:
+                    Beyond physical spaces, this style of categorization is especially apparent to us when we use computers--the design of graphical user interfaces heavily employs visual distinctions between layers for navigation. For instance, every UCI undergraduate uses the Canvas learning management system, as seen in the image:
                     <br><br>
                     <div style="display: flex;">
                         <div style="width: 70%;">
