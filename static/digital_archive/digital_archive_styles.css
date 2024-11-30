@@ -20,6 +20,7 @@
     --sectionborderdark: rgb(165, 175, 184);
     --hrborder: rgb(176, 186, 194);
     --hrborderdark: rgb(156, 166, 173);
+    --hrborderdark2: rgb(134, 144, 150);
     --headercolor: rgb(29, 33, 41);
     --textcolor: rgb(70, 78, 94);
     --blue1light: rgb(106, 183, 212);
@@ -145,7 +146,7 @@ h3 {
 }
 span.minihead {
     font-size: 14px;
-    color: var(--hrborderdark);
+    color: var(--hrborderdark2);
 }
 span.bigfont {
     font-weight: bold;
