@@ -315,3 +315,6 @@ a:hover {
 a:active {
     color: var(--blue1dark);
 }
+a.nounderline {
+    text-decoration: none;
+}
