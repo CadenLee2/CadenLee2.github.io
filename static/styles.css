@@ -22,6 +22,7 @@
     --hrborderdark: rgb(156, 166, 173);
     --headercolor: rgb(29, 33, 41);
     --textcolor: rgb(70, 78, 94);
+    --textcolorlight: rgb(93, 102, 120);
     --blue1light: rgb(106, 183, 212);
     --blue1: rgb(75, 173, 209);
     --blue1mid: rgb(58, 140, 181);
@@ -170,6 +171,69 @@ div.codebox {
 img {
     border-radius: 4px;
 }
+i.icon {
+    font-size: 30px;
+    margin: 4px;
+    transition: all 0.05s;
+    color: var(--textcolorlight);
+}
+i.icon:hover {
+    transform: scale(1.2);
+    color: var(--textcolor);
+}
+i.github-hover:hover + .github-hover-box {
+    display: block;
+}
+.github-hover-box:hover {
+    display: block;
+}
+/*span.github-hover-box {
+    content:'';
+    position:absolute;
+    bottom:-10px; 
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #dfdfdf;
+    border-right:5px solid #dfdfdf;
+    background:#f8f8f8;
+    left:50%;
+    margin-left:-10px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}*/
+span.github-hover-box {
+    display: none;
+    /*background:#F8F8F8;
+    border: 5px solid #DFDFDF;
+    color: #717171;
+    font-size: 13px;
+    height: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -80px;
+    left:-30px;
+    display:none;
+    padding:0 20px;*/
+}
+/*span.github-hover-box:after{
+    content:'';
+    position:absolute;
+    bottom:-10px; 
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #dfdfdf;
+    border-right:5px solid #dfdfdf;
+    background:#f8f8f8;
+    left:50%;
+    margin-left:-10px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+}*/
 
 /* Button */
 button {

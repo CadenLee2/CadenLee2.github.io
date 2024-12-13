@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="static/styles.css">
     <title>Caden Lee: Student & Software Developer</title>
     <!-- TODO: better title -->
+    <!-- devicon header for icons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
     <!-- Modify for Pages deployment (2) -->
 </head>
 <body>
@@ -23,7 +25,6 @@
                     <button onclick="location.href='./resume.html'">Skills &amp; Resume</button>
                     <button onclick="location.href='./contact.html'">Contact</button>
                     <button onclick="location.href='./tutoring.html'">Need tutoring?</button>
-                    <!-- TODO: create pages, link buttons -->
                     <!-- TODO: on skills & resume page, have a timeline: "2018-2023: programmer hobbyist, 2024-: CS student @ UCI (class of 2028) (honors)" -->
                     <!-- TODO: include a picture of myself? -->
                 </div>
@@ -32,14 +33,11 @@
                 <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
             </noscript>
             <!-- Main sections -->
-            <div class="section">
-                <!-- <h1><span class="minihead">#</span> Welcome!</h1>
-                <hr> -->
+            <!-- <div class="section">
                 ⚠️ This page is currently under construction for the summer
                 <br>
                 <span class="minihead">- 2024/05/31</span>
-            </div>
-            <!-- TODO: tech stack, images, etc. in this top portion -->
+            </div> -->
             <div class="section">
                 <div style="display: flex;">
                     <div>
@@ -51,6 +49,11 @@
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button> <!-- TODO: link -->
                         <!-- TODO: button should be brighter/colored than the others to signify action -->
                         <!-- TODO: images, more interesting formatting (ex. bento style?) -->
+                        <br><br>
+                        <!-- TODO: make these actually link -->
+                        <i class="icon devicon-linkedin-plain" title="LinkedIn"></i>
+                        <i class="icon github-hover devicon-github-plain" title="GitHub"></i>
+                        <span class="github-hover-box">I have a personal GitHub and a professional GitHub.</span>
                     </div>
                     <div style="width: 70%;">
                         <img src="static/images/img_ICSStairs_Filter.jpg" style="width: 100%;">
@@ -96,6 +99,35 @@
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
                 <!-- TODO: feature my tech stack? -->
             </div>
+            <!-- TODO: tech stack, images, etc. in this top portion -->
+            <div class="section">
+                <h1><span class="minihead">#</span> My Tools</span></h1>
+                <br>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <i class="icon devicon-cplusplus-plain" title="C++"></i>
+                    <i class="icon devicon-rust-original" title="Rust"></i>
+                    <i class="icon devicon-javascript-plain" title="JavaScript"></i>
+                    <i class="icon devicon-typescript-plain" title="TypeScript"></i>
+                    <i class="icon devicon-python-plain" title="Python"></i>
+                    <i class="icon devicon-java-plain" title="Java"></i>
+                    <i class="icon devicon-html5-plain" title="HTML5"></i>
+                    <i class="icon devicon-css3-plain" title="CSS3"></i>
+                    <i class="icon devicon-react-plain" title="React"></i>
+                </div>
+                <br>
+                <div style="display: flex; justify-content: space-evenly;">
+                    <i class="icon devicon-nodejs-plain" title="Node.JS"></i>
+                    <i class="icon devicon-socketio-plain" title="Socket.IO"></i>
+                    <i class="icon devicon-opengl-plain" title="OpenGL (SFML)"></i>
+                    <i class="icon devicon-mysql-plain" title="MySQL"></i>
+                    <i class="icon devicon-git-plain" title="Git"></i>
+                    <i class="icon devicon-vscode-plain" title="VS Code"></i>
+                    <i class="icon devicon-neovim-plain" title="Neovim/Vim"></i>
+                    <i class="icon devicon-powershell-plain" title="Powershell"></i>
+                    <i class="icon devicon-bash-plain" title="Bash/Zsh"></i>
+                </div>
+                <br>
+            </div>
             <div class="section">
                 <h1><span class="minihead">#</span> Other Interests</span></h1>
                 <hr>
@@ -115,7 +147,8 @@
                 <!-- TODO: contact stuff (social media links), link to personal cadecraft site -->
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS.
-                    <br>Last updated: <span id="editdate">2024/08/02</span>
+                    <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
+                    <br>Last updated: <span id="editdate">2024/12/12</span>
                 </span>
             </div>
         </div>
