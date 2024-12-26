@@ -47,17 +47,26 @@
                         As a student in computer science and honors, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
                         <br>
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button> <!-- TODO: link -->
-                        <!-- TODO: button should be brighter/colored than the others to signify action -->
                         <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                         <br><br>
-                        <!-- TODO: make these actually link -->
                         <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn"></i></a>
-                        <a class="nounderline" href="https://github.com/Cadecraft"><i class="icon github-hover devicon-github-plain" title="GitHub"></i></a>
-                        <span class="github-hover-box">I have a personal GitHub and a professional GitHub. This links to my personal one, which has my projects.</span>
+                        <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';"><i class="icon github-hover devicon-github-plain" title="GitHub"></i></a> <!-- TODO: fix styles for hover -->
                         <!-- <a class="nounderline" href="./contact.html" style="line-height: 0px;">•••</a> -->
-                        <!-- TODO: make this popup display and give the user an option to pick personal or professional, aesthetically -->
+                        <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
+                        <!-- TODO: include small profile picture icons next to this? Also highlight that the GitHub button was pressed? -->
+                        <div class="github-hover-box" id="github-hover-box-item">
+                            <div class="github-lister">
+                                <i>Personal GitHub (projects)</i>
+                                <button class="mid blue" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/Cadecraft'">➜ Go</button>
+                            </div>
+                            <div class="github-lister">
+                                <i>Professional GitHub</i>
+                                <button class="mid" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/CadenLee2'">➜ Go</button>
+                            </div>
+                        </div>
                     </div>
                     <div style="width: 70%;">
+                        <!-- TODO: include a picture of my face here, instead of the ICS stairs, and move them below? -->
                         <img src="static/images/img_ICSStairs_Filter.jpg" style="width: 100%;">
                     </div>
                 </div>
@@ -134,13 +143,12 @@
                 <h1><span class="minihead">#</span> Other Interests</span></h1>
                 <hr>
                 In my free time, I make trance, synthwave, and other electronic music.
-                <br>I also enjoy photography, reading, and 3d modeling.
+                <br>I also enjoy photography, science fiction books, and 3d modeling.
                 <br>
                 <!-- TODO: clean up my yt channel... -->
                 <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button> <!-- TODO: link -->
                 <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
-                <!-- TODO: feature my tech stack? -->
             </div>
             <!-- TODO: "my bookshelf" section -->
             <!-- Footer -->
@@ -150,7 +158,7 @@
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS.
                     <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
-                    <br>Last updated: <span id="editdate">2024/12/12</span>
+                    <br>Last updated: <span id="editdate">2024/12/25</span>
                 </span>
             </div>
         </div>
