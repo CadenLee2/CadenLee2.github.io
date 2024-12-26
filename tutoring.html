@@ -7,7 +7,7 @@
     <meta property="og:title" content="Caden Lee: Student & Software Developer">
     <meta property="og:description" content="I'm a CS student at UC Irvine with a passion for programming.">
     <link rel="stylesheet" href="static/styles.css">
-    <title>Caden Lee: Tutoring in CS & Math</title>
+    <title>Caden Lee: Tutoring in CS</title>
     <!-- TODO: FIX FOR PHONE!! -->
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <!-- <button style="float:right;">Back to my homepage</button> --> <!-- TODO: link -->
                 <!-- TODO: clarify I'm a first-year but willing to tutor introductory subjects? -->
                 <h1>Caden Lee: Tutoring @ UCI</h1>
-                I specialize in introductory calculus, writing, and computer science
+                I specialize in writing and computer science
                 <!-- TODO: make button look better -->
                 <br><button class="mid" onclick="location.href='./index.html'">➜ Back to my homepage</button> <!-- TODO: link, features?-->
                 <!-- TODO: anteater emojis/clipart to make the page less menacing -->
@@ -33,10 +33,9 @@
             <div class="section">
                 <!-- <h1><span class="minihead">#</span> Welcome!</h1>
                 <hr> -->
-                ⚠️ This page is currently under construction for the summer, since I'm hoping to tutor eventually.
-                As we get closer to the fall, I'll finish the site and might be open for tutoring requests.
+                ⚠️ I'm not actively tutoring right now as this is still my first year and I'm relatively busy, but I may be open--just reach out to me if you have a request.
                 <br>
-                <span class="minihead">- 2024/06/16</span>
+                <span class="minihead">- 2024/12/26</span>
             </div>
             <!-- TODO: tech stack, images, etc. in this top portion -->
             <div class="section">
@@ -44,13 +43,10 @@
                 <hr>
                 <table>
                     <tr>
-                        <td>- Calculus (up to Calc 2)</td>
-                    </tr>
-                    <tr>
                         <td>- Writing: general writing skills
                     </tr>
                     <tr>
-                        <td>- CS: Data Structures &amp; Algorithms (LeetCode)</td>
+                        <td>- CS: Data Structures &amp; Algorithms (LeetCode around the Medium level)</td>
                     </tr>
                     <tr>
                         <td>- CS: Introductory programming, learn a language (check the list below)</td>
@@ -59,26 +55,35 @@
                         <td>- CS: personal coding project guidance</td>
                     </tr>
                     <tr>
-                        <td>- <b>Programming Languages:</b> C++, Python (ICS31, 32), web dev (JS/HTML/CSS--I built this website from scratch!), Rust, Java, some x86 ASM</td>
+                        <td>- <b>Programming Languages:</b> C++, Python (ICS31, 32, 33), web dev (JS/HTML/CSS--I built this website from scratch!), Rust, Java, some x86 ASM</td>
                     </tr>
                 </table>
                 <br>
                 ↓↓ Scroll down for options, pricing, and contact ↓↓
                 <br><br>
+            </div>
+            <div class="section">
                 <h1><span class="minihead">#</span> Skills/Credentials</h1>
                 <hr>
                 <span style="font-size: 20px;">UCI CS major, CHC ('28)</span>
                 <br>
-                <span class="bigfont">4.6</span> HS gpa;
-                <span class="bigfont">5</span> on AP Chem, Lang, Calc, and others
+                <span class="bigfont">4.0</span> GPA as of Winter 2024
+                <br>- HUMAN 1A (Humanities Core): A+
+                <br>- ICS 6B: A+
+                <br>- ICS 32: A
                 <br>
-                Active on GitHub (<a href="https://github.com/Cadecraft">@Cadecraft</a>):
+                <br>HS GPA: <b>4.6</b>
+                <br>Score of <b>5</b> on AP Chem, Lang, Calc, and others
                 <br>
-                <img style="width: 60%;" src="static/images/ss_github.jpg">
+                <br>Active on GitHub (<a href="https://github.com/Cadecraft">@Cadecraft</a>):
+                <br>
+                <img style="width: 60%;" src="./static/images/ss_github.jpg">
+                <br>
                 <br>
                 Experience with LeetCode:
                 <br>
-                <img style="width: 40%;" src="static/images/ss_leetcode.jpg">
+                <img style="width: 40%;" src="./static/images/ss_leetcode.png">
+                <br>
                 <br>
                 <button class="mid" onclick="location.href='./resume.html'">➜ View my resume</button> <!-- TODO: link, features?-->
                 <!-- TODO: button should be brighter/colored than the others to signify action -->
@@ -93,18 +98,18 @@
                     <b>Online</b>
                     <br>📞Discord call or Zoom
                     <br>🕒Times are flexible
-                    <button class="mid blue" style="float:right;">$20/hr*</button>
+                    <button class="mid blue" style="float:right;" onclick="document.getElementById('contact-section').scrollIntoView(true);">$20/hr*</button>
                 </div>
                 <div class="subsection">
                     <b>In-Person (Individual)</b>
                     <br>🏫UCI campus, location flexible
                     <br>☀️Weekday afternoons
-                    <button class="mid blue" style="float:right;">$20/hr*</button>
+                    <button class="mid blue" style="float:right;" onclick="document.getElementById('contact-section').scrollIntoView(true);">$20/hr*</button>
                 </div>
                 <div class="subsection">
                     <b>In-Person (Group Session)</b>
                     <div style="float:right;">
-                        <button class="mid blue">$30/hr (split the cost)*</button>
+                        <button class="mid blue" onclick="document.getElementById('contact-section').scrollIntoView(true);">$30/hr (split the cost)*</button>
                         <br><span class="minihead">⮤Could be $1/person if you<br>have enough people...</span>
                     </div>
                     <br>🏫UCI campus, location flexible
@@ -115,17 +120,17 @@
             </div>
             <!-- Contact section -->
             <!-- TODO: make this flash/scroll to this when you click a pricing button -->
-            <div class="section">
+            <div class="section" id="contact-section">
                 <h1><span class="minihead">#</span> Contact</h1>
                 <hr>
                 UCI email: <a href="mailto:cadenl4@uci.edu">cadenl4@uci.edu</a>
-                <!-- TODO: instagram? -->
-                <br>NOTE: I will not be tutoring in-person over the summer of 2024, and I haven't fully decided all of the pricing/times. That said, if you are curious, I'm open to tutoring online if you want to reach out.
+                <br>
+                <br>NOTE: I'm not actively tutoring right now as this is still my first year and I'm relatively busy, but I may be open--just reach out to me if you have a request. Prices and times aren't fully decided yet.
                 <br><br><b>Please let me know:</b>
                 <br>- The specific topic you want help with (ex. "recursion in Python for ICS-31")
                 <br>- Which option above works best for you
                 <br>- The timing/location that's best for you
-                <br><br>I will get back to you as soon as possible (under 24 hours).
+                <br><br>I will get back to you as soon as possible (under 24 hours). My availability may depend on how busy I currently am.
                 <br><br><span class="minihead">Note: I strongly value academic honesty. I will never write someone else's essay, do their project, or complete their homework for them; my philosophy is to teach people to learn for themselves.</span>
             </div>
             <!-- Footer -->
@@ -134,7 +139,7 @@
                 <!-- TODO: contact stuff (social media links), link to personal cadecraft site -->
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS.
-                    <br>Last updated: <span id="editdate">2024/08/02</span>
+                    <br>Last updated: <span id="editdate">2024/12/26</span>
                 </span>
             </div>
         </div>
