@@ -54,23 +54,23 @@
                         <!-- <a class="nounderline" href="./contact.html" style="line-height: 0px;">•••</a> -->
                         <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
                         <!-- TODO: include small profile picture icons next to this? Also highlight that the GitHub button was pressed? -->
-                        <div class="github-hover-box" id="github-hover-box-item">
-                            <div class="github-lister">
-                                <i>Personal GitHub (projects)</i>
-                                <button class="mid blue" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/Cadecraft'">➜ Go</button>
-                            </div>
-                            <div class="github-lister">
-                                <i>Professional GitHub</i>
-                                <button class="mid" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/CadenLee2'">➜ Go</button>
-                            </div>
-                        </div>
                     </div>
                     <div style="width: 70%;">
                         <!-- TODO: include a picture of my face here, instead of the ICS stairs, and move them below? -->
-                        <img src="static/images/img_ICSStairs_Filter.jpg" style="width: 100%;">
+                        <img src="static/images/img_ICSStairs_Filter.jpg" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                 </div>
                 <!-- Pictures of Aldrich Park, Crystal Cove, Anteater ? -->
+                <div class="github-hover-box" id="github-hover-box-item" style="width: 340px;">
+                    <div class="github-lister">
+                        <i>Personal GitHub (projects)</i>
+                        <button class="mid blue" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/Cadecraft'">➜ Go</button>
+                    </div>
+                    <div class="github-lister">
+                        <i>Professional GitHub</i>
+                        <button class="mid" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/CadenLee2'">➜ Go</button>
+                    </div>
+                </div>
             </div>
             <div class="section">
                 <h1><span class="minihead">#</span> Avid Software Developer</span></h1>
@@ -149,6 +149,19 @@
                 <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button> <!-- TODO: link -->
                 <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
+                <!-- <div style="display: grid; grid-template-areas: 'a b' 'a c'; grid-template-rows: 200px 1fr 30px; grid-template-columns: 50% 1fr;"> -->
+                <br>
+                <hr>
+                <div style="display: flex; height: 340px;">
+                    <div style="width: 60%;">
+                        <img src="./static/images/img_ICSTrees_edit.jpg" style="height: 340px; width: 97%; object-fit: cover;">
+                    </div>
+                    <div style="width: 40%;">
+                        <img src="./static/images/img_HermosaPierWinterSun.jpg" style="height: 160px; width: 100%; object-fit: cover;">
+                        <img src="./static/images/img_BombayBoat.jpg" style="height: 167px; width: 100%; object-fit: cover; margin-top: 10px;">
+                    </div>
+                </div>
+                <span class="minihead">UCI's Engineering Tower (left), the Hermosa Beach pier (top right), and Bombay Beach (bottom right)</span>
             </div>
             <!-- TODO: "my bookshelf" section -->
             <!-- Footer -->
@@ -158,7 +171,7 @@
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS.
                     <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
-                    <br>Last updated: <span id="editdate">2024/12/25</span>
+                    <br>Last updated: <span id="editdate">2024/12/26</span>
                 </span>
             </div>
         </div>
