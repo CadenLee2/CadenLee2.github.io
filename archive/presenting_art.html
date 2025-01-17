@@ -11,7 +11,14 @@
 </head>
 <body>
     <div class="pagecentercontainer">
-        <div class="pagecenter">
+        <div id="zoom-img-big" style="display: none;">
+            <img style="width: 800px;" src="https://yalealumnimagazine.org/uploads/images/12300123/1640910031/kaphar.jpeg">
+            <br>
+            <div style="display: flex; justify-content: center;">
+                <button onclick="document.getElementById('zoom-img-big').style.display = 'none'; document.getElementById('page-main').style.display = 'block'; document.getElementById('zoom-img').scrollIntoView();">Return to main page</button>
+            </div>
+        </div>
+        <div id="page-main" class="pagecenter">
             <!-- Top section -->
             <div class="whitesection" style="height: auto; background-image: url('https://i.imgur.com/9OqbPb6.jpeg'); background-size: 100%; background-blend-mode: multiply; background-color:rgba(0, 0, 50, 0.3); border: none; color: white">
                 <br>
@@ -21,6 +28,8 @@
                 <br>
                 <div>
                     <button onclick="location.href='./../digitalarchive.html'">🏠 Home</button>
+                Notice the image
+                <br>
                 </div>
             </div>
             <noscript>
@@ -45,7 +54,7 @@
                         <br><br>
                         By moving through the room, viewers also inherently look from different angles and distances, allowing them to naturally focus on different details over time.
                         <br><br>
-                        <img style="width: 100%;" src="https://yalealumnimagazine.org/uploads/images/12300123/1640910031/kaphar.jpeg">
+                        <img id="zoom-img" style="width: 100%; cursor: pointer;" src="https://yalealumnimagazine.org/uploads/images/12300123/1640910031/kaphar.jpeg">
                         <span class="minihead">Above (image 3): Titus Kaphar's work <i>Enough About You</i> (2016) includes a crumpled, distorted section and gold frame whose texture and detail could be more deeply analyzed in person from various angles</span>
                         <br><br>
                         Museums and collections can also have physical significance with respect to the art inside--placing a work in a modern art museum, for instance, already categorizes it as contemporary art. In the case of Kaphar's <i>Enough About You</i>, which transforms a painting of the wealthy founders of Yale University to focus on the unnamed enslaved child, it was recently displayed in the Yale Center for British Art, replacing the original painting and highlighting the university's slavery-entwined past. Part of its significance in that context came from its physical location at Yale, showing one way that the university is attempting to reckon with its history.
@@ -57,8 +66,16 @@
                         <span class="minihead">Above (image 2): a screenshot of the Selected Works page of Kaphar's website, <a href="https://www.kapharstudio.com/work/">https://www.kapharstudio.com/work/</a>. When the user hovers an image, it displays the medium (such as "Cutouts"). Clicking on an image takes the user to a page with other works in the same medium</span>
                         <br><br>
                         In a browser, it is possible to zoom in or open images in new tabs, but this is a conscious and specific action. Normally it is up to the website designers to choose which details to highlight by default. In Kaphar's website, clicking on an image makes it take up the full screen, allowing further inspection. However, this feature still requires conscious effort, as opposed to the natural progression of a museum visit.
+                        <br><br>Try <b>clicking</b> the image of Kaphar's <i>Enough About You</i> to the left to zoom in--notice that it requires conscious action, interrupting the flow of the page.
                         <br><br>
                         <img style="width: 100%;" src="./../static/digital_archive/images/20250112_TitusKapharWebsiteScreenshot2.png">
+                        <script>
+                            document.getElementById("zoom-img").addEventListener("click", () => {
+                                // Toggle the zoom of the image
+                                document.getElementById("zoom-img-big").style.display = "block";
+                                document.getElementById("page-main").style.display = "none";
+                            });
+                        </script>
                         <span class="minihead">Above (image 4): a screenshot of Kaphar's page about one of his exhibitions. The rest of the page is blank, allowing the user to focus on the art</span>
                         <br><br>
                         By arranging these images with a plain white background, Kaphar's website emulates the simple organization often found in museums. This corresponds to his use of traditional museum-hosted mediums like oil painting as a starting point for many works, inducing the viewer into a sense of familiarity. The web page alone already conveys this surface-level component of his art, which is then subverted by his distortions, additions, and other distinct features.
