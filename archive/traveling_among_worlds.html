@@ -40,19 +40,68 @@
                 <div style="display: flex;">
                     <div style="width: 70%; padding-right: 2%;">
                         In recent Humanities Core lectures on the history of China, which have explored ways cultural works influence global audiences and have different impacts in different parts of the world, I was particularly drawn to Professor Wasserstrom's example of the three-finger salute from the Hunger Games, which has been adopted as a significant real-world symbol in some Southeast Asian protests--it's an example of how works of fiction can be referenced and used in a changing world.
-                        <br><br>After reading one of science fiction author William Gibson's nonfiction articles, <i><a href="https://www.wired.com/1993/04/gibson-2/">Disneyland with the Death Penalty</a></i>, for the class, I was reminded of a book I read last summer: his 1984 novel <i>Neuromancer</i>, which has also had real-world cultural impact--not just in different places, but also in the vastly different time periods in the four decades since it has been published. <i>Neuromancer</i> follows the story of a hacker, named Case, who directly interfaces with a global network of computers through his brain; his missions take him through the decaying streets of metropolises on a near-future Earth, where he discovers the effects of rising technologies like artificial intelligence, computer security programs, and virtual reality.
-                        <br><br>Not everyone is familiar with the novel, but its ideas have, over time, been adopted, reflected, and built upon to impact how we see the innovations of the digital age.
+                        <br><br>After reading one of science fiction author William Gibson's nonfiction articles, <i><a href="https://www.wired.com/1993/04/gibson-2/">Disneyland with the Death Penalty</a></i>, for the class, I was reminded of a book I read last summer: his 1984 novel <i>Neuromancer</i>, which follows the story of a hacker named Case who directly interfaces with a global network of computers through his brain. His missions take him through the decaying streets of metropolises on a near-future Earth, where he discovers the effects of rising technologies like artificial intelligence, computer security programs, and virtual reality.
+                        <br><br>Not everyone is familiar with the novel, but its ideas have, over time, been adopted, changed, and built upon to vastly impact how we see the innovations of the digital age, both in real life and in fiction. In fact, after I started writing this archive entry, Professor Wasserstrom actually mentioned the novel in class, describing how it reflects views of the future during the 1980s.
+                        <br><br>
+                        Here is a timeline of some of the topics discussed (click to jump to one):
+                        <br><br>
+                        <!-- TODO: interactive timeline of tech/books from 1980s to now -->
+                        <style>
+                        .hoverdate {
+                            border-left: 3px transparent solid;
+                        }
+                        .hoverdate:hover {
+                            border-left: 3px var(--blue1) solid;
+                            background-color: var(--sectionbgmid);
+                            cursor: pointer;
+                        }
+                        .timebar {
+                            width: 100%;
+                            height: 8px;
+                            background-color: var(--hrborderdark);
+                            /*border-top-right-radius: 4px;
+                            border-bottom-right-radius: 4px;*/
+                            border-right: solid 10px var(--blue1);
+                        }
+                        </style>
+                        <script>
+                            function scrToTopic(topicName) {
+                                document.getElementById("topic-" + topicName).scrollIntoView();
+                            }
+                        </script>
+                        <div style="width: 100%;">
+                            <div class="timebar">
+                            </div>
+                            <div style="width: 100%; display: flex;">
+                                <div style="width: 20%;" class="hoverdate" onclick="scrToTopic('neuro')">
+                                    <b>1980s</b>
+                                    <br><i>Neuromancer</i> (1984)
+                                </div>
+                                <div style="width: 36%;" class="hoverdate" onclick="scrToTopic('matrix')">
+                                    <b>1990s</b>
+                                    <br>Internet popularity expands, <i>The Matrix</i> (1999)
+                                </div>
+                                <div style="width: 30%;" class="hoverdate" onclick="scrToTopic('computer')">
+                                    <b>2000s-2010s</b>
+                                    <br>Continued growth of computer culture
+                                </div>
+                                <div style="width: 14%;" class="hoverdate" onclick="scrToTopic('neptune')">
+                                    <b>2020s</b>
+                                    <br><i>Neptune Frost</i> (2021)
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div style="width: 30%; padding-right: 2%;">
                         <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg" style="width: 100%;">
-                        <span class="minihead">Above (image 1): a cover of an edition of <i>Neuromancer</i>. Notice that I also included this book on my archive homepage at the start of the year</span>
+                        <span class="minihead">Above (image 1): a cover of an edition of <i>Neuromancer</i>. Notice that I also included this book on my archive <a href="../digitalarchive.html">homepage at the start of the year</a></span>
                     </div>
                 </div>
             </div>
             <div class="section">
-                <h1><span class="minihead"># </span> Words and Concepts to Define a Digital World</h1>
+                <h1 id="topic-neuro"><span class="minihead"># </span> Words and Concepts to Define a Digital World</h1>
                 <hr>
-                Gibson did not come from a highly technical background, but he saw the world changing as new technologies, such as personal computers, began to evolve, and many terms coined in <i>Neuromancer</i> have become ways to visualize these emerging concepts:
+                Gibson did not come from a highly technical background, but he saw the world changing as new technologies, such as personal computers, began to evolve, and many terms coined in <i>Neuromancer</i> have become ways to visualize emerging concepts.
                 <br><br>
                 <div style="display: flex;">
                     <div style="width: 50%; padding-right: 2%;">
@@ -60,12 +109,12 @@
                         <span class="minihead">Above (image 2): in the novel, cyberspace is sometimes represented by city night lights. This image is from Chongqing, China</span>
 
                         <br><br>
-                        <b>Matrix</b>
+                        <b id="topic-matrix">Matrix</b>
                         <div class="quotebox">
                             'The Matrix has its roots in primitive arcade games,' said the voice-over, 'in early graphics programs and military experimentation with cranial jacks.' (Gibson)
                         </div>
                         <br>
-                        The Matrix, in <i>Neuromancer</i>, is a graphical visualization of cyberspace, geographically and spatially organized in a way that reflects the real world. The film <i>The Matrix</i> (1999), which we watched in class, very clearly borrows and builds upon this idea. In <i>Neuromancer</i>, only those with the technical know-how are able to enter deep into the Matrix, bypassing security and fully immersing themselves in a simulation. Meanwhile, <i>The Matrix</i> creates a world where it's the opposite: only those with enough knowledge are able to escape or rescue others from the simulation to see the real world.
+                        The Matrix, in <i>Neuromancer</i>, is a graphical visualization of cyberspace, geographically and spatially organized in a way that reflects the real world. The film <i>The Matrix</i> (1999), which we watched in class, very clearly borrows and builds upon this idea. In <i>Neuromancer</i>, only those with the technical know-how are able to enter deep into the Matrix, bypassing security and fully immersing themselves in a simulation. Meanwhile, <i>The Matrix</i> creates a world where it's the opposite: only those with enough knowledge are able to escape or extract others out of the simulation to see the real world.
                     </div>
                     <div style="width: 50%; padding-left: 2%;">
                         <b>Cyberspace</b>
@@ -73,52 +122,81 @@
                             Cyberspace. A consensual hallucination experienced daily by billions of legitimate operators, in every nation (Gibson)
                         </div>
                         <br>
-                        When <i>Neuromancer</i> was written in 1984, the Internet we know of now essentially did not exist--<i>Cyberspace</i> in the novel refers to a fictional construct, not what it means today--but we have adopted this term to describe the interconnection of computers, similar to the systems in the novel (source: <a href="https://doi.org/10.1086/444514" >Streeter</a>, see citation below). The word can be found <a href="https://www.oed.com/dictionary/cyberspace_n?tab=meaning_and_use#12786295">in the Oxford English Dictionary</a>.
+                        When <i>Neuromancer</i> was written in 1984, the Internet we know of now essentially did not exist--<i>Cyberspace</i> in the novel refers to a fictional construct where the world's computers are linked together--but we have since adopted this term to describe the real-life interconnection of computers similar to the systems in the novel (source: <a href="https://doi.org/10.1086/444514" >Streeter</a>, see citation below). The word can be found <a href="https://www.oed.com/dictionary/cyberspace_n?tab=meaning_and_use#12786295">in the Oxford English Dictionary</a> and shows how, thanks to the book, we now see the Internet as a space of its own.
                         <br><br><b>Biological Microchips ("Microsofts")</b>
                         <div class="quotebox">
                             Angular fragments of colored silicon mounted under oblong transparent bubbles on squares of white cardboard (Gibson)
                         </div>
-                        <br><i>Neuromancer</i> popularized the idea of uniting people and computers together biologically, a concept since used in much subsequent science fiction. It is important to note that this term is unrelated to the name of the company Microsoft, but does still reflect general naming trends in computing at the time.
+                        <br><i>Neuromancer</i> popularized the idea of uniting people and computers together biologically, a concept since used in much subsequent science fiction. It is important to note that this term is unrelated to the name of the company Microsoft, but does still reflect general naming trends in business at the time.
                         <br><br>
                         <img style="width: 100%;" src="https://decider.com/wp-content/uploads/2014/07/the-matrix.jpg">
                         <span class="minihead">Above (image 3): much like <i>Neuromancer</i>'s Matrix, <i>The Matrix</i>'s matrix is a hallucination created from data and code</span>
                     </div>
                 </div>
                 <br>
-                In fact, Gibson's novel became a strong basis for a rising subgenre of science fiction, called cyberpunk, which explores these ideas and other ways technology can create dystopias and heterotopias. This genre grew in significance along with computers and the Internet themselves over time, and we can see traces of it in countless subsequent works.
+                In fact, Gibson's novel became a strong basis for a rising subgenre of science fiction called cyberpunk, which explores ways like these that technology can create dystopias and heterotopias. This genre grew in significance along with computers and the Internet itself over time, and we can see traces of <i>Neuromancer</i> in countless subsequent works.
             </div>
             <div class="section">
-                <h1><span class="minihead"># </span> <i>Neptune Frost</i>: Who is Cyberspace For?</h1>
+                <h1 id="topic-neptune"><span class="minihead"># </span> <i>Neptune Frost</i>: Who is Cyberspace For?</h1>
                 <hr>
                 <div style="display:flex;">
                     <div style="width: 40%; padding-right: 2%;">
-                        <img src="https://cdn.theasc.com/NeptuneFrost_2.jpg" style="width: 100%;">
-                        <span class="minihead">Above (image 4): in <i>Neptune Frost</i>, Unanimous Goldmine is able to hack into the internet, intuitively feeling through the code and the networks much like Case from <i>Neuromancer</i></span>
+                        <iframe width="100%" height="275" src="https://www.youtube.com/embed/acfBNIXovww?si=ZPTrM-pd8_hAeH06&amp;start=61" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- <img src="https://cdn.theasc.com/NeptuneFrost_2.jpg" style="width: 100%;"> -->
+                        <span class="minihead">Above (video 1): in <i>Neptune Frost</i>, the members of Unanimous Goldmine are biologically united with complicated technology, intuitively feeling through the code, much like Case from <i>Neuromancer</i></span>
                     </div>
                     <div style="width: 60%; padding-left: 2%;">
-                        The 2021 film <i>Neptune Frost</i> by Anisia Uzeyman and Saul Williams draws, potentially directly and potentially indirectly, on the technological aesthetics of <i>Neuromancer</i>. The scenes where the protagonist group Unanimous Goldmine hacks into the global internet, specifically, mirror the scenes of Case "jacking in" to the Matrix in <i>Neuromancer</i>, surrounded by complicated electronics.
+                        The 2021 Afrofuturist film <i>Neptune Frost</i> by Anisia Uzeyman and Saul Williams draws, potentially directly and potentially indirectly, on the technological aesthetics of <i>Neuromancer</i>. The scenes where the protagonist group Unanimous Goldmine hacks into the global internet, specifically, mirror the scenes of <i>Neuromancer</i>'s protagonist Case "jacking in" to cyberspace, surrounded by complicated electronics to physically and mentally connect with the machines.
                         <br><br>
-                        However, <i>Neuromancer</i> generally covers potential impacts of this technology only on its end users, mostly in technologically developed and wealthy locations like Tokyo, North American metropolises, or cities in space, without describing where the technology comes from. <i>Neptune Frost</i>, on the other hand, is centered on the lives of the coltan miners in unstable communities whose labor is exploited for such technology to be possible. While <i>Neuromancer</i> suggests that cyberspace is for the technical elite who thrive through their their connections and contracts with corporations, <i>Neptune Frost</i> shifts the perspective of who can be a hacker, considering a potential world where technology is reclaimed by those whose labor was instrumental to producing it.
+                        However, <i>Neuromancer</i> generally covers this futuristic technology only in relation to its end users, mostly in technologically developed and wealthy locations like Tokyo, North American metropolises, or cities in space, without describing where the technology comes from. <i>Neptune Frost</i>, on the other hand, is centered on the lives of the coltan miners in unstable communities whose labor and resources are exploited for such technology to be possible. While <i>Neuromancer</i> has created a popular picture of cyberspace being for the technical elite who thrive through their their connections and contracts with corporations, <i>Neptune Frost</i> shifts the perspective of who can be a hacker, considering a potential world where technology is reclaimed by those whose labor was instrumental to producing it.
                     </div>
                 </div>
+            </div>
+            <div class="section">
+                <h1 id="topic-computer"><span class="minihead"># </span> Computer Culture and "Science" versus "Fiction"</h1>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 50%; padding-right: 2%;">
+                        Given its depiction of a futuristic technological world that somewhat romanticizes the adventures of a computer hacker, it makes sense for the novel to be popular among programming, cybersecurity, and related communities. In fact, I was initially interested in it partly because I had seen various <i>Neuromancer</i> quotes in the profiles of users of <a href="https://stackoverflow.com/questions">StackOverflow</a>, a question and answer forum for computer programmers.
+                        <br><br>Considering how much of its content really has become prevalent in society--a global network of computers, a form of artificial intelligence, virtual reality, and so on--many technologists are enthusiastic about Gibson's ideas, viewing him as a prophet and hoping to directly bring about the technology from his books. However, Gibson himself does not come from this background and is not necessarily supportive of this literal adoption of his work.
+                        <br><br>For example, in 1988, the Autodesk company tried to <a href="https://blog.jtbworld.com/2007/01/autodesk-trademarked-cyberspace.html">create a virtual reality product called Cyberspace</a> inspired by Gibson and attempted to trademark the word. In response, he "'threatened to sue' the company, suspecting 'that technical people who like [his] work miss several layers of irony'" (Cavallaro). Other fans have tried to create "<a href="https://www.youtube.com/watch?v=qzEd50uzdF0">cyberdecks</a>" like those in the novel, but with no exact description, these are hard to define and are essentially up to interpretation.
+                        <br><br>Such interactions question the line between predictions and metaphors--or perhaps between inspirations and warnings--across science fiction: on one hand, science fiction is based in <i>science</i>, logically imagining worlds that could unfold from our current one; on the other, science fiction is <i>fiction</i>, using its imagined worlds not just as literal statements about the future, but also as symbols and settings that make us think deeper about life or the world today.
+                        <br><br>Like with any work of science fiction, not everything in <i>Neuromancer</i> is literal and fated to exist. Regardless, though, the novel--and the cyberpunk genre that it helped bring about--still serves as a source of creative inspiration, getting people interested in the future of technology and the aesthetics such a future might hold.
+                    </div>
+                    <div style="width: 50%; padding-left: 2%;">
+                        <img src="https://i.redd.it/rfhuq0e0ddk91.png" style="width: 100%;">
+                        <span class="minihead">Above (image 4): the real-world replication of the cyberpunk aesthetic is reflected in this screenshot: a Reddit user visually customized their personal computer, calling their creation "The Neuromancer Desktop"</span>
+                    </div>
+                </div>
+                <!-- Some have tried to treat his words like prophecies, bringing about his ideas -->
+                <!-- Cyberdecks? -->
+                <!-- Creating a matrix/Neuromancer system? -->
+                <!-- Autodesk's use of Cyberspace: he "'threatened to sue' the company, suspecting 'that technical people who like [his] work miss several layers of irony'" (Cavallaro) -->
+                <!-- Metaphor -->
             </div>
             <!-- Image credits -->
             <div class="section">
                 <span class="minihead">
-                    Main primary sources:
+                    <b>Main primary sources:</b>
                     <br>Gibson, William. <i>Neuromancer</i>. Ace Books, 1984.
                     <br><i>Neptune Frost</i>. Directed by Anisia Uzeyman and Saul Williams, Kino Lorber, 2022.
                     <br><i>The Matrix</i>. Directed by Lana Wachowski and Lilly Wachowski, Warner Bros., 1999.
-                    <br><br>Information:
+                    <br><br>
+                    <b>Information:</b>
                     <br>Streeter, Thomas. "The Moment of Wired." Critical Inquiry,
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vol. 31, no. 4, 2005, pp. 755–79. JSTOR,
                     <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://doi.org/10.1086/444514. Accessed 10 Mar. 2025.
+                    <br>Cavallaro, Dani. <i>Cyberpunk and cyberculture: science fiction and</i>
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>the work of William Gibson</i>. Athlone Press, 2000.
                     <br><br>
-                    Image credits (in order, starting with image 1):
+                    <b>Image credits (in order, starting with image 1):</b>
                     <br>1. The <a href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1554437249i/6088007.jpg">cover of the edition of <i>Neuromancer</i> published by Ace Books in 2000</a>
                     <br>2. A picture of <a href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Chongqing_Nightscape.jpg/1280px-Chongqing_Nightscape.jpg">night lights in Chongqing, China in 2019</a>, by Jay Huang
                     <br>3. A still from <a href="https://decider.com/wp-content/uploads/2014/07/the-matrix.jpg"><i>The Matrix</i> (cited above) near the end of the film</a>
-                    <br>4. A still from <a href="https://cdn.theasc.com/NeptuneFrost_2.jpg"><i>Neptune Frost</i> (cited above) that shows Unanimous Goldmine's array of computers</a>
+                    <br>4. A <a href="https://decider.com/wp-content/uploads/2014/07/the-matrix.jpg">Reddit post</a> by user viewp0rt titled "I call this... THE NEUROMANCER DESKTOP"
+                    <br><br>
+                    <b>Video credits:</b>
+                    <br>1. The <a href="https://www.youtube.com/embed/acfBNIXovww?si=ZPTrM-pd8_hAeH06&amp;start=61">official trailer of Neptune Frost (cited above)</a>
                 </span>
             </div>
             <!-- Footer -->
