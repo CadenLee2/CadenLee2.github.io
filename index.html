@@ -7,9 +7,9 @@
     <meta property="og:title" content="Caden Lee: Student & Software Developer">
     <meta property="og:description" content="I'm a CS student at UC Irvine with a passion for programming.">
     <link rel="stylesheet" href="static/styles.css">
-    <title>Caden Lee: Student & Software Developer</title>
+    <title>Caden Lee: Student &#38; Software Developer</title>
     <!-- TODO: better title -->
-    <!-- TODO: dark theme?? -->
+    <!-- TODO: toggle for dark theme?? -->
     <!-- devicon header for icons -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" /> 
     <!-- Modify for Pages deployment (2) -->
@@ -42,7 +42,7 @@
             <div class="section">
                 <div style="display: flex;">
                     <div>
-                        <h1><span class="minihead">#</span> CS Student @ UCI <span style="font-size: 14px;">Class of 2028</span></h1>
+                        <h1><span class="minihead">#</span> Computer Science @ UCI <span style="font-size: 14px;">Class of 2028</span></h1>
                         <!-- TODO: "Studying CS @ UCI" instead of "CS Student @ UCI"? -->
                         <hr style="margin-right: 10px;">
                         As a student in computer science and honors, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
@@ -50,7 +50,7 @@
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button> <!-- TODO: link -->
                         <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                         <br><br>
-                        <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn"></i></a>
+                        <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn" style="margin-left: 0px;"></i></a>
                         <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';"><i class="icon github-hover devicon-github-plain" title="GitHub"></i></a> <!-- TODO: fix styles for hover -->
                         <!-- <a class="nounderline" href="./contact.html" style="line-height: 0px;">•••</a> -->
                         <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
@@ -65,7 +65,7 @@
                 <div class="github-hover-box" id="github-hover-box-item" style="width: 340px;">
                     <div class="github-lister">
                         <i>Personal GitHub (projects)</i>
-                        <button class="mid blue" style="height: 20px; width: 100px; float:right; margin-top: 0px;" onclick="location.href='https://github.com/Cadecraft'">➜ Go</button>
+                        <button class="mid blue" style="height: 20px; width: 100px; float:right; margin: 0px;" onclick="location.href='https://github.com/Cadecraft'">➜ Go</button>
                     </div>
                     <div class="github-lister">
                         <i>Professional GitHub</i>
@@ -83,35 +83,82 @@
                     // Attention to detail is my philosophy.
                 </div>
                 <hr>
-                <div style="display: flex; justify-content: center; text-align: center;">
-                    <!-- TODO: fix alignment -->
-                    <!-- TODO: add contents, choose good projects -->
+                <div class="showcase" style="background-image: url('static/images/ss_ppc_roadmap_blur.png'); background-size: 100%; display: flex; gap: 12px;">
+                    <div style="width: 50%; display: flex; flex-direction: column;">
+                        <div style="flex: 1; flex-basis: auto;">
+                            <b>PeterPortal</b>
+                            <br>I'm part of the PeterPortal team at UCI's ICS Student Council. We're developing a course planning service for students!
+                            <br>
+                        </div>
+                        <div style="height: 100px;">
+                            <button class="dark" onclick="location.href='https://github.com/icssc/peterportal-client'">
+                                <i class="iconlight github-hover devicon-github-plain" title="GitHub"></i>
+                                GitHub
+                            </button>
+                            <br>
+                            <button class="dark" onclick="location.href='https://peterportal.org/'">➜ Try it out</button>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
+                                <i class="iconlight devicon-react-plain" title="React"></i>
+                                <i class="iconlight devicon-postgresql-plain" title="PostgreSQL"></i>
+                                <i class="iconlight devicon-sass-plain" title="SCSS"></i>
+                                <i class="iconlight devicon-trpc-plain" title="tRPC"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 50%;">
+                        <img src="static/images/ss_ppc_roadmap_clear.png" style="width: 100%;">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center; text-align: center; gap: 8px;">
                     <!-- TODO: add images -->
                     <!-- TODO: programming language icons in the corner of each project -->
-                    <div class="showcase" style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;">
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/sheatfish'"
+                    >
                         <b>Sheatfish</b>
                         <br>A lightweight, productive terminal-based spreadsheet editor
-                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/sheatfish'">➜ GitHub</button>
+                        <br><br>
+                        <div class="toolslist">
+                            <i class="iconlight devicon-rust-original" title="Rust"></i>
+                        </div>
                     </div>
-                    <div class="showcase" style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%;">
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/tetrome-source'"
+                    >
                         <b>Tetrome</b>
                         <br>A fully-featured stacker game as a browser extension
-                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/tetrome-source'">➜ GitHub</button>
+                        <div class="toolslist">
+                            <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
+                            <i class="iconlight devicon-html5-plain" title="HTML5"></i>
+                            <i class="iconlight devicon-css3-plain" title="CSS3"></i>
+                        </div>
                     </div>
-                    <div class="showcase" style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;">
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'"
+                    >
                         <b>Landform: Eclipse</b>
-                        <br>An web game with an emphasis on procedural generation and rendering
-                        <button class="mid dark" style="width: 100%;" onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'">➜ GitHub</button>
+                        <br>A web game with an emphasis on procedural generation and rendering
+                        <div class="toolslist">
+                            <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
+                            <i class="iconlight devicon-html5-plain" title="HTML5"></i>
+                            <i class="iconlight devicon-css3-plain" title="CSS3"></i>
+                        </div>
                     </div>
                 </div>
                 <hr>
-                <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button> <!-- TODO: link -->
-                <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button> <!-- TODO: link -->
+                <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button>
+                <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button>
                 <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                 <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
                 <!-- TODO: feature my tech stack? -->
             </div>
-            <!-- TODO: tech stack, images, etc. in this top portion -->
             <div class="section">
                 <h1><span class="minihead">#</span> My Tools</span></h1>
                 <br>
@@ -146,11 +193,7 @@
                 In my free time, I make trance, synthwave, and other electronic music.
                 <br>I also enjoy photography, science fiction books, and 3d modeling.
                 <br>
-                <!-- TODO: clean up my yt channel... -->
-                <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button> <!-- TODO: link -->
-                <!-- TODO: images, more interesting formatting (ex. bento style?) -->
-                <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
-                <!-- <div style="display: grid; grid-template-areas: 'a b' 'a c'; grid-template-rows: 200px 1fr 30px; grid-template-columns: 50% 1fr;"> -->
+                <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button>
                 <br>
                 <hr>
                 <div style="display: flex; height: 340px;">
@@ -170,15 +213,14 @@
                 © 2024 Caden Lee
                 <!-- TODO: contact stuff (social media links), link to personal cadecraft site -->
                 <br><span class="minihead">
-                    This website was made in pure JS/HTML/CSS.
+                    This website was made in pure JS/HTML/CSS. <a href="https://github.com/cadenlee2/CadenLee2.github.io/">View the source!</a>
                     <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
-                    <br>Last updated: <span id="editdate">2024/12/26</span>
+                    <br>Last updated: <span id="editdate">2025/03/22</span>
                 </span>
             </div>
         </div>
     </div>
-    <!-- TODO: projects, bookshelf, life roadmap, resume (+PDF, .md download), etc. -->
-    <!-- TODO: social links, pictures -->
-    <!-- TODO: section for a tutoring business? (phone number or insta) -->
+    <!-- TODO: bookshelf, life roadmap, resume .md download -->
+    <!-- TODO: more social links, pictures -->
 </body>
 </html>
