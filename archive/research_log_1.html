@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- todo: meta, og, title, favicon, better description, og image -->
+    <meta property="og:title" content="Caden Lee's Digital Archive">
+    <meta property="og:description" content="A record of my thoughts and experiences during my time in UCI's Humanities Core course">
+    <link rel="stylesheet" href="./../static/digital_archive/digital_archive_styles.css">
+    <title>Caden Lee's Digital Archive</title>
+</head>
+<body>
+    <div class="pagecentercontainer">
+        <div id="page-main" class="pagecenter">
+            <!-- Top section -->
+            <div class="whitesection" style="height: auto; background-image: url('https://i.imgur.com/9OqbPb6.jpeg'); background-size: 100%; background-blend-mode: multiply; background-color:rgba(0, 0, 50, 0.3); border: none; color: white">
+                <br>
+                <h1 style="color: white;">Caden Lee's Digital Archive</h1>
+                <br>
+                <h1 style="color: white;">W O R L D B U I L D I N G - 2 0 2 5</h1>
+                <br>
+                <div>
+                    <button onclick="location.href='./../digitalarchive.html'">🏠 Home</button>
+                <br>
+                </div>
+            </div>
+            <noscript>
+                <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
+            </noscript>
+            <!-- Main sections -->
+            <div class="section">
+                <div class="designnoteexpand" style="width: 100%;" onclick="expanddesign();">
+                    <h1><span class="minihead">#</span> <i>Design Note <span style="font-size: 16px;">(click to <span id="expandtext">expand</span>)</span></i></h1>
+                </div>
+                <div id="designnotecontents" class="designnotecontents" style="display: none;">
+                    <hr>
+                    Because I'm in a different seminar section now, I'd like to clarify how I chose to develop my site. As a computer science student, in fall quarter I opted to program my website from scratch rather than using Google Sites because it gives me more flexibility in creating a more minimalist--but also more interactive--layout. 
+                    <br><br>Considering that we learned in class about the perceived divide between the sciences and the humanities, I am even more motivated this quarter to use my web development skills to bridge that gap.
+                    <br><br>This should not change the way you access the site, but you can expect a slightly different appearance from other archives. If you're curious about the technical details, see the section called "Design Note" on <a href="../digitalarchive.html">my homepage</a>. This website is also mobile-friendly.
+                    <br><br>- Caden, 2025/04/07
+                </div>
+                <style>
+                    .designnoteexpand {
+                        i {
+                            color: var(--hrborderdark);
+                        }
+                        width: 100%;
+                    }
+                    .designnoteexpand:hover {
+                        i {
+                            color: var(--textcolor);
+                        }
+                        cursor: pointer;
+                    }
+                </style>
+                <script defer>
+                    let expanded = false;
+                    function expanddesign() {
+                        expanded = !expanded;
+                        console.log("A");
+                        if (expanded) {
+                            document.getElementById("designnotecontents").style.display = "block";
+                            document.getElementById("expandtext").innerText = "hide";
+                        } else {
+                            document.getElementById("designnotecontents").style.display = "none";
+                            document.getElementById("expandtext").innerText = "expand";
+                        }
+                    }
+                </script>
+            </div>
+            <div class="section">
+                <h1><span class="minihead"># </span> Research Log 1: Evaluating Potential Primary Sources <span class="minihead">2025/04/08</span></h1>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 66%; padding-right: 2%;">
+                        When deciding what primary sources to use, I thought about both my interests and the sources we learned about in class. To make sure I cover multiple types of sources, I considered:
+                        <br>- Books I've recently read (inside and outside of class)
+                        <br>- Music genres I like
+                        <br>- Images that impacted me
+                        <br>- Games I've played
+                        <br>- Places I want to know more about
+                        <br>- Movies I've watched
+                        <br><br>The following three sources are ones that I think are interesting, but I'm considering others as well.
+                        <br><br><span class="minihead">Right (image 1): it's hard to choose when there are so many interesting topics and sources! (Note: I always list full image credits at the very bottom of the page)</span>
+                    </div>
+                    <div style="width: 34%; padding-right: 2%;">
+                        <img src="https://images.stockcake.com/public/d/7/9/d79e32ab-4b42-4371-ab6a-d1c51541a1ff_large/cluttered-office-desk-stockcake.jpg" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1><span class="minihead"># </span> Italo Calvino's <i>Invisible Cities</i></h1>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 70%; padding-right: 2%;">
+                        <b>1972 • Novel • Postmodernism • Magical Realism</b>
+                        <br><br>
+                        In eleventh grade, my friend recommended that I read <i>Invisible Cities</i>, a 1972 novel by the Italian author Italo Calvino. I had never heard of the novel, but a year later, I obtained and started reading it; I was quickly lost in a maze of words and concepts, beautiful yet confusing.
+                        <br><br>
+                        <div class="quotebox">
+                            Arriving at each new city, the traveler finds again a past of his that he did not know he had: the foreignness of what you no longer are or no longer possess lies in wait for you in foreign, unpossessed places (Calvino)
+                        </div>
+                        <br>In the book, the explorer Marco Polo visits the emperor Kublai Khan and tells him stories of the cities he experienced on his travels. Each city is described in a page or two, with very abstract but meaningful sentences like the one above, and there are 55 in total. He mentions that in describing each city, he is describing Venice.
+                        <br><br>I was reminded of the book when reading Plato's <i>Republic</i>, which similarly describes a city whose complexities reflect philosophical views of the world, despite being written much longer ago, and it definitely connects to our course's worldbuilding theme by literally creating cities.
+                        <br><br><span class="minihead">Right and above (image 2): complicated cities lie behind a simple cover</span>
+                    </div>
+                    <div style="width: 30%; padding-right: 2%;">
+                        <img src="https://images.booksense.com/images/806/453/9780156453806.jpg" style="width: 100%;">
+                    </div>
+                </div>
+                <br>
+                Because this book was written in the 1970s, and I'm not very familiar with postmodernism, I'd definitely want to do historical and genre analysis. I went into reading with very little understanding of the context and audience, so that would give me much more understanding. To get started, I can find many scholarly sources discussing the novel and Calvino's work as a whole, such as on <a href="https://www.jstor.org/action/doBasicSearch?Query=invisible+cities&so=rel">JSTOR</a>. I can imagine countless research topics, such as:
+                <br><br><b>How cities are inspirations? • Exoticization of foreign cities? • Finding unfamiliarity in familiar social structures? • Themes in postmodern literature? • The complicated narrative structure? Audience reception of the book?</b>
+            </div>
+            <div class="section">
+                <h1><span class="minihead"># </span> Makoto Shinkai's <i>Weathering with You</i></h1>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 45%; padding-right: 2%;">
+                        <iframe style="border-radius: 4px;" width="100%" height="250" src="https://www.youtube.com/embed/9N1gmaD499k?si=ibIyWSm1w_ZwOJ7r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <!-- <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Weathering_with_You_Poster.jpg/250px-Weathering_with_You_Poster.jpg" style="width: 100%;"> -->
+                        <br><span class="minihead">Above (video 1): a trailer for Weathering with You. Note the focus on weather and cities, and the gunshot sound mixed with thunder near the end</span>
+                    </div>
+                    <div style="width: 55%; padding-right: 2%;">
+                        <b>2019 • Film • Supernatural / Science Fiction / Romance • Animation</b>
+                        <br><br>
+                        As a much more recent primary source, the 2019 Japanese animated film <i>Weathering with You</i> also has a strong sense of worldbuilding, exploring a changing climate (based on the reality of climate change) and myths related to the weather (based on the supernatural) in modern Tokyo.
+                        <br><br>The director, Makoto Shinkai, has created many recent films similarly featuring young protagonists dealing with natural disaster. Because it was a popular film internationally, the audience is not limited to Japan, and typically seems to include a wide range of people interested in animation, weather, cities, and other themes in the film.
+                    </div>
+                </div>
+                <br>
+                I would like to research the real-life mythology and folklore that went into this film, specifically when it comes to the "weather maidens" who are able to change the weather, and how this connects to the social perception of climate change. I am also interested in the symbolism of the gun (a small gun plays a large and serious role in the story).
+                <br><br>
+                Research would involve film analysis, possibly rhetorical analysis, and style analysis, considering the distinctive visual style. Again, I can find scholarly sources discussing either the film or the director.
+                <br><br>
+                <b>Globalization and modernity? • Symbolism of the gun? • How folklore accompanies scientific advancement? • Perceptions of rain and weather in media?</b>
+            </div>
+            <div class="section">
+                <h1><span class="minihead"># </span> Josh Rowell's <i>Virtually Fragile</i></h1>
+                <hr>
+                <div style="display: flex;">
+                    <div style="width: 55%; padding-right: 2%;">
+                        <b>2019 • Visual Art • Post-Internet</b>
+                        <br><br>
+                        While recently looking at art related to the Internet, I came across the Post-Internet movement, which aesthetically analyzes the Internet's impacts on humanity. Artist Josh Rowell's <i>Virtually Fragile</i>series (see the image to the right) stood out to me because the image of a broken screen is instantly recognizable in the twenty-first century, but his work's physicality, despite fundamentally being about digital concepts, is a reversal of the fact that our lives are becoming increasingly digital.
+                        <br><br>According to <a href="https://www.joshrowell.co.uk/about">his website</a>, he is an international artist with exhibitions in numerous different countries. He has a Master of Fine Arts from Kingston Art School in the United Kingdom.
+                        <br><br>Despite the fact that I could not find scholarly articles directly mentioning him, he has left a visible impact with major museums, and because his themes include extremely prevalent topics, I believe I could find highly related scholarly research. It would be interesting to represent his work as a contribution to the scholarly conversation surrounding Post-Internet art.
+                    </div>
+                    <div style="width: 45%; padding-right: 2%;">
+                        <img src="https://artreviewcity.com/wp-content/uploads/2021/04/Virtually-Fragile-6-2018-Acrylic-on-Wooden-Panel-120-x-180-cm-1024x725.jpg" style="width: 100%;">
+                        <br><span class="minihead">Above (image 3): "Virtually Fragile #6" mimics the appearance of a broken screen, but it is painted with acrylic on wood.</span>
+                    </div>
+                </div>
+                <br>Research topics might include the history of computing and the Internet, the usage of broken screens in media, and Post-Internet art (about which there is much scholarly discourse).
+                <br><br>
+                <b>What is the symbolism of broken screens? • Is there meaning in the patterns of these artworks? • How has the Internet changed the importance of screens?</b>
+            </div>
+            <!-- Image credits -->
+            <div class="section">
+                <span class="minihead">
+                    <b>Main primary source citations:</b>
+                    <br>Calvino, Italo. <i>Invisible Cities</i>. Giulio Einaudi, 1972.
+                    <br>Rowell, Josh. <i>Virtually Fragile</i>. 2019, Firetti Contemporary, Dubai.
+                    <br><i>Weathering with You</i>. Directed by Makoto Shinkai, Toho, 2019.
+                    <br><br>
+                    <b>Image credits (in order, starting with image 1):</b>
+                    <br>1. A stock image of a<a href="https://stockcake.com/i/cluttered-office-desk_1171729_1058800"> cluttered office desk by Stockcake</a>
+                    <br>2. The cover of the edition of <i>Invisible Cities</i> by Italo Calvino, published by Mariner Books Classics as shown on <a href="https://www.literatibookstore.com/book/9780156453806">Literati Bookstore's website</a>
+                    <br>3. A photograph of "Virtually Fragile #6" by Josh Rowell, <a href="https://artreviewcity.com/2021/04/09/josh-rowell/">taken by Art Review City</a> in 2021
+                    <br><br>
+                    <b>Video credit:</b>
+                    <br>1. A <a href="https://www.youtube.com/watch?v=9N1gmaD499k">teaser uploaded by film distributor GKIDS on YouTube</a> for <i>Weathering with You</i> (2019) by Makoto Shinkai
+                </span>
+            </div>
+            <!-- Footer -->
+            <div class="section">
+                All code (software and associated documentation files) is © 2025 Caden Lee under the MIT license (<a href="https://github.com/CadenLee2/CadenLee2.github.io/">source</a>).
+                Analysis on this digital archive is written by Caden Lee, unless stated otherwise.
+                <br>All referenced works (images, websites, quotes, etc.) not by me belong to their respective creators and are used here for commentary and educational purposes.
+                <span class="minihead">
+                    <br>Last updated: <span id="editdate">2025/04/07</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
