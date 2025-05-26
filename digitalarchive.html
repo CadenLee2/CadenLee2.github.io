@@ -55,26 +55,38 @@
                             <br><b>Spring</b><br>
                             <button style="width: 30%" onclick="location.href='./archive/research_log_1.html'">📝 2025/04/10: Research Log 1</button>
                             <button style="width: 30%" onclick="location.href='./archive/research_log_2.html'">📝 2025/04/16: Research Log 2</button>
+                            <button style="width: 30%" onclick="location.href='./archive/research_presentation.html'">📝 2025/05/26: Research Presentation</button>
                         </div>
                     </div>
                     <script>
                         // Script for the organizer
-                        document.getElementById("b_fall").addEventListener("click", () => {
-                            document.getElementById("o_fall").style.display = "block";
-                            document.getElementById("o_winter").style.display = "none";
-                            document.getElementById("o_spring").style.display = "none";
-                        });
-                        document.getElementById("b_winter").addEventListener("click", () => {
-                            document.getElementById("o_fall").style.display = "none";
-                            document.getElementById("o_winter").style.display = "block";
-                            document.getElementById("o_spring").style.display = "none";
-                        });
-                        document.getElementById("b_spring").addEventListener("click", () => {
-                            document.getElementById("o_fall").style.display = "none";
-                            document.getElementById("o_winter").style.display = "none";
-                            document.getElementById("o_spring").style.display = "block";
-                        });
+                        const allOrganizerSections = ["fall", "winter", "spring"];
+
+                        function showSection(toShow) {
+                            for (const s of allOrganizerSections) {
+                                if (s == toShow) {
+                                    document.getElementById("o_" + s).style.display = "block";
+                                } else {
+                                    document.getElementById("o_" + s).style.display = "none";
+                                }
+                            }
+                        }
+
+                        for (const s of allOrganizerSections) {
+                            document.getElementById("b_" + s).addEventListener("click", () => {
+                                showSection(s);
+                            });
+                        }
                     </script>
+                </div>
+            </div>
+            <div class="section">
+                <div style="text-align: center; padding: 10px;">
+                    <h1>Check out my research presentation!</h1>
+                    <br>
+                    For my Spring 2025 research project, I'm analyzing Italo Calvino's novel <i>Invisible Cities</i>.
+                    <br><br>
+                    <button class="mid blue" onclick="location.href='./archive/research_presentation.html'">➜ View online</button>
                 </div>
             </div>
             <!-- Who am I? -->

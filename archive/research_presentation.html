@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- todo: meta, og, title, favicon, better description, og image -->
+    <meta property="og:title" content="Caden Lee's Digital Archive">
+    <meta property="og:description" content="A record of my thoughts and experiences during my time in UCI's Humanities Core course">
+    <link rel="stylesheet" href="./../static/digital_archive/digital_archive_styles.css">
+    <title>Caden Lee's Digital Archive</title>
+</head>
+<body>
+    <div class="pagecentercontainer">
+        <div id="page-main" class="pagecenter">
+            <!-- Top section -->
+            <div class="whitesection" style="height: auto; background-image: url('https://i.imgur.com/9OqbPb6.jpeg'); background-size: 100%; background-blend-mode: multiply; background-color:rgba(0, 0, 50, 0.3); border: none; color: white">
+                <br>
+                <h1 style="color: white;">Caden Lee's Digital Archive</h1>
+                <br>
+                <h1 style="color: white;">W O R L D B U I L D I N G - 2 0 2 5</h1>
+                <br>
+                <div>
+                    <button onclick="location.href='./../digitalarchive.html'">🏠 Home</button>
+                <br>
+                </div>
+            </div>
+            <noscript>
+                <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
+            </noscript>
+            <!-- Main sections -->
+            <div class="section">
+                <h1><span class="minihead"># </span> Spring 2025 Research Presentation <span class="minihead">2025/05/26</span></h1>
+                <hr>
+                For my research presentation, I decided to create a slideshow to provide a similar experience to presenting in person.
+                <br><br>
+                <b>Instructions:</b> As you click through the presentation using the blue arrow buttons below, multimodal features will appear underneath some of the slides, which you can optionally interact with or visit.
+            </div>
+            <div class="section">
+                <!-- Slide -->
+                <img id="slidedisp" style="width: 100%; border-radius: 6px;" src="../static/digital_archive/images/research_presentation/pres1.png">
+                <!-- Navigation -->
+                <div style="display:flex; justify-content: space-around; width:100%; margin-bottom: 40px;">
+                    <button id="prev" class="mid" disabled>🡰</button>
+                    <div style="text-align: center;">
+                        <div style="width: 200px; background-color: var(--sectionbgmid); border-radius: 4px; margin-top: 4px; height: 6px;">
+                        </div>
+                        <span class="minihead">
+                            <span id="currslide"></span>/<span id="maxslide">-</span>
+                        </span>
+                    </div>
+                    <div>
+                        <button id="next" class="mid blue">🡲</button>
+                        <div id="multimodal_1" style="display: block;">
+                            <div style="text-align: center;">
+                                🡱
+                                <br>Use this button to go
+                                <br>to the next slide
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional multimodal sections for slides -->
+                <div id="multimodal_4" style="display: none; text-align: center; margin-bottom: 40px;">
+                    Find more drawings based on <i>Invisible Cities</i> in Karina Puente's collection on <a href="https://www.archdaily.com/906742/intricate-illustrations-of-italo-calvinos-invisible-cities">ArchDaily</a>.
+                    <br>Here is one representing part of Sophronia, a city with two halves:
+                    <br><br>
+                    <img src="https://images.adsttc.com/media/images/5bfe/9fd4/08a5/e522/0900/01fe/slideshow/ZENOBIA.jpg?1543413709" style="width: 80%;">
+                </div>
+                <div id="multimodal_6" style="display: none; text-align: center; margin-bottom: 40px;">
+                    <a href="https://www.ucldigitalpress.co.uk/Book/Article/52/77/3864/">The article</a> includes more variations on the visualization, such as by connecting cities together in sequence.
+                </div>
+                <div id="multimodal_13" style="display: none; text-align: center; margin-bottom: 40px;">
+                    One of my favorite passages from the book is:
+                    <br><br>
+                    <div class="quotebox" style="text-align: left;">
+                        Then Marco Polo spoke: "Your chessboard, sire, is inlaid with two woods: ebony and maple. The square on which your enlightened gaze is fixed was cut from the ring of a trunk that grew in a year of drought: you see how its fibers are arranged? Here a barely hinted knot can be made out: a bud tried to burgeon on a premature spring day, but the night's frost forced it to desist."
+                        <br><br>
+                        [...]
+                        <br><br>
+                        "Here is a thicker pore: perhaps it was a larvum's nest; not a woodworm, because, once born, it would have begun to dig, but a caterpillar that gnawed the leaves and was the cause of the tree's being chosen for chopping down... This edge was scored by the wood carver with his gouge so that it would adhree to the next square, more protruding...."
+                        <br><br>
+                        The quantity of things that could be read in a little piece of smooth and empty wood overwhelmed Kublai; Polo was already talking about ebony forests, about rafts laden with logs that come down the rivers, of docks, of women at the windows...
+                    </div>
+                </div>
+                <div id="multimodal_14" style="display: none; text-align: center; margin-bottom: 40px;">
+                    As one example of how people are interacting with the novel,
+                    <br><a href="https://umi.codes/geek/2014/8/interactive-ereader-for-invisible-cities-by-italo-calvano">here is a project I found</a> that imagines a prototype of an interactive book reader
+                    <br><br>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5139c9a2e4b01b4441c6f88f/1426890510428-LNNT27QGE3UFZMJQY77H/3d.jpg?format=1000w" style="width: 80%;">
+                </div>
+                <script>
+                    let currSlide = 1;
+
+                    const FIRST_SLIDE = 1;
+                    const LAST_SLIDE = 17;
+
+                    document.getElementById("currslide").innerText = currSlide;
+                    document.getElementById("maxslide").innerText = LAST_SLIDE;
+
+                    const slideDisp = document.getElementById("slidedisp");
+                    const prev = document.getElementById("prev");
+                    const next = document.getElementById("next");
+
+                    const SLIDE_PATH_PREFIX = "../static/digital_archive/images/research_presentation/pres";
+
+                    function showOneMultimodal(slideNumber) {
+                        for (let i = FIRST_SLIDE; i <= LAST_SLIDE; i++) {
+                            const selected = document.getElementById("multimodal_" + i);
+                            if (selected) {
+                                if (i == slideNumber) {
+                                    selected.style.display = "block";
+                                } else {
+                                    selected.style.display = "none";
+                                }
+                            }
+                        }
+                    }
+
+                    prev.addEventListener("click", () => {
+                        currSlide--;
+                        if (currSlide <= FIRST_SLIDE) {
+                            prev.disabled = true;
+                            prev.className = "mid";
+                        }
+                        next.disabled = false;
+                        next.className = "mid blue";
+                        slideDisp.src = SLIDE_PATH_PREFIX + currSlide + ".png";
+                        showOneMultimodal(currSlide);
+                        document.getElementById("currslide").innerText = currSlide;
+                    });
+                    next.addEventListener("click", () => {
+                        currSlide++;
+                        if (currSlide >= LAST_SLIDE) {
+                            next.disabled = true;
+                            next.className = "mid";
+                        }
+                        prev.disabled = false;
+                        prev.className = "mid blue";
+                        slideDisp.src = SLIDE_PATH_PREFIX + currSlide + ".png";
+                        showOneMultimodal(currSlide);
+                        document.getElementById("currslide").innerText = currSlide;
+                    });
+                </script>
+            </div>
+            <!-- Image credits -->
+            <div class="section">
+                <span class="minihead">
+                    Image credits and source citations are provided in the slides (above)
+                </span>
+            </div>
+            <!-- Footer -->
+            <div class="section">
+                All code (software and associated documentation files) is © 2025 Caden Lee under the MIT license (<a href="https://github.com/CadenLee2/CadenLee2.github.io/">source</a>).
+                Analysis on this digital archive is written by Caden Lee, unless stated otherwise.
+                <br>All referenced works (images, websites, quotes, etc.) not by me belong to their respective creators and are used here for commentary and educational purposes.
+                <span class="minihead">
+                    <br>Last updated: <span id="editdate">2025/05/26</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
