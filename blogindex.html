@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- todo: meta, og, title, favicon, better description, og image -->
+    <meta property="og:title" content="Caden Lee: Student & Software Developer">
+    <meta property="og:description" content="I'm a CS student at UC Irvine with a passion for programming.">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Caden Lee: Student & Software Developer</title>
+</head>
+<body>
+    <div class="pagecentercontainer">
+        <div class="pagecenter">
+            <!-- Top section -->
+            <div class="whitesection" style="height: auto;">
+                <h1>Caden Lee</h1>
+                <br>
+                <div>
+                    <button onclick="location.href='./index.html'">Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
+                    <button onclick="location.href='./resume.html'">Skills &amp; Resume</button>
+                    <button onclick="location.href='./contact.html'">Contact</button>
+                    <button disabled>Blog</button>
+                </div>
+            </div>
+            <noscript>
+                <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
+            </noscript>
+            <!-- Main sections -->
+            <!-- Blog section -->
+            <div class="section">
+                <h1><span class="minihead">#</span> Blog</h1>
+                <hr>
+                I started this blog in Summer 2025 to share my ideas on software, technology, and the world. All my articles will show up here (once I write them).
+                <br><br>
+                <div style="display: flex; flex-direction: column; text-align: center; gap: 8px; margin-bottom: -8px;">
+                    <div class="showcase clickable"
+                        style="min-height: 80px; background-image: url('static/blog/digital_notes.png'); background-size: 100%;"
+                        onclick="location.href='./blog/defense_of_digital.html'"
+                    >
+                        <div style="text-align: left;">
+                            <b>2025/06/14 • A philosophical defense of digital notetaking</b>
+                            <br>and of technology in general (when it's used right)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="section">
+                © 2025 Caden Lee
+                <br><span class="minihead">
+                    This website was made in pure JS/HTML/CSS.
+                    <br>Last updated: <span id="editdate">2025/06/14</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

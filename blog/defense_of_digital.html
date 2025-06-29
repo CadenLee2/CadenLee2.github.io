@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- todo: meta, og, title, favicon, better description, og image -->
+    <meta property="og:title" content="Caden Lee: Student & Software Developer">
+    <meta property="og:description" content="I'm a CS student at UC Irvine with a passion for programming.">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Caden Lee's Blog</title>
+</head>
+<body>
+    <div class="pagecentercontainer">
+        <div class="pagecenter">
+            <!-- Top section -->
+            <div class="whitesection">
+                <h1>Caden Lee's Blog</h1>
+                <br><button class="mid" onclick="location.href='./../blogindex.html'">⬅ Return to blog index</button> <!-- TODO: improve this button-->
+            </div>
+            <noscript>
+                <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
+            </noscript>
+            <!-- Main sections -->
+            <div class="blogtitleimage"
+                style="min-height: 80px; background-image: url('../static/blog/digital_notes.png'); background-size: 100%;"
+            >
+                <span>A philosophical defense of digital notetaking</span>
+                <span class="date">2025/06/14</span>
+            </div>
+            <div class="section">
+                <h1><span class="minihead">#</span> Introduction</h1>
+                <hr>
+                Teachers, psychologists, and productivity enthusiasts tend to be <a href="https://www.npr.org/2016/04/17/474525392/attention-students-put-your-laptops-away">critical of digital notetaking</a>--at least <i>typed</i> notetaking--compared to handwriting with a pen and paper. Beyond forcing you to slow down and think, which improves retention, paper creates a "personal connection" to the material, some say. It has its own texture, its own physical presence in our lives. The process of handwriting is philosophically held to be more authentic than the process of using a computer.
+                <br><br>
+                As a computer scientist, I'm inclined to fight back against these sentiments. Yes, paper may have merits, and the way we use information technology can cause huge problems (see short-form content, invasive digital advertising, declining attention spans), but I want us to believe, philosophically, that there is hope for a more ideal future in technological advancements--something that's critical for us in changing and challenging times.
+                <br><br>
+                For the sake of simplicity, I'll be comparing handwritten paper notes with purely typed digital notes, putting aside intermixed mediums like a stylus on a digital tablet (or perhaps a typewriter), and offering a defense of the digital method's potential.
+            </div>
+            <div class="section">
+                <h1><span class="minihead">#</span> Complexities</h1>
+                <hr>
+                One of the most uncontested benefits of digital notetaking is the efficiency with which we can search, reorganize, and access notes. This is not merely a practical benefit, though; it's also a philosophical advantage.
+                <br><br>
+                Taking inspiration from the analysis of algorithms in computer science, let us define <span class="codesmall">n</span> to be the amount (lines, words, etc.) we write. We can describe the <i><a href="https://en.wikipedia.org/wiki/Big_O_notation">complexity</a></i> of a process by identifying how the amount of resources required grows as <span class="codesmall">n</span> grows.
+                <br><br>
+                The key difference between paper and digital writing is that paper takes up a sizeable amount of space in your house (think about your bookshelf) and many actions must be done by hand (or via printers, if you're really that serious about it). But text files on a computer, in the grand scheme of things, are like grains of sand on a beach, nothing compared to the big whales of video files and photo archives and gigabyte-sized games. For all intents and purposes, text takes no resources at all, and can move and shift independent of the medium that hosts it.
+                <br><br>
+                <table style="border: solid 1px var(--hrborder); width: 100%; text-align: left;">
+                    <tr>
+                        <th>Resource usage</th>
+                        <th>Handwritten</th>
+                        <th>Digital</th>
+                    </tr>
+                    <tr>
+                        <td>Time to write</td>
+                        <td><span class="codesmall">O(n)</span></td>
+                        <td><span class="codesmall">O(n)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Time to copy <span class="codesmall">k</span> times</td>
+                        <td><span class="codesmall">O(n·k)</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Time to send to <span class="codesmall">k</span> people</td>
+                        <td><span class="codesmall">O(k)</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Time to erase/mass-edit a page <span class="codesmall">k</span> lines long</td>
+                        <td><span class="codesmall">O(k)</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Time to search for a specific date/subject
+                            <br>(if you're well-organized)
+                        </td>
+                        <td><span class="codesmall">O(lg(n))</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Space taken up</td>
+                        <td><span class="codesmall">O(n)</span></td>
+                        <td><span class="codesmall">O(1)</span>*</td>
+                    </tr>
+                    <tr>
+                        <td>Lead/ink/pencils/pens needed</td>
+                        <td><span class="codesmall">O(n)</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                    <tr>
+                        <td>Trees killed</td>
+                        <td><span class="codesmall">O(n)</span></td>
+                        <td><span class="codesmall">O(1)</span></td>
+                    </tr>
+                </table>
+                <br>
+                <i>* See the sand analogy above</i>
+                <br><br>
+                In summary, though the actual values depend on various factors like your speed, organizational ability, and so on, these theoretical complexities give the digital a clear high ground: no matter how much you reasonably write, share (!, see below), and reorganize, you will never get bogged down by the limits of the physical world.
+                <!-- <br><br>
+                    As a YouTuber No Boilerplate states in the video <a href="https://www.youtube.com/watch?v=sqm4-B07LsE"><i>Writing at the Speed of Thought</i></a>, editing is thinking, and the more effectively we can edit the more effectively we can think. -->
+            </div>
+            <div class="section">
+                <h1><span class="minihead">#</span> Information wants to live</h1>
+                <hr>
+                Your reams of notebooks and binders and college-ruled papers, if you don't have the heart to throw them away, beg to be shoved away into a closet somewhere, into big plastic boxes or archival cabinets, precisely because of their physical ponderousness (above). You'll forget about them until you start purging things because you've run out of space. Even the dreadful process of manually taking photos of paper notes seals them into large binary files such as PNG's. Only scans preserve actual text as data, and even those might not faithfully read your all-too-human handwriting.
+                <br><br>
+                But beyond just easy accessibility (check your folders, do a quick search), digital notes are built to be shared--to live beyond your own mind. In my 2024-25 Humanities Core class at UCI, I took notes in Markdown then uploaded them to a shared Google Drive folder; lots of my classmates thanked me for the study material, since I caught key points that weren't in the lecturers' slides. Importantly, the act of sharing is made incredibly easy: just drag into the browser, send in a message, and so on. That's because the Internet is fundamentally a network about connecting computers, and thus connecting the people who use them.
+                <br><br>
+                The more effectively we can share, compare, and discuss our writings, the more that information has a chance to <i>live</i>. This process shouldn't be restricted to such institutions as academic journals and research; it should instead reflect a broader societal ideal of openness that is able to thrive only because of technology.
+            </div>
+            <div class="section">
+                <h1><span class="minihead">#</span> Text is universal</h1>
+                <hr>
+                Any file that stores data in plain text, such as a
+                <span class="codesmall">.txt</span>,
+                <span class="codesmall">.md</span>, or
+                <span class="codesmall">.cpp</span> file,
+                is instantly the most vital, universal, and time-resilient way to store information. Of course there are different encoding standards and such, but still, practically anyone with a computer can open your file; read it; and copy it somewhere else. People may stop using certain complicated file formats, but plain text will only be unreadable if we destroy every computer.
+                <br><br>
+                In his <i>Republic</i>, Plato theorized a higher sort of universe composed of <i>Forms</i>: perfect blueprints, abstractions, or essences of things that are imperfectly mirrored in our own world. We can consider the Form of the Square, for example, to be the quadrilateral with four equal sides and four right angles, and one of its instances (called a <i>particular</i>) to be the square-like shape that your screen is rendering (□).
+                <br><br>
+                There are many problems with this idea (see my first-year <a href="../archive/research_presentation.html">research project</a>), but it presents a useful vision of authenticity. What is <i>writing</i>? It is the recording of ideas through language that has been preserved in a visual form. That is, it is the production of text. And when such text is encoded unambiguously and universally in binary data, independent from the physical pieces of memory that it might currently reside on, it is far closer to the perfect ideal of writing than are the messy and uncertain scrawls produced with flecks of graphite upon the pulp of long-dead trees.
+            </div>
+            <div class="section">
+                <h1><span class="minihead">#</span> Takeaways</h1>
+                <hr>
+                What does it mean for there to be a justification and ideal behind digital notetaking? In a practical sense, it means that when you take full advantage of your computer's capabilities, you're stepping into a potentially more satisfying experience. Personally, I recommend:
+                <br>- Using a reliable and simple text editor, like <a href="https://www.vim.org/">Vim</a>;
+                <br>- Organizing your files well (to achieve that essentially-<span class="codesmall">O(1)</span> lookup time);
+                <br>- Using a standard format like <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> to enrich your notes (e.g. with headings, italics, and links);
+                <br>- Avoiding distraction by keeping as few tabs and windows open as possible;
+                <br>- And sharing your notes with those who might find them helpful.
+                <br><br>Of course, it's hard to achieve these ideals, and some of us still prefer paper because of the texture, the sensation of writing, or the nuance we can produce through different stroke intensities and letter sizes, but that's okay. Paper isn't going anywhere--we haven't actually <i>lost</i> anything with the invention of computers. Rather, what's most important to recognize is that innovation continues to bring new possibilities that we could use to improve our lives if we're open to change.
+            </div>
+            <!-- <div class="section">
+                <h1><span class="minihead">#</span> Practical caveats and the choice of software</h1>
+                <hr>
+                Vim
+            </div> -->
+            <!-- Footer -->
+            <div class="section">
+                © 2024 Caden Lee
+                <!-- TODO: contact stuff (social media links), link to personal cadecraft site -->
+                <br><span class="minihead">
+                    This website was made in pure JS/HTML/CSS.
+                    <br>Last updated: <span id="editdate">2025/06/28</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

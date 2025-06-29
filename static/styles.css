@@ -9,7 +9,6 @@
 
     /* Light Theme colors */
     --pagebg: rgb(204, 212, 219);
-    /*--sectionbg: rgb(211, 220, 227);*/ /* Old */
     --sectionbg: rgb(218, 226, 232);
     --sectionbgmid: rgb(199, 209, 217);
     --sectionbglight: rgb(223, 230, 235);
@@ -30,8 +29,6 @@
     --darkb: rgba(0, 0, 0, 0.3);
     --darkb2: rgba(0, 0, 0, 0.5);
     --darkb3: rgba(0, 0, 0, 0.8);
-    /* Light Theme colors */
-    /* Light Theme colors */
 }
 
 @font-face {
@@ -47,7 +44,6 @@
 body {
     color: var(--textcolor);
     background-color: var(--pagebg);
-    /*font-family: Arial, sans-serif;*/
     padding: 0px;
     padding-left: 8px;
     padding-right: 8px;
@@ -75,7 +71,6 @@ div.section {
     padding: 12px;
     border-radius: 8px;
     border: solid 1px var(--sectionborder);
-    /* box-shadow: 0px 2px 2px var(--sectionbordershadow); */
     margin-bottom: 8px;
     transition: all 0.1s;
 }
@@ -106,6 +101,9 @@ div.subsection {
 }
 div.subsection:hover {
     background-color: var(--sectionbglight);
+}
+div.clickable:hover {
+    cursor: pointer;
 }
 /* Project showcase div (meant to be used in a flexbox) */
 div.showcase {
@@ -138,8 +136,27 @@ div.showcase .toolslist {
     text-align: left;
     margin-top: 10px;
 }
-div.clickable:hover {
-    cursor: pointer;
+/* Thin image */
+div.blogtitleimage {
+    color: var(--sectionbg);
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 8px;
+    min-height: 190px;
+    font-size: 20px;
+    font-weight: bold;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+
+    .date {
+        font-weight: normal;
+        font-size: 14px;
+    }
 }
 
 /* Text */
@@ -160,6 +177,13 @@ span.minihead {
 span.bigfont {
     font-weight: bold;
     font-size: 24px;
+}
+span.codesmall {
+    font-family: monospace;
+    background-color: var(--sectionbgmid);
+    border-radius: 2px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 /* Misc. */
