@@ -383,3 +383,26 @@ a.nounderline {
     margin-left: 10px;
     opacity: 0.6;
 }
+
+/* Fancy peeking image */
+div.peeking-container {
+    min-width: 80px;
+    max-width: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    margin-right: -12px;
+    padding: 8px;
+    padding-left: 22px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+div.showcase:hover div.peeking-container img {
+    transform: translateX(-14px);
+}
+
+div.peeking-container img {
+    max-height: 100%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.1s;
+}
