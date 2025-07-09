@@ -76,29 +76,36 @@
                 <div class="flexcol">
                     <div class="showcase" style="background-image: url('static/images/ss_ppc_roadmap_blur.png'); background-size: 100%; flex-direction: row; gap: 12px;">
                         <div style="width: 50%; display: flex; flex-direction: column;">
-                            <div style="flex: 1;">
+                            <div style="flex: 1; display: flex; flex-direction: column;">
                                 <b>PeterPortal</b>
-                                <br>I'm part of the PeterPortal team at UCI's ICS Student Council. We're developing a course planning service for students!
-                                <div class="pathclimb-container" style="height: 230px;">
-                                    <div class="branch" style="top: 0px;">
+                                <span>
+                                    I'm on the PeterPortal team at UCI's ICS Student Council. We're improving a course planning service used by thousands of students!
+                                </span>
+                                <div class="pathclimb-container">
+                                    <div class="branch">
                                         <img class="branchimg">
-                                        <span class="head">
-                                            Co-Lead
-                                            <span class="subhead">2025</span>
-                                        </span>
-                                        <span class="descr">
-                                            I'm helping take our course planning service in new directions while supporting the team.
-                                        </span>
+                                        <div class="contents">
+                                            <span class="head">
+                                                Co-Lead
+                                                <span class="subhead">2025</span>
+                                            </span>
+                                            <!-- <span>
+                                                Helping take our project in new directions while supporting the team
+                                            </span> -->
+                                        </div>
                                     </div>
-                                    <div class="branch" style="top: 100px;">
+                                    <div class="branch">
                                         <img class="branchimg">
-                                        <span class="head">
-                                            Team Member
-                                            <span class="subhead">2024</span>
-                                        </span>
-                                        <span class="descr">
-                                            Created a new menu for general education requirements, enhanced schedule imports, and implemented a data conversion pipeline.
-                                        </span>
+                                        <div class="contents">
+                                            <span class="head">
+                                                Developer
+                                                <span class="subhead">Fall 2024</span>
+                                            </span>
+                                            <!-- <span class="descr">
+                                                Shipped a new menu for general education requirements, added a schedule import method, and built a data conversion pipeline
+                                            </span>
+                                            <!-- TODO: maybe not have these descriptions, and just have the role titles? The descriptions are a lot, too bulky, too much space -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -123,14 +130,50 @@
                     </div>
                     <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); background-size: 100% 100%; flex-direction: row; gap: 12px; margin-bottom: 0px;">
                         <div style="width: 65%; display: flex; flex-direction: column;">
-                            <div style="flex: 1;">
+                            <div style="flex: 1; display: flex; flex-direction: column;">
                                 <b>Knick Knack</b>
-                                <br>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app, placing 1st in our Demo Day competition
-                                <br><br>
-                                <button class="dark" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
-                                    <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
-                                    Check it out
-                                </button>
+                                <span>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app. We're coming to the app store soon.</span>
+                                <div class="pathclimb-container">
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Launching to Market!
+                                                <span class="subhead">in Fall 2025</span>
+                                            </span>
+                                            <span class="descr">
+                                                <button class="dark" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'">
+                                                    ➜
+                                                    Join our waitlist
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Placed 1st in Demo Day competition
+                                                <span class="subhead">Spring 2025</span>
+                                            </span>
+                                            <span class="descr">
+                                                <button class="dark" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
+                                                    <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
+                                                    Check it out
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Met in UCI's Product Fellowship
+                                                <span class="subhead">2024</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="toolslist">
                                 <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
@@ -140,8 +183,9 @@
                                 <i class="iconlight devicon-python-plain" title="Python"></i>
                             </div>
                         </div>
-                        <div style="width: 35%;">
+                        <div class="flexcol" style="width: 35%;">
                             <img src="static/images/img_KnickKnackGroupEdit.jpg" style="width: 100%;">
+                            <img src="static/images/ss_kk_phones.png" style="width: 100%;">
                         </div>
                     </div>
                 </div>
@@ -353,13 +397,15 @@
                     </div>
                 </div>
 
-                <div class="flexrow" style="height: 340px; margin-top: 8px;">
+                <div class="flexrow" style="height: 340px; margin-top: 12px;">
                     <div style="min-width: 58%; max-width: 58%;">
                         <img src="./static/images/img_ICSTrees_edit.jpg" style="height: 100%; width: 100%; object-fit: cover;">
                     </div>
-                    <div style="flex-grow: 1;">
+                    <div class="flexcol" style="flex-grow: 1;">
                         <img src="./static/images/img_HermosaPierWinterSun.jpg" style="height: 160px; width: 100%; object-fit: cover;">
-                        <img src="./static/images/img_BombayBoat.jpg" style="height: 167px; width: 100%; object-fit: cover; margin-top: 10px;">
+                        <div style="flex-grow: 1; height: 10px;">
+                            <img src="./static/images/img_BombayBoat.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>

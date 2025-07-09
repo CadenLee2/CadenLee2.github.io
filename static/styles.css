@@ -74,7 +74,6 @@ div.flexrow {
 div.flexcol {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 8px;
 }
 div.section {
@@ -347,12 +346,15 @@ a.nounderline {
 .pathclimb-container {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: fit-content;
+    padding-bottom: 19px;
+    margin-top: auto;
 }
 .pathclimb-container div.branch {
-    position: absolute;
-    left: 0px; 
     width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-bottom: 22px;
 }
 .pathclimb-container img.branchimg {
     width: 50px;
@@ -360,21 +362,24 @@ a.nounderline {
     left: 0px;
     top: 0px;
     /* Display the branch svg image on every branch */
-    content:url(images/branchpath.svg)
+    content:url(images/branchpath.svg);
+    opacity: 0.6;
+    mask-image: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+}
+.pathclimb-container div.contents {
+    position: relative;
+    left: 64px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(100% - 64px);
 }
 .pathclimb-container span.head {
     font-weight: bold;
-    position: absolute;
-    left: 64px;
-    top: 16px;
 }
 .pathclimb-container span.subhead {
-    color: rgba(255,255,255,0.5);
     font-size: 13px;
     margin-left: 10px;
-}
-.pathclimb-container span.descr {
-    position: absolute;
-    left: 64px;
-    top: 40px;
+    opacity: 0.6;
 }
