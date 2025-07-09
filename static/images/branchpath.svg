@@ -1,0 +1,10 @@
+<svg width="200" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_5" d="m249.56611,81.73962" opacity="NaN" stroke="#000" fill="#fff"/>
+  <path stroke-width="14" id="svg_6" d="m11.00009,200l-0.00009,400" opacity="undefined" stroke="#ffffff" fill="#000"/>
+  <path stroke-width="14" id="svg_7" d="m7,204.50456l140.51624,-82.1729" opacity="undefined" stroke="#ffffff" fill="#000"/>
+  <ellipse fill-opacity="0" ry="18" rx="18" id="svg_9" cy="115.69084" cx="162" stroke-width="14" stroke="#ffffff" fill="#bcbc4d"/>
+ </g>
+</svg>

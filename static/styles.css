@@ -319,7 +319,7 @@ button.dark {
     justify-content: center;
     justify-items: center;
     justify-items: center;
-    border-radius: 30px;
+    height: 30px;
 }
 button.dark:hover {
     background-color: var(--darkb2);
@@ -341,4 +341,40 @@ a:active {
 }
 a.nounderline {
     text-decoration: none;
+}
+
+/* Fancy graphics */
+.pathclimb-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+.pathclimb-container div.branch {
+    position: absolute;
+    left: 0px; 
+    width: 100%;
+}
+.pathclimb-container img.branchimg {
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* Display the branch svg image on every branch */
+    content:url(images/branchpath.svg)
+}
+.pathclimb-container span.head {
+    font-weight: bold;
+    position: absolute;
+    left: 64px;
+    top: 16px;
+}
+.pathclimb-container span.subhead {
+    color: rgba(255,255,255,0.5);
+    font-size: 13px;
+    margin-left: 10px;
+}
+.pathclimb-container span.descr {
+    position: absolute;
+    left: 64px;
+    top: 40px;
 }
