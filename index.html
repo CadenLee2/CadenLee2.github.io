@@ -19,7 +19,7 @@
         <div class="pagecenter">
             <!-- Top section -->
             <div class="whitesection" style="height: auto;">
-                <h1>Caden Lee</h1>
+                <h1 class="pagetitle">Caden Lee</h1>
                 <br>
                 <div>
                     <button disabled>Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
@@ -95,7 +95,7 @@
                                         <img class="branchimg">
                                         <div class="contents">
                                             <span class="head">
-                                                Developer
+                                                Software Developer
                                                 <span class="subhead">Fall 2024</span>
                                             </span>
                                             <!-- <span class="descr">
@@ -125,7 +125,7 @@
                                 </button>
                         </div>
                     </div>
-                    <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); background-size: 100% 100%; flex-direction: row; gap: 12px; margin-bottom: 0px;">
+                    <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); background-size: auto 100%; object-fit: cover; flex-direction: row; gap: 12px; margin-bottom: 0px;">
                         <div style="width: 65%; display: flex; flex-direction: column;">
                             <div style="flex: 1; display: flex; flex-direction: column;">
                                 <b>Knick Knack</b>
@@ -141,7 +141,7 @@
                                             <span class="descr">
                                                 <button class="dark" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'">
                                                     ➜
-                                                    Join our waitlist
+                                                    Join the waitlist
                                                 </button>
                                             </span>
                                         </div>
@@ -180,10 +180,18 @@
                                 <i class="iconlight devicon-python-plain" title="Python"></i>
                             </div>
                         </div>
-                        <div class="flexcol" style="width: 35%;">
+                        <div class="flexcol" style="width: 35%; align-items: center;">
                             <img src="static/images/img_KnickKnackGroupEdit.jpg" style="width: 100%;">
                             <!-- TODO: instead of these phones, maybe actual phone image that pops up from the bottom of the container when you hover over it -->
-                            <img src="static/images/ss_kk_phones.png" style="width: 100%;">
+                            <!-- <img src="static/images/ss_kk_phones.png" style="width: 100%;"> -->
+                            <div class="peeking-container-vert">
+                                <img
+                                    class="clickable"
+                                    src="static/images/ss_kk_demo2.png"
+                                    title="Join the waitlist!"
+                                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'"
+                                >
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,7 +241,7 @@
                     >
                         <div>
                             <b>Sheatfish</b>
-                            <br>A lightweight, productive terminal-based spreadsheet editor
+                            <br>Lightweight, productive terminal-based spreadsheet editor
                         </div>
                         <br><br>
                         <div class="toolslist">
@@ -242,12 +250,12 @@
                     </div>
                     <div
                         class="showcase clickable"
-                        style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%;"
+                        style="background-image: url('static/images/ss_remslice.png'); background-size: auto 100%;"
                         onclick="location.href='https://github.com/Cadecraft/remslice'"
                     >
                         <div>
                             <b>Remslice</b>
-                            <br>The Swiss Army knife for desktop productivity in the command line
+                            <br>Desktop productivity assistant that runs in the command line
                         </div>
                         <div class="toolslist">
                             <i class="iconlight devicon-rust-original" title="Rust"></i>
@@ -255,12 +263,12 @@
                     </div>
                     <div
                         class="showcase clickable"
-                        style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;"
+                        style="background-image: url('static/images/ss_homepageomni_blur.png'); background-size: 100%;"
                         onclick="location.href='https://github.com/Cadecraft/HomepageOmni'"
                     >
                         <div>
                             <b>HomepageOmni</b>
-                            <br>A configurable, productivity-focused homepage for your browser
+                            <br>Configurable, productivity-focused homepage for your browser
                         </div>
                         <div class="toolslist">
                             <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
@@ -319,7 +327,7 @@
                     <div class="flexcol" style="flex-grow: 1;">
                         <div
                             class="showcase clickable"
-                            style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%; min-height: fit-content; max-height: fit-content;"
+                            style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
                             onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'"
                         >
                             <div class="flexrow">
@@ -339,14 +347,19 @@
                         </div>
                         <div
                             class="showcase clickable"
-                            style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;"
+                            style="background-image: url('static/images/ss_speedstreets_blur.png'); background-size: 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
                             onclick="location.href='https://github.com/Big-Dyl/IrvineHacks2025'"
                         >
-                            <div>
-                                <b>SpeedStreets</b>
-                                <br>
-                                This multiplayer geography game tests how well you know the streets in your city,
-                                built for IrvineHacks 2025
+                            <div class="flexrow">
+                                <div style="flex-grow: 1;">
+                                    <b>SpeedStreets</b>
+                                    <br>
+                                    This multiplayer geography game tests how well you know the streets in your city,
+                                    built for IrvineHacks 2025
+                                </div>
+                                <div class="peeking-container">
+                                    <img src="https://github.com/Big-Dyl/IrvineHacks2025/raw/main/screenshot/Screenshot_Game.png">
+                                </div>
                             </div>
                             <div class="toolslist">
                                 <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
