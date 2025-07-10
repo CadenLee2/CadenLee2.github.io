@@ -1,5 +1,5 @@
 :root {
-    /* Dark Theme colors */
+    /* Dark Theme colors (possibly?) */
     /*--pagebg: rgb(16, 18, 22);
     --sectionbg: rgb(21, 24, 31);
     --sectionborder: rgb(34, 38, 48);
@@ -266,7 +266,6 @@ button {
     font-family: 'Lato';
     color: var(--textcolor);
     background-color: var(--sectionbg);
-    /*background-color: rgb(130, 173, 232);*/
     border: none;
     border-radius: 4px;
     margin-top: 4px;
@@ -290,8 +289,8 @@ button:active {
     background-color: var(--sectionborder);
 }
 button:disabled, button:disabled:hover, button:disabled:focus {
-    color: var(--sectionbgdark); /* var(--sectionbgmid); */
-    background-color: transparent; /* var(--sectionbg); */
+    color: var(--sectionbgdark);
+    background-color: transparent;
     cursor: auto;
 }
 /* TODO: button focus border/edge style */
@@ -319,7 +318,7 @@ button.blue:active {
     background-color: var(--blue1dark);
 }
 button.dark {
-    background-color: var(--darkb); /*var(--darkb);*/
+    background-color: var(--darkb);
     color: var(--blue1light);
     width: 100%;
     display: inline-flex;
@@ -427,16 +426,43 @@ div.peeking-container-vert {
     overflow: hidden;
     margin-top: auto;
 }
-
 div.showcase:hover div.peeking-container-vert img {
     transform: translateY(-10px);
 }
-
 div.showcase:hover div.peeking-container-vert:hover img:hover {
     transform: translateY(-14px);
 }
-
 div.peeking-container-vert img {
     max-width: 100%;
     transition: all 0.1s;
+}
+
+/* Fancy album cover */
+div.album-container {
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    position: relative;
+}
+div.album-cover {
+    background-size: 100%;
+    min-height: 130px;
+    max-height: 130px;
+    width: 130px;
+    position: absolute;
+}
+div.album-cover-top {
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+div.album-cover-bottom {
+    left: 10px;
+    top: 10px;
 }

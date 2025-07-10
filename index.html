@@ -22,7 +22,7 @@
                 <h1 class="pagetitle">Caden Lee</h1>
                 <br>
                 <div>
-                    <button disabled>Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
+                    <button disabled>Home</button>
                     <button onclick="location.href='./resume.html'">Skills &amp; Resume</button>
                     <button onclick="location.href='./contact.html'">Contact</button>
                     <button onclick="location.href='./blogindex.html'">Blog</button>
@@ -42,13 +42,10 @@
                         <br>
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button>
                         <br><br>
-                            <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn" style="margin-left: 0px;"></i></a>
-                            <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';">
-                                <i class="icon github-hover devicon-github-plain" title="GitHub"></i>
-                            </a>
-                            <!-- TODO: fix styles for hover -->
-                        <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
-                        <!-- TODO: include small profile picture icons next to this? Also highlight that the GitHub button was pressed? -->
+                        <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn" style="margin-left: 0px;"></i></a>
+                        <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';">
+                            <i class="icon github-hover devicon-github-plain" title="GitHub"></i>
+                        </a>
                     </div>
                     <div style="width: 70%;">
                         <!-- TODO: include a picture of my face here, instead of the ICS stairs, and move them below? -->
@@ -56,6 +53,7 @@
                     </div>
                 </div>
                 <!-- Pictures of Aldrich Park, Crystal Cove, Anteater ? -->
+                <!-- This popup displays to give the user an option to pick personal or professional -->
                 <div class="github-hover-box" id="github-hover-box-item" style="width: 340px;">
                     <div class="github-lister">
                         <i>Personal GitHub (projects)</i>
@@ -70,7 +68,7 @@
             <div class="section">
                 <h1><span class="minihead">#</span> Building Valuable Projects</h1>
                 <hr>
-                <!-- I love collaborating on projects that improve the world. -->
+                <!-- Old title: "I love collaborating on projects that improve the world." -->
                 <div class="flexcol" style="margin-top: 12px;">
                     <div class="showcase" style="background-image: url('static/images/ss_ppc_roadmap_blur.png'); background-size: 100%; flex-direction: row; gap: 12px;">
                         <div style="width: 50%; display: flex; flex-direction: column;">
@@ -191,8 +189,6 @@
                         </div>
                         <div class="flexcol" style="width: 35%; align-items: center;">
                             <img src="static/images/img_KnickKnackGroupEdit.jpg" style="width: 100%;">
-                            <!-- TODO: instead of these phones, maybe actual phone image that pops up from the bottom of the container when you hover over it -->
-                            <!-- <img src="static/images/ss_kk_phones.png" style="width: 100%;"> -->
                             <div class="peeking-container-vert">
                                 <img
                                     class="clickable"
@@ -204,9 +200,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- TODO: images, more interesting formatting (ex. bento style?) -->
-                <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
-                <!-- TODO: feature my tech stack? -->
             </div>
             <div class="section">
                 <h1><span class="minihead">#</span> My Tools</h1>
@@ -240,9 +233,8 @@
                 <h1><span class="minihead">#</span> Making Life Easier</h1>
                 <hr>
                 Here are some open-source tools I've made to improve the experience of using a computer.
+                <!-- Original idea for description: "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
                 <div class="flexrow" style="text-align: center; margin-top: 12px;">
-                    <!-- TODO: ensure links work -->
-                    <!-- TODO: update programming language icons in the corner of each project -->
                     <div
                         class="showcase clickable"
                         style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;"
@@ -287,7 +279,6 @@
                     </div>
                 </div>
                 <hr>
-                <!-- TODO: center? -->
                 <div class="codebox">
                     // Attention to detail is my philosophy.
                 </div>
@@ -404,18 +395,18 @@
                 <h1><span class="minihead">#</span> Other Interests</h1>
                 <hr>
                 <div class="flexrow" style="gap: 16px;">
-                    <div style="min-width: 140px; max-width: 140px; min-height: 140px; max-height: 140px; position: relative;">
+                    <div class="album-container">
                         <div
-                            class="showcase clickable"
-                            style="background-image: url('static/images/ss_SkylineCover.png'); background-size: 100%; min-height: 130px; max-height: 130px; width: 130px; display: flex; align-items: center; justify-content: center; font-size: 34px; z-index: 2; position: absolute; left: 0px; top: 0px; box-shadow: 0px 2px 2px rgba(0,0,0,0.2);"
+                            class="showcase album-cover album-cover-top clickable"
+                            style="background-image: url('static/images/ss_SkylineCover.png');"
                             onclick="location.href='https://youtu.be/QRya2g7BbXs?si=Sqa9VzWz5GmYPFXq'"
                             title="Listen to Skyline by Cadecraft on YouTube"
                         >
                             ▶
                         </div>
                         <div
-                            class="showcase"
-                            style="background-image: url('static/images/ss_DewdropsCover.png'); background-size: 100%; min-height: 130px; max-height: 130px; width: 130px; position: absolute; left: 10px; top: 10px;"
+                            class="showcase album-cover album-cover-bottom"
+                            style="background-image: url('static/images/ss_DewdropsCover.png');"
                         >
                         </div>
                     </div>
@@ -427,7 +418,9 @@
                         </span>
                         <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button>
                         <br>
-                        <span class="minihead" style="margin-top: auto;">Below: photos I took of UCI's Engineering Tower (left), the Hermosa Beach pier (top right), and Bombay Beach (bottom right)</span>
+                        <span class="minihead" style="margin-top: auto;">
+                            Below: photos I took of UCI's Engineering Tower (left), the Hermosa Beach pier (top right), and Bombay Beach (bottom right)
+                        </span>
                     </div>
                 </div>
 
@@ -460,7 +453,7 @@
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS. <a href="https://github.com/cadenlee2/CadenLee2.github.io/">View the source!</a>
                     <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
-                    <br>Last updated: <span id="editdate">2025/07/09</span>
+                    <br>Last updated: <span id="editdate">2025/07/10</span>
                 </span>
             </div>
         </div>
