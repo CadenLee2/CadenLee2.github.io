@@ -19,10 +19,10 @@
         <div class="pagecenter">
             <!-- Top section -->
             <div class="whitesection" style="height: auto;">
-                <h1>Caden Lee</h1>
+                <h1 class="pagetitle">Caden Lee</h1>
                 <br>
                 <div>
-                    <button disabled>Home</button> <!-- TODO: change to Projects? Where to put photograpy? -->
+                    <button disabled>Home</button>
                     <button onclick="location.href='./resume.html'">Skills &amp; Resume</button>
                     <button onclick="location.href='./contact.html'">Contact</button>
                     <button onclick="location.href='./blogindex.html'">Blog</button>
@@ -32,27 +32,20 @@
                 <div class="section">⚠️ Warning: <a href="https://www.enable-javascript.com/">JavaScript must be enabled</a> for this page to work properly</div>
             </noscript>
             <!-- Main sections -->
-            <!-- <div class="section">
-                ⚠️ This page is currently under construction for the summer
-                <br>
-                <span class="minihead">- 2024/05/31</span>
-            </div> -->
             <div class="section">
-                <div style="display: flex;">
+                <div class="flexrow">
                     <div>
                         <h1><span class="minihead">#</span> Computer Science @ UCI <span style="font-size: 14px;">Class of 2028</span></h1>
-                        <!-- TODO: "Studying CS @ UCI" instead of "CS Student @ UCI"? -->
                         <hr style="margin-right: 10px;">
-                        As a student in computer science and honors, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
+                        <!-- TODO: "Through academics and honors, I'm constantly ..."? -->
+                        As an avid student and full-stack engineer, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
                         <br>
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button>
-                        <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                         <br><br>
                         <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn" style="margin-left: 0px;"></i></a>
-                        <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';"><i class="icon github-hover devicon-github-plain" title="GitHub"></i></a> <!-- TODO: fix styles for hover -->
-                        <!-- <a class="nounderline" href="./contact.html" style="line-height: 0px;">•••</a> -->
-                        <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
-                        <!-- TODO: include small profile picture icons next to this? Also highlight that the GitHub button was pressed? -->
+                        <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';">
+                            <i class="icon github-hover devicon-github-plain" title="GitHub"></i>
+                        </a>
                     </div>
                     <div style="width: 70%;">
                         <!-- TODO: include a picture of my face here, instead of the ICS stairs, and move them below? -->
@@ -60,6 +53,7 @@
                     </div>
                 </div>
                 <!-- Pictures of Aldrich Park, Crystal Cove, Anteater ? -->
+                <!-- This popup displays to give the user an option to pick personal or professional -->
                 <div class="github-hover-box" id="github-hover-box-item" style="width: 340px;">
                     <div class="github-lister">
                         <i>Personal GitHub (projects)</i>
@@ -72,27 +66,53 @@
                 </div>
             </div>
             <div class="section">
-                <h1><span class="minihead">#</span> Avid Software Developer</h1>
+                <h1><span class="minihead">#</span> Building Valuable Projects</h1>
                 <hr>
-                I've built and collaborated on numerous projects to satisfy real-world needs and learn various technologies<!--; my philosophy is quality and attention to detail-->.
-                <br>
-                <!-- TODO: code box -->
-                <div class="codebox">
-                    // Attention to detail is my philosophy.
-                </div>
-                <hr>
-                <div class="showcase" style="background-image: url('static/images/ss_ppc_roadmap_blur.png'); background-size: 100%; flex-direction: row; gap: 12px;">
-                    <div style="width: 50%; display: flex; flex-direction: column;">
-                        <div style="flex: 1; flex-basis: auto;">
-                            <b>PeterPortal</b>
-                            <br>I'm part of the PeterPortal team at UCI's ICS Student Council. We're developing a course planning service for students!
-                            <br><br>
-                            <button class="dark" onclick="location.href='https://github.com/icssc/peterportal-client'">
-                                <i class="iconlight github-hover devicon-github-plain" title="GitHub"></i>
-                                GitHub
-                            </button>
-                            <button class="dark" onclick="location.href='https://peterportal.org/'">➜ Try it out</button>
-                        </div>
+                <!-- Old title: "I love collaborating on projects that improve the world." -->
+                <div class="flexcol" style="margin-top: 12px;">
+                    <div class="showcase" style="background-image: url('static/images/ss_ppc_roadmap_blur.png'); background-size: 100%; flex-direction: row; gap: 12px;">
+                        <div style="width: 50%; display: flex; flex-direction: column;">
+                            <div style="flex: 1; display: flex; flex-direction: column;">
+                                <b>PeterPortal</b>
+                                <span>
+                                    I'm on the PeterPortal team at UCI's ICS Student Council. We're improving a course planning service used by thousands of students!
+                                </span>
+                                <div style="margin-top: 14px;">
+                                    <button class="dark" onclick="location.href='https://peterportal.org/roadmap'">
+                                        ➜ Visit PeterPortal
+                                    </button>
+                                    <button class="dark" onclick="location.href='https://github.com/icssc/peterportal-client'">
+                                        <i class="iconlight github-hover devicon-github-plain" title="GitHub"></i>
+                                        Contribute on GitHub
+                                    </button>
+                                </div>
+                                <div class="pathclimb-container">
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Project Co-Lead
+                                                <span class="subhead">2025</span>
+                                            </span>
+                                            <!-- <span>
+                                                Helping take our project in new directions while supporting the team
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Software Developer
+                                                <span class="subhead">Fall 2024</span>
+                                            </span>
+                                            <!-- <span class="descr">
+                                                Shipped a new menu for general education requirements, added a schedule import method, and built a data conversion pipeline
+                                            </span> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="toolslist">
                                 <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
                                 <i class="iconlight devicon-react-plain" title="React"></i>
@@ -100,65 +120,86 @@
                                 <i class="iconlight devicon-sass-plain" title="SCSS"></i>
                                 <i class="iconlight devicon-trpc-plain" title="tRPC"></i>
                             </div>
+                        </div>
+                        <div style="width: 50%;">
+                            <img
+                                class="clickable"
+                                src="static/images/ss_ppc_roadmap_clear.png"
+                                style="width: 100%;"
+                                onclick="location.href='https://peterportal.org/roadmap'"
+                                title="Start planning courses now!"
+                            >
+                            <span style="opacity: 0.5;">
+                                ⇧ <i>Plan quarter schedules around major/minor requirements, transfer your AP credits, check prerequisites, and rate courses!</i>
+                            </span>
+                        </div>
                     </div>
-                    <div style="width: 50%;">
-                        <img src="static/images/ss_ppc_roadmap_clear.png" style="width: 100%;">
+                    <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); flex-direction: row; gap: 12px; margin-bottom: 0px;">
+                        <div style="width: 65%; display: flex; flex-direction: column;">
+                            <div style="flex: 1; display: flex; flex-direction: column;">
+                                <b>Knick Knack</b>
+                                <span>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app, coming to the app store in Fall.</span>
+                                <div class="flexrow" style="margin-top: 14px;">
+                                    <button class="dark" style="flex: 1 1 0px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'">
+                                        ➜
+                                        Join the waitlist
+                                    </button>
+                                    <button class="dark" style="flex: 1 1 0px;" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
+                                        <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
+                                        Check it out
+                                    </button>
+                                </div>
+                                <div class="pathclimb-container">
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Launching to Market!
+                                                <span class="subhead">in Fall 2025</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Placed 1st in Demo Day Competition
+                                                <span class="subhead">Spring 2025</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="branch">
+                                        <img class="branchimg">
+                                        <div class="contents">
+                                            <span class="head">
+                                                Met in UCI's Product Fellowship
+                                                <span class="subhead">2024</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
+                                <i class="iconlight devicon-react-plain" title="React"></i>
+                                <i class="iconlight devicon-firebase-plain" title="Firebase"></i>
+                                <i class="iconlight devicon-tensorflow-original" title="TensorFlow"></i>
+                                <i class="iconlight devicon-python-plain" title="Python"></i>
+                            </div>
+                        </div>
+                        <div class="flexcol" style="width: 35%; align-items: center;">
+                            <img src="static/images/img_KnickKnackGroupEdit.jpg" style="width: 100%;">
+                            <div class="peeking-container-vert">
+                                <img
+                                    class="clickable"
+                                    src="static/images/ss_kk_demo2.png"
+                                    title="Join the waitlist!"
+                                    onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'"
+                                >
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div style="display: flex; justify-content: center; text-align: center; gap: 8px;">
-                    <!-- TODO: add images -->
-                    <!-- TODO: programming language icons in the corner of each project -->
-                    <div
-                        class="showcase clickable"
-                        style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;"
-                        onclick="location.href='https://github.com/Cadecraft/sheatfish'"
-                    >
-                        <div>
-                            <b>Sheatfish</b>
-                            <br>A lightweight, productive terminal-based spreadsheet editor
-                        </div>
-                        <br><br>
-                        <div class="toolslist">
-                            <i class="iconlight devicon-rust-original" title="Rust"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="showcase clickable"
-                        style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%;"
-                        onclick="location.href='https://github.com/Cadecraft/tetrome-source'"
-                    >
-                        <div>
-                            <b>Tetrome</b>
-                            <br>A fully-featured stacker game as a browser extension
-                        </div>
-                        <div class="toolslist">
-                            <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
-                            <i class="iconlight devicon-html5-plain" title="HTML5"></i>
-                            <i class="iconlight devicon-css3-plain" title="CSS3"></i>
-                        </div>
-                    </div>
-                    <div
-                        class="showcase clickable"
-                        style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;"
-                        onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'"
-                    >
-                        <div>
-                            <b>Landform: Eclipse</b>
-                            <br>A web game with an emphasis on procedural generation and rendering
-                        </div>
-                        <div class="toolslist">
-                            <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
-                            <i class="iconlight devicon-html5-plain" title="HTML5"></i>
-                            <i class="iconlight devicon-css3-plain" title="CSS3"></i>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button>
-                <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button>
-                <!-- TODO: images, more interesting formatting (ex. bento style?) -->
-                <!-- TODO: be SPECIFIC in the descr (like activities): "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
-                <!-- TODO: feature my tech stack? -->
             </div>
             <div class="section">
                 <h1><span class="minihead">#</span> My Tools</h1>
@@ -189,52 +230,209 @@
                 <br>
             </div>
             <div class="section">
-                <h1><span class="minihead">#</span> Building Valuable Products</h1>
+                <h1><span class="minihead">#</span> Making Life Easier</h1>
                 <hr>
-                <!-- I take every opportunity to apply my skills.
-                <br>
-                <hr> -->
-                <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); background-size: 100% 100%; flex-direction: row; gap: 12px; margin-bottom: 0px;">
-                    <div style="width: 65%; display: flex; flex-direction: column;">
-                        <div style="flex: 1; flex-basis: auto;">
-                            <b>Knick Knack</b>
-                            <br>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app, placing 1st in our Demo Day competition
-                            <br><br>
-                            <button class="dark" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
-                                <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
-                                Check it out
-                            </button>
+                Here are some open-source tools I've made to improve the experience of using a computer.
+                <!-- Original idea for description: "I've built a spreadsheet editor, {}, and more; replace with a "news panel" like on my other website -->
+                <div class="flexrow" style="text-align: center; margin-top: 12px;">
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/sheatfish'"
+                    >
+                        <div>
+                            <b>Sheatfish</b>
+                            <br>Lightweight, productive terminal-based spreadsheet editor
                         </div>
+                        <br><br>
                         <div class="toolslist">
-                            <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
-                            <i class="iconlight devicon-react-plain" title="React"></i>
-                            <i class="iconlight devicon-firebase-plain" title="Firebase"></i>
-                            <i class="iconlight devicon-tensorflow-original" title="TensorFlow"></i>
-                            <i class="iconlight devicon-python-plain" title="Python"></i>
+                            <i class="iconlight devicon-rust-original" title="Rust"></i>
                         </div>
                     </div>
-                    <div style="width: 35%;">
-                        <img src="static/images/img_KnickKnackGroupEdit.jpg" style="width: 100%;">
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_remslice.png'); background-size: auto 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/remslice'"
+                    >
+                        <div>
+                            <b>Remslice</b>
+                            <br>Desktop productivity assistant that runs in the command line
+                        </div>
+                        <div class="toolslist">
+                            <i class="iconlight devicon-rust-original" title="Rust"></i>
+                        </div>
+                    </div>
+                    <div
+                        class="showcase clickable"
+                        style="background-image: url('static/images/ss_homepageomni_blur.png'); background-size: 100%;"
+                        onclick="location.href='https://github.com/Cadecraft/HomepageOmni'"
+                    >
+                        <div>
+                            <b>HomepageOmni</b>
+                            <br>Configurable, productivity-focused homepage for your browser
+                        </div>
+                        <div class="toolslist">
+                            <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
+                            <i class="iconlight devicon-html5-plain" title="HTML5"></i>
+                            <i class="iconlight devicon-css3-plain" title="CSS3"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="codebox">
+                    // Attention to detail is my philosophy.
+                </div>
+                <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button>
+                <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button>
+            </div>
+            <div class="section" style="overflow: hidden;">
+                <h1><span class="minihead">#</span> Games I've Built</h1>
+                <hr>
+                Click on a game to head over to its repository and play it.
+                <div class="flexrow" style="justify-content: center; text-align: center; margin-top: 12px;">
+                    <div class="flexcol" style="min-width: 36%; max-width: 36%;">
+                        <div
+                            class="showcase clickable"
+                            style="background-image: url('static/images/ss_tetr3_blur.png'); background-size: 100%; min-height: fit-content;"
+                            onclick="location.href='https://github.com/Cadecraft/tetrome-source'"
+                        >
+                            <div>
+                                <b>Tetrome</b>
+                                <br>A full-featured stacker game. Add the extension to your browser!
+                                <br>
+                                <br>
+                                <img src="https://github.com/Cadecraft/tetrome-source/raw/master/repo_images/TetromeDemo.gif" style="width: 100%; border-radius: 8px; box-shadow: 0px 4px 8px rgba(0,0,0,0.5);">
+                            </div>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="iconlight devicon-html5-plain" title="HTML5"></i>
+                                <i class="iconlight devicon-css3-plain" title="CSS3"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="showcase"
+                            style="background-image: url('static/images/ss_regnatural_blur.png'); background-size: cover;"
+                        >
+                            <div>
+                                <b>Re:Gnatural</b>
+                                <br>Coming soon: a time/physics-based simulation game inspired by falling sand
+                            </div>
+                            <br><br>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-cplusplus-plain" title="C++"></i>
+                                <i class="iconlight devicon-opengl-plain" title="OpenGL"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexcol" style="flex-grow: 1;">
+                        <div
+                            class="showcase clickable"
+                            style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
+                            onclick="location.href='https://github.com/Cadecraft/Cadecraft.github.io/tree/main/static/landform-eclipse'"
+                        >
+                            <div class="flexrow">
+                                <div style="flex-grow: 1;">
+                                    <b>Landform: Eclipse</b>
+                                    <br>A 2d open-world exploration web game with an emphasis on procedural generation and rendering
+                                </div>
+                                <div class="peeking-container">
+                                    <img src="static/images/ss_landform_game.png">
+                                </div>
+                            </div>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-javascript-plain" title="JavaScript"></i>
+                                <i class="iconlight devicon-html5-plain" title="HTML5"></i>
+                                <i class="iconlight devicon-css3-plain" title="CSS3"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="showcase clickable"
+                            style="background-image: url('static/images/ss_speedstreets_blur.png'); background-size: 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
+                            onclick="location.href='https://github.com/Big-Dyl/IrvineHacks2025'"
+                        >
+                            <div class="flexrow">
+                                <div style="flex-grow: 1;">
+                                    <b>SpeedStreets</b>
+                                    <br>
+                                    This multiplayer geography game tests how well you know the streets in your city,
+                                    built for IrvineHacks 2025
+                                </div>
+                                <div class="peeking-container">
+                                    <img src="https://github.com/Big-Dyl/IrvineHacks2025/raw/main/screenshot/Screenshot_Game.png">
+                                </div>
+                            </div>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-typescript-plain" title="TypeScript"></i>
+                                <i class="iconlight devicon-react-plain" title="React"></i>
+                                <i class="iconlight devicon-vitejs-plain" title="Vite"></i>
+                                <i class="iconlight devicon-tailwindcss-original" title="Tailwind CSS"></i>
+                                <i class="iconlight devicon-socketio-original" title="Socket.IO"></i>
+                            </div>
+                        </div>
+                        <div
+                            class="showcase clickable"
+                            style="background-image: url('static/images/ss_platscifi_blur.png'); background-size: auto 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
+                            onclick="location.href='https://github.com/tivect/PlatScifi'"
+                        >
+                            <div class="flexrow">
+                                <div style="flex-grow: 1;">
+                                    <b>PlatSciFi</b>
+                                    <br>An experimental programmer's platformer game that lets you define levels by writing files in a custom language
+                                </div>
+                                <div class="peeking-container">
+                                    <img src="static/images/ss_platscifi.png">
+                                </div>
+                            </div>
+                            <div class="toolslist">
+                                <i class="iconlight devicon-cplusplus-plain" title="C++"></i>
+                                <i class="iconlight devicon-opengl-plain" title="OpenGL"></i>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section">
                 <h1><span class="minihead">#</span> Other Interests</h1>
                 <hr>
-                In my free time, I make trance, synthwave, and other electronic music.
-                <br>I also enjoy photography, science fiction books, and 3d modeling.
-                <br>
-                <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button>
-                <br>
-                <hr>
-                <span class="minihead">Below: UCI's Engineering Tower (left), the Hermosa Beach pier (top right), and Bombay Beach (bottom right)</span>
-                <div style="display: flex; height: 340px; margin-top: 8px;">
-                    <div style="width: 60%;">
-                        <img src="./static/images/img_ICSTrees_edit.jpg" style="height: 340px; width: 97%; object-fit: cover;">
+                <div class="flexrow" style="gap: 16px;">
+                    <div class="album-container">
+                        <div
+                            class="showcase album-cover album-cover-top clickable"
+                            style="background-image: url('static/images/ss_SkylineCover.png');"
+                            onclick="location.href='https://youtu.be/QRya2g7BbXs?si=Sqa9VzWz5GmYPFXq'"
+                            title="Listen to Skyline by Cadecraft on YouTube"
+                        >
+                            ▶
+                        </div>
+                        <div
+                            class="showcase album-cover album-cover-bottom"
+                            style="background-image: url('static/images/ss_DewdropsCover.png');"
+                        >
+                        </div>
                     </div>
-                    <div style="width: 40%;">
+                    <div class="flexcol" style="flex-grow: 1;">
+                        <span>
+                            In my free time, I make trance, synthwave, and other electronic music.
+                            <br>
+                            I also enjoy photography, science fiction books, and 3d modeling.
+                        </span>
+                        <button class="mid" onclick="location.href='https://youtube.com/playlist?list=PLbN2H2xs0W6tlWWImF9bK6xp-U0PCpN7a&si=za9rSy9WBiHHEivw'">➜ Listen on YouTube</button>
+                        <br>
+                        <span class="minihead" style="margin-top: auto;">
+                            Below: photos I took of UCI's Engineering Tower (left), the Hermosa Beach pier (top right), and Bombay Beach (bottom right)
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flexrow" style="height: 340px; margin-top: 12px;">
+                    <div style="min-width: 58%; max-width: 58%;">
+                        <img src="./static/images/img_ICSTrees_edit.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="flexcol" style="flex-grow: 1;">
                         <img src="./static/images/img_HermosaPierWinterSun.jpg" style="height: 160px; width: 100%; object-fit: cover;">
-                        <img src="./static/images/img_BombayBoat.jpg" style="height: 167px; width: 100%; object-fit: cover; margin-top: 10px;">
+                        <div style="flex-grow: 1; height: 10px;">
+                            <img src="./static/images/img_BombayBoat.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -255,7 +453,7 @@
                 <br><span class="minihead">
                     This website was made in pure JS/HTML/CSS. <a href="https://github.com/cadenlee2/CadenLee2.github.io/">View the source!</a>
                     <br>Image credits: most images taken by me. Specific technology product icons are sourced from devicon.dev, and all their names, logos, and brands are property of their respective owners and are used here for identification purposes only.
-                    <br>Last updated: <span id="editdate">2025/05/04</span>
+                    <br>Last updated: <span id="editdate">2025/07/10</span>
                 </span>
             </div>
         </div>

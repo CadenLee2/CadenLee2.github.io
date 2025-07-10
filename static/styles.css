@@ -1,5 +1,5 @@
 :root {
-    /* Dark Theme colors */
+    /* Dark Theme colors (possibly?) */
     /*--pagebg: rgb(16, 18, 22);
     --sectionbg: rgb(21, 24, 31);
     --sectionborder: rgb(34, 38, 48);
@@ -32,13 +32,13 @@
 }
 
 @font-face {
-    font-family: 'Abordage';
-    src: url('Abordage-Regular.otf');
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'Lato';
-    src: url('Lato-Regular.ttf');
+    font-family: 'Atkinson Hyperlegible';
+    src: url('AtkinsonHyperlegible-Regular.ttf');
 }
 
 body {
@@ -64,6 +64,18 @@ div.pagecentercontainer {
 div.pagecenter {
     width: 750px;
     padding: 0px;
+    min-width: 400px;
+}
+div.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+div.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 div.section {
     background-color: var(--sectionbg);
@@ -102,7 +114,7 @@ div.subsection {
 div.subsection:hover {
     background-color: var(--sectionbglight);
 }
-div.clickable:hover {
+.clickable:hover {
     cursor: pointer;
 }
 /* Project showcase div (meant to be used in a flexbox) */
@@ -112,13 +124,14 @@ div.showcase {
     padding: 12px;
     border-radius: 8px;
     border: none;
-    margin-bottom: 8px;
     transition: all 0.1s;
     box-shadow: 0px 2px 2px var(--sectionbordershadow);
     flex: 1;
     position: relative;
     min-height: 190px;
     background-blend-mode: multiply;
+    /* May want to adjust in specific instances, such as to 100% or auto 100% */
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -164,6 +177,12 @@ h1 {
     font-size: 20px;
     margin: 0px;
     color: var(--headercolor);
+    font-weight: normal;
+    font-family: 'Atkinson Hyperlegible';
+}
+h1.pagetitle {
+    font-size: 22px;
+    font-family: 'Atkinson Hyperlegible';
 }
 h3 {
     font-size: 18px;
@@ -247,7 +266,6 @@ button {
     font-family: 'Lato';
     color: var(--textcolor);
     background-color: var(--sectionbg);
-    /*background-color: rgb(130, 173, 232);*/
     border: none;
     border-radius: 4px;
     margin-top: 4px;
@@ -271,8 +289,8 @@ button:active {
     background-color: var(--sectionborder);
 }
 button:disabled, button:disabled:hover, button:disabled:focus {
-    color: var(--sectionbgdark); /* var(--sectionbgmid); */
-    background-color: transparent; /* var(--sectionbg); */
+    color: var(--sectionbgdark);
+    background-color: transparent;
     cursor: auto;
 }
 /* TODO: button focus border/edge style */
@@ -300,7 +318,7 @@ button.blue:active {
     background-color: var(--blue1dark);
 }
 button.dark {
-    background-color: var(--darkb); /*var(--darkb);*/
+    background-color: var(--darkb);
     color: var(--blue1light);
     width: 100%;
     display: inline-flex;
@@ -308,7 +326,7 @@ button.dark {
     justify-content: center;
     justify-items: center;
     justify-items: center;
-    border-radius: 30px;
+    height: 30px;
 }
 button.dark:hover {
     background-color: var(--darkb2);
@@ -330,4 +348,121 @@ a:active {
 }
 a.nounderline {
     text-decoration: none;
+}
+
+/* Fancy graphics */
+.pathclimb-container {
+    position: relative;
+    overflow: hidden;
+    height: fit-content;
+    padding-bottom: 19px;
+    margin-top: auto;
+}
+.pathclimb-container div.branch {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding-bottom: 22px;
+}
+.pathclimb-container img.branchimg {
+    width: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    /* Display the branch svg image on every branch */
+    content:url(images/branchpath.svg);
+    opacity: 0.6;
+    mask-image: linear-gradient(to top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 80%);
+}
+.pathclimb-container div.contents {
+    position: relative;
+    left: 64px;
+    top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: calc(100% - 64px);
+}
+.pathclimb-container span.head {
+    font-weight: bold;
+}
+.pathclimb-container span.subhead {
+    font-size: 13px;
+    margin-left: 10px;
+    opacity: 0.6;
+}
+
+/* Fancy peeking image */
+div.peeking-container {
+    min-width: 80px;
+    max-width: 200px;
+    width: 80vw;
+    min-height: 200px;
+    max-height: 200px;
+    margin-right: -12px;
+    padding: 8px;
+    padding-left: 22px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+div.showcase:hover div.peeking-container img {
+    transform: translateX(-14px);
+}
+div.peeking-container img {
+    max-height: 100%;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    transition: all 0.1s;
+}
+
+/* Fancy peeking image (vertical) */
+div.peeking-container-vert {
+    width: 80%;
+    min-height: 200px;
+    max-height: 200px;
+    margin-bottom: -12px;
+    padding: 8px;
+    padding-top: 22px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    margin-top: auto;
+}
+div.showcase:hover div.peeking-container-vert img {
+    transform: translateY(-10px);
+}
+div.showcase:hover div.peeking-container-vert:hover img:hover {
+    transform: translateY(-14px);
+}
+div.peeking-container-vert img {
+    max-width: 100%;
+    transition: all 0.1s;
+}
+
+/* Fancy album cover */
+div.album-container {
+    min-width: 140px;
+    max-width: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    position: relative;
+}
+div.album-cover {
+    background-size: 100%;
+    min-height: 130px;
+    max-height: 130px;
+    width: 130px;
+    position: absolute;
+}
+div.album-cover-top {
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+div.album-cover-bottom {
+    left: 10px;
+    top: 10px;
 }
