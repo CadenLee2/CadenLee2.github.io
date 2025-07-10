@@ -64,6 +64,7 @@ div.pagecentercontainer {
 div.pagecenter {
     width: 750px;
     padding: 0px;
+    min-width: 400px;
 }
 div.flexrow {
     display: flex;
@@ -129,6 +130,8 @@ div.showcase {
     position: relative;
     min-height: 190px;
     background-blend-mode: multiply;
+    /* May want to adjust in specific instances, such as to 100% or auto 100% */
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -394,6 +397,7 @@ a.nounderline {
 div.peeking-container {
     min-width: 80px;
     max-width: 200px;
+    width: 80vw;
     min-height: 200px;
     max-height: 200px;
     margin-right: -12px;

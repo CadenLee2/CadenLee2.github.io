@@ -41,11 +41,12 @@
                         As an avid student and full-stack engineer, I'm constantly strengthening my fundamental teamwork, research, and technical skills<!-- (zot zot!)-->.
                         <br>
                         <button class="mid blue" onclick="location.href='./resume.html'">➜ View my resume</button>
-                        <!-- TODO: images, more interesting formatting (ex. bento style?) -->
                         <br><br>
                             <a class="nounderline" href="https://www.linkedin.com/in/caden-lee-b76441275/"><i class="icon devicon-linkedin-plain" title="LinkedIn" style="margin-left: 0px;"></i></a>
-                            <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';"><i class="icon github-hover devicon-github-plain" title="GitHub"></i></a> <!-- TODO: fix styles for hover -->
-                        <!-- <a class="nounderline" href="./contact.html" style="line-height: 0px;">•••</a> -->
+                            <a class="nounderline" href="javascript:;" onclick="document.getElementById('github-hover-box-item').style.display = 'block';">
+                                <i class="icon github-hover devicon-github-plain" title="GitHub"></i>
+                            </a>
+                            <!-- TODO: fix styles for hover -->
                         <!-- This popup displays to give the user an option to pick personal or professional, aesthetically -->
                         <!-- TODO: include small profile picture icons next to this? Also highlight that the GitHub button was pressed? -->
                     </div>
@@ -78,6 +79,15 @@
                                 <span>
                                     I'm on the PeterPortal team at UCI's ICS Student Council. We're improving a course planning service used by thousands of students!
                                 </span>
+                                <div style="margin-top: 14px;">
+                                    <button class="dark" onclick="location.href='https://peterportal.org/roadmap'">
+                                        ➜ Visit PeterPortal
+                                    </button>
+                                    <button class="dark" onclick="location.href='https://github.com/icssc/peterportal-client'">
+                                        <i class="iconlight github-hover devicon-github-plain" title="GitHub"></i>
+                                        Contribute on GitHub
+                                    </button>
+                                </div>
                                 <div class="pathclimb-container">
                                     <div class="branch">
                                         <img class="branchimg">
@@ -100,8 +110,7 @@
                                             </span>
                                             <!-- <span class="descr">
                                                 Shipped a new menu for general education requirements, added a schedule import method, and built a data conversion pipeline
-                                            </span>
-                                            <!-- TODO: maybe not have these descriptions, and just have the role titles? The descriptions are a lot, too bulky, too much space -->
+                                            </span> -->
                                         </div>
                                     </div>
                                 </div>
@@ -115,21 +124,33 @@
                             </div>
                         </div>
                         <div style="width: 50%;">
-                            <img src="static/images/ss_ppc_roadmap_clear.png" style="width: 100%;">
-                                <button class="dark" onclick="location.href='https://peterportal.org/roadmap'">
-                                    ➜ Visit PeterPortal
-                                </button>
-                                <button class="dark" onclick="location.href='https://github.com/icssc/peterportal-client'">
-                                    <i class="iconlight github-hover devicon-github-plain" title="GitHub"></i>
-                                    GitHub
-                                </button>
+                            <img
+                                class="clickable"
+                                src="static/images/ss_ppc_roadmap_clear.png"
+                                style="width: 100%;"
+                                onclick="location.href='https://peterportal.org/roadmap'"
+                                title="Start planning courses now!"
+                            >
+                            <span style="opacity: 0.5;">
+                                ⇧ <i>Plan quarter schedules around major/minor requirements, transfer your AP credits, check prerequisites, and rate courses!</i>
+                            </span>
                         </div>
                     </div>
-                    <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); background-size: auto 100%; object-fit: cover; flex-direction: row; gap: 12px; margin-bottom: 0px;">
+                    <div class="showcase" style="background-image: url('static/images/ss_kk_blur.png'); flex-direction: row; gap: 12px; margin-bottom: 0px;">
                         <div style="width: 65%; display: flex; flex-direction: column;">
                             <div style="flex: 1; display: flex; flex-direction: column;">
                                 <b>Knick Knack</b>
-                                <span>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app. We're coming to the app store soon.</span>
+                                <span>In the 2024-25 Product Association fellowship, I worked with product designers and managers to engineer a mobile figurine trading app, coming to the app store in Fall.</span>
+                                <div class="flexrow" style="margin-top: 14px;">
+                                    <button class="dark" style="flex: 1 1 0px;" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'">
+                                        ➜
+                                        Join the waitlist
+                                    </button>
+                                    <button class="dark" style="flex: 1 1 0px;" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
+                                        <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
+                                        Check it out
+                                    </button>
+                                </div>
                                 <div class="pathclimb-container">
                                     <div class="branch">
                                         <img class="branchimg">
@@ -138,26 +159,14 @@
                                                 Launching to Market!
                                                 <span class="subhead">in Fall 2025</span>
                                             </span>
-                                            <span class="descr">
-                                                <button class="dark" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScaxXLfBdZ5Ttdv-pwFF4yqRW2h4hU9GNILZbA3JGfxPXl9qA/viewform?usp=header'">
-                                                    ➜
-                                                    Join the waitlist
-                                                </button>
-                                            </span>
                                         </div>
                                     </div>
                                     <div class="branch">
                                         <img class="branchimg">
                                         <div class="contents">
                                             <span class="head">
-                                                Placed 1st in Demo Day competition
+                                                Placed 1st in Demo Day Competition
                                                 <span class="subhead">Spring 2025</span>
-                                            </span>
-                                            <span class="descr">
-                                                <button class="dark" onclick="location.href='https://www.linkedin.com/posts/kyleshih_wow-what-an-incredible-12-weeks-it-has-been-activity-7316262735397195779-PMK6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEMpkUoBj-OsZZHQm8VZqeqxE49ANrAKP_o'">
-                                                    <i class="iconlight devicon-linkedin-plain" title="LinkedIn"></i>
-                                                    Check it out
-                                                </button>
                                             </span>
                                         </div>
                                     </div>
@@ -285,7 +294,7 @@
                 <button class="mid long blue" onclick="location.href='https://cadecraft.github.io/'">➜ Visit my personal showcase page</button>
                 <button class="mid" onclick="location.href='https://github.com/Cadecraft'">➜ See my personal GitHub</button>
             </div>
-            <div class="section">
+            <div class="section" style="overflow: hidden;">
                 <h1><span class="minihead">#</span> Games I've Built</h1>
                 <hr>
                 Click on a game to head over to its repository and play it.
@@ -311,7 +320,7 @@
                         </div>
                         <div
                             class="showcase"
-                            style="background-image: url('static/images/ss_sheatfish_blur.png'); background-size: 100%;"
+                            style="background-image: url('static/images/ss_regnatural_blur.png'); background-size: cover;"
                         >
                             <div>
                                 <b>Re:Gnatural</b>
@@ -371,12 +380,17 @@
                         </div>
                         <div
                             class="showcase clickable"
-                            style="background-image: url('static/images/ss_landform_blur.png'); background-size: 100%;"
+                            style="background-image: url('static/images/ss_platscifi_blur.png'); background-size: auto 100%; min-height: fit-content; max-height: fit-content; text-align: left;"
                             onclick="location.href='https://github.com/tivect/PlatScifi'"
                         >
-                            <div>
-                                <b>PlatSciFi</b>
-                                <br>An experimental programmer's platformer game that lets you define levels by writing files in a custom language
+                            <div class="flexrow">
+                                <div style="flex-grow: 1;">
+                                    <b>PlatSciFi</b>
+                                    <br>An experimental programmer's platformer game that lets you define levels by writing files in a custom language
+                                </div>
+                                <div class="peeking-container">
+                                    <img src="static/images/ss_platscifi.png">
+                                </div>
                             </div>
                             <div class="toolslist">
                                 <i class="iconlight devicon-cplusplus-plain" title="C++"></i>
@@ -384,8 +398,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- TODO: add images -->
-                    <!-- TODO: update programming language icons in the corner of each project -->
                 </div>
             </div>
             <div class="section">
