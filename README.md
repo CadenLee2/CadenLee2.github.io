@@ -1,6 +1,9 @@
 # CadenLee2.github.io
 
-My website, located at <https://cadenlee2.github.io/>
+> [!IMPORTANT]
+> This repository is kept up for archival purposes; information here may no longer be up to date. My website has moved to <https://cadenlee.dev/> and its source is available at <https://github.com/CadenLee2/personal-website>.
+
+My original personal website, located at <https://cadenlee2.github.io/>. This is now a redirect.
 
 ## License
 
